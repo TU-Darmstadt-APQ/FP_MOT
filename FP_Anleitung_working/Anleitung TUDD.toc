@@ -1,0 +1,33 @@
+\contentsline {section}{\numberline {0}Warnhinweise und Spielregeln}{3}{section.0}
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}
+\contentsline {section}{\numberline {2}Aufgaben}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Vorbereitungsaufgaben}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Pr\"asenzaufgaben}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Auswertungsaufgaben}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Literaturempfehlung}{5}{section.3}
+\contentsline {section}{\numberline {4}\"Uberblick \"uber den Versuchsaufbau}{6}{section.4}
+\contentsline {section}{\numberline {5}Wichtige Bauteile}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}Akusto-optischer Modulator (AOM)}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Verz\"ogerungsplatten}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Polarisationsstrahlteilerw\"urfel (PST)}{12}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Photodiode}{13}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Ionen-Getter-Pumpe}{13}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}PID-Regler}{15}{subsection.5.6}
+\contentsline {section}{\numberline {6}Theorie zur Laserstabilisierung}{16}{section.6}
+\contentsline {subsection}{\numberline {6.1}Aufbau der Laserstabilisierung}{16}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Verwendete Lasertypen}{16}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Dopplerfreie S\"attigungsspektroskopie}{17}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Offsetlock}{18}{subsection.6.4}
+\contentsline {section}{\numberline {7}Theorie zur MOT}{18}{section.7}
+\contentsline {subsection}{\numberline {7.1}Optisches K\"uhlen}{18}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Spontankraft}{18}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Dopplerk\"uhlung - Optische Melasse}{20}{subsubsection.7.1.2}
+\contentsline {subsection}{\numberline {7.2}Fangen der Atome}{21}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Rubidium-MOT}{23}{subsection.7.3}
+\contentsline {section}{\numberline {8}Fragenkatalog}{25}{section.8}
+\contentsline {subsection}{\numberline {8.1}Vorbereitungsfragen}{25}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Fakultative Fragen zum Selbsttest}{25}{subsection.8.2}
+\contentsline {section}{Literaturverzeichnis}{26}{subsection.8.2}
+\contentsline {section}{\numberline {A}Anhang}{27}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Fotos des Versuchsaufbaus}{27}{subsection.A.1}
+\contentsfinish 
