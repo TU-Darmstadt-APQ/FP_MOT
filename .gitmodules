@@ -1,0 +1,3 @@
+[submodule "source/apqdesign"]
+	path = source/apqdesign
+	url = ../../TU-Darmstadt-APQ/APQ-CI.git
