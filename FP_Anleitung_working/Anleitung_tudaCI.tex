@@ -24,6 +24,7 @@ pdfa=false % Problem mit Paket pdfx
 \usepackage{mathtools}
 \usepackage{mathrsfs}
 \usepackage{enumerate}
+\usepackage{enumitem}
 \usepackage{isotope}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
@@ -41,6 +42,17 @@ pdfa=false % Problem mit Paket pdfx
 %\newcites{erg}{Ergänzende Literatur}
 %\newcites{wes}{Wesentliche Literatur}
 
+\newtheorem{satz}{Satz}[section]
+\newtheorem{lemma}[satz]{Lemma}
+\newtheorem{kor}[satz]{Korollar}
+\newtheorem{prop}[satz]{Proposition}
+\newtheorem{frage}[satz]{Frage}
+
+\newtheorem{defi}[satz]{Definition}
+
+\newtheorem{bsp}[satz]{Beispiel}
+\newtheorem{bem}[satz]{Bemerkung}
+\newtheorem{beob}[satz]{Beobachtung}
 
 \usepackage{siunitx}
 \sisetup{
@@ -90,7 +102,7 @@ pdfa=false % Problem mit Paket pdfx
 \renewcommand*{\figurename}{Abb.}
 %\renewcommand*{\figurename}{Fig.} %Für englische Dokumente auskommentieren
 \renewcommand*{\tablename}{Tab.}
-	\titleimage{\includegraphics[width=\textwidth]{graphics/title_okt23_2.png}}
+	\titleimage{\includegraphics[width=\textwidth]{Bilder/g.jpg}}
 	
 	%%% Problem mit pdfx-Paket Start
 	%\Metadata{
@@ -280,7 +292,7 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 
 \section{Literaturempfehlung}\label{sec:LE}
 
-\begin{enumerate}[label=(\roman*)]
+\begin{enumerate}[label=\roman*]
 	\item D. Meschede. \textit{Optik, Licht und Laser}. Vieweg-Teubner, 2008.
 	
 	\item F. Pedrotti, L. Pedrotti, W. Bausch, and H. Schmidt. \textit{Optik für Ingenieure - Grundlagen (3. Auflage)}. Springer, 2005.
@@ -384,8 +396,6 @@ Dieser ist mit allen markierten Elementen ebenfalls auf der nächsten Seite und 
 	\caption{Alle Strahlengänge und alle Elemente}
 	\label{fig:AEGBv}
 \end{figure}
-
-\justify
 
 Für die Variation der einzelnen Phasen des Versuchsablaufs in Dauer und Vorkommen wird ein LabVIEW-Programm verwendet. Dort kann der zyklische Durchlauf des Programms über die Benutzeroberfläche (siehe \autoref{fig:ES}) angepasst und kontrolliert werden.\\
 
