@@ -83,6 +83,10 @@ pdfa=false % Problem mit Paket pdfx
 	nomarginpar
 }
 
+\renewcommand{\emph}[1]{\textcolor{TUDa-1b}{\textbf{#1}}}
+
+\usepackage{hyperref} % Immer als letztes laden
+\def\UrlFont{\normalfont}
 \hypersetup{colorlinks=true,linkcolor=black,urlcolor=TUDa-1b,citecolor=TUDa-1b}
 \urlstyle{same}
 % % % % % % % %
@@ -199,11 +203,11 @@ Zu den Spielregeln.
 
 \chapter{Einleitung}
 Betrachtet man die Themen der aktuellen Grundlagenforschung, so erkennt man, dass ein besonderer Fokus auf
-Präzisionsmessungen mit ultra-kalten Atomen gerichtet ist. Zu diesen Experimenten zählen zum Beispiel die Untersuchung von kalten Stößen, die Realisierung von Atomuhren sowie die Quanteninformationsverarbeitung und
+Präzisionsmessungen mit ultrakalten Atomen gerichtet ist. Zu diesen Experimenten zählen zum Beispiel die Untersuchung von kalten Stößen, die Realisierung von Atomuhren sowie die Quanteninformationsverarbeitung und
 die Erzeugung eines Bose-Einstein-Kondensats.\\
 Das Kühlen bzw. Vorkühlen dieser Atome erfolgt dabei stets durch den Einsatz von Laserlicht. Eine spezielle Art
-zum Kühlen und Fangen von neutralen Atomen ist die magneto-optische Falle (magneto-optical trap, MOT). In
-diesem Praktikumsversuch soll eine MOT erzeugt und $^{85}$Rb gefangen werden. Ziel ist es zu messen wie kalt die
+zum Kühlen und Fangen von neutralen Atomen ist die magneto-optische Falle (engl.: magneto-optical trap, kurz: MOT). In
+diesem Praktikumsversuch soll eine MOT erzeugt und \isotope[85]{Rb} gefangen werden. Ziel ist es zu messen wie kalt die
 Atome in der MOT schließlich sind.\\
 Die Falle besteht, wie ihr Name schon sagt, aus zwei wesentlichen Komponenten: der optischen und der magnetischen.\\
 Während es sich bei der magnetischen Komponente um ein Quadrupolfeld handelt, besteht die optische Komponente
@@ -215,30 +219,23 @@ zwei verschiedene Arten der Stabilisierung eingesetzt, die es einzustellen und z
 Teil des Versuchs wird eine MOT erzeugt und vermessen. Dabei sollen Daten zur Bestimmung der Laderate der
 Falle und die Temperatur der gefangenen Atome ermittelt werden.\\
 Zunächst wird ein kurzer Überblick über den gesamten Versuchsaufbau gegeben.\\ 
-Bevor dies stattfindet sollen jedoch die benötigten \textbf{Voraussetzungen zur Versuchsteilnahme} und die Präsenzaufgaben spezifiziert werden. 
+Bevor dies stattfindet sollen jedoch die benötigten \emph{Voraussetzungen zur Versuchsteilnahme} und die Präsenzaufgaben spezifiziert werden. 
 
-\newpage
 
-\section{Aufgaben}
-
+\chapter{Aufgaben}
 Die Aufgaben gliedern sich zum einen in die \textbf{Vorbereitungsaufgaben}, welche vor der Versuchsdurchführung zu Hause zu bearbeiten sind, die \textbf{Präsenzaufgaben}, welche am Tag der Versuchsdurchführung zu erledigen sind und die \textbf{Auswertungsaufgaben}, welche nach der Versuchsdurchführung wiederum zu Hause zu erledigen sind.\\
 
 \textbf{Hinweis:} Bringen Sie zur Versuchsdurchführung einen  \textbf{USB-Stick} mit, um die während der Versuchsdurchführung gewonnenen Daten mitnehmen zu können.
 
-\subsection{Vorbereitungsaufgaben}
+\section{Vorbereitungsaufgaben}
 
 Zur Vorbereitung auf den Versuch sind sich einerseits die in 1. bis 4. aufgelisteten Themen zu erarbeiten und andererseits ist sich mit den im Anschluss aufgeführten Fragen zu beschäftigen, sodass diese im Vorbereitungsgespräch am Versuchstag beantwortet werden können. 
-
 \begin{enumerate}
 	\item \textbf{Versuchsaufbau:} Übersicht über den gesamten Aufbau, Laserstabilisierung, MOT
-	
 	\item \textbf{wichtige Bauteile:} Akusto-Optischer Modulator (AOM), Verzögerungsplatten ($\lambda/2$-, $\lambda/4$-Platten), Polarisationsstrahlteilerwürfel (PST), Photodiode, Ionen-Getter-Pumpe, PID-Regler
-	
 	\item \textbf{Theorie Laserstabilisierung:} Diodenlaser mit externem Resonator, dopplerfreie Sättigungsspektroskopie, Offsetlock
-	
-	\item \textbf{Theorie MOT:} Dopplerkühlung, Energieniveaustruktur $^{85}$Rb, Quadrupolfeld, Sub-Dopplerkühlung   
+	\item \sloppy \textbf{Theorie MOT:} Dopplerkühlung, Energieniveaustruktur $^{85}$Rb, Quadrupolfeld, Sub-Dopplerkühlung   
 \end{enumerate}
-
 \textbf{Anmerkung:} Die Anleitung zum Versuch stellt eine Einführung in das Thema dar. Um die Vorbereitung zu erleichtern sind die unter 1. und 2. aufgeführten Punkte in der Anleitung in der zur Versuchsdurchführung hinreichenden Tiefe dargestellt. Hier muss keine zusätzliche Literatur zurate gezogen werden. Die unter 3. und 4. aufgeführten Themen werden hingegen lediglich andiskutiert und zu deren Verständnis ist es \textit{unerlässlich} zusätzliche Literatur durchzuarbeiten. Hierzu existiert eine \nameref{sec:LE}. Insbesondere zum Thema der Subdopplerkühlung sei auf Quelle (v) Seiten 218-226 hingewiesen.\\
 
 \textbf{Fragen:}  
@@ -259,12 +256,9 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 	\item \textbf{Frage 7.1:} Welche Elemente werden zur Erzeugung einer MOT benötigt? Wo wird das Licht in die drei Strahlen aufgeteilt? Wie verlaufen die Strahlen?
 \end{itemize}
 
-\newpage
+\section{Präsenzaufgaben}
 
-\subsection{Präsenzaufgaben}
-
-\begin{itemize}
-	
+\begin{itemize}	
 	\item \textbf{Stabilisierung der Laser:} Zur Stabilisierung der Laser betrachten Sie zunächst das Spektroskopiesignal des Rückpumplasers und stabilisieren Sie diesen auf den F=2 nach F'=1 Übergang. Betrachten Sie dazu das Spektroskopiesignal des Rückpumplasers und das zugehörige Dispersionssignal. Nehmen sie beide Signale mit Hilfe des digitalen Oszilloskops und der zugehörigen Computersoftware auf.
 	
 	\item \textbf{Spektroskopie des Kühllasers:} Durch Verschieben der Rubidiumdampfzelle in den Strahlengang des Kühllasers können Sie eine Spektroskopie an diesem durchführen. Nehmen Sie dieses Signal ebenfalls mit Hilfe des digitalen Oszilloskops auf.
@@ -274,13 +268,10 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 	\item \textbf{Temperatur in der MOT:} Nehmen Sie eine geeignete Messreihe zur Bestimmung der Temperatur in der MOT auf.
 	
 	\item \textbf{Temperatur nach der Melassenphase:} Nehmen Sie eine Messreihe zur Bestimmung der Temperatur nach der Melassenphase auf.
-	
 \end{itemize}
 
-\subsection{Auswertungsaufgaben}
-
+\section{Auswertungsaufgaben}
 \begin{itemize}
-	
 	\item \textbf{Spektroskopie:} Stellen Sie die aufgenommenen Spektroskopiesignale des Rückpump- (inkl. Dispersionssignal) und Kühllasers graphisch dar und diskutieren Sie das Ergebnis.
 	
 	\item \textbf{Ladephase:} Betrachten Sie Ihre aufgenommene Messreihe zur Ladephase der MOT. Stellen Sie deren zeitlichen Verlauf dar und approximieren Sie diesen mit einer geeigneten Funktion. Beschreiben Sie das Ergebnis.\\
@@ -291,26 +282,21 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 	\item \textbf{Temperatur nach der Melassenphase:} Bestimmen Sie analog zur Temperatur in der MOT nun die Temperatur nach der Melassenphase. Erklären Sie auftretende Abweichungen im Vergleich zu der Temperatur der Atome in der MOT.
 \end{itemize}
 
-\section{Literaturempfehlung}\label{sec:LE}
+\chapter{Literaturempfehlung}\label{sec:LE}
 
-\begin{enumerate}[label=\roman*]
+\begin{enumerate}[label=\roman*.]
 	\item D. Meschede. \textit{Optik, Licht und Laser}. Vieweg-Teubner, 2008.
 	
 	\item F. Pedrotti, L. Pedrotti, W. Bausch, and H. Schmidt. \textit{Optik für Ingenieure - Grundlagen (3. Auflage)}. Springer, 2005.
 	
-	\item W. Demtröder.\textit{Laserspektroskopie - Grundlagen und Techniken}. Springer 2007. Seiten 328 - 335
+	\item W. Demtröder. \textit{Laserspektroskopie - Grundlagen und Techniken}. Springer 2007. Seiten 328 - 335
 	
-	\item H. Metcalf and P. van der Straten. \textit{Laser cooling and trapping}. Springer 2002. Kapitel 3; 4.1; 7; 8; 11.4
+	\item H. Metcalf and P. van der Straten. \textit{Laser cooling and trapping}. Springer 2002. Kapitel 3, 4.1, 7, 8, 11.4
 	
-	\item W. D. Philips. \textit{Laser cooling and trapping of neutral altoms (Noble Lecture)}.  \url{http://www.nobelprize.org/nobel_prizes/physics/laureates/1997/phillips-lecture.html} Seiten 218 - 226
-	
-	
+	\item W. D. Philips. \href{http://www.nobelprize.org/nobel_prizes/physics/laureates/1997/phillips-lecture.html}{\textit{Laser cooling and trapping of neutral altoms (Noble Prize Lecture)}.} Seiten 218 - 226
 \end{enumerate}
 
-\newpage
-
-\section{Überblick über den Versuchsaufbau}
-
+\chapter{Überblick über den Versuchsaufbau}
 Ziel dieses Kapitels ist es, zunächst einen Überblick über den gesamten Versuchsaufbaus zu schaffen. Anschließend soll näher auf die beiden wesentlichen Teile, die Laserstabilisierung und die MOT eingegangen werden. Es empfiehlt sich dieses Kapitel als Lageplan ähnlich dem eines Reiseführers zu verstehen und diesen als Ausgangspunkt zur Beschäftigung mit den einzelnen ``Sehenswürdigkeiten'' zu verwenden.\\
 ~\\  
 Der Gesamtversuchsaufbau besteht aus drei Hauptteilen (siehe Gesamtbild auf Seite 1), dem optischen Versuchsaufbau (rechts), dem Elektronikrack zur Experimentsteuerung (Mitte) und dem Computersystem zur Datenaufnahme (links). Diese Teile werden im Folgenden genauer vorgestellt.
