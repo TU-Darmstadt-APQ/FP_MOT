@@ -544,7 +544,7 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				
 				\section{Optisches Kühlen}			
 				Die Temperatur eines Ensembles von Atomen entspricht der gemittelten Bewegung der Atome. Da auf Grund der
-				Erhaltung der Energie die Wärmeenergie $E_W = \frac{f}{2}k_BT$ der Bewegungsenergie $E_{kin} = \frac{1}{2}mv^2$ gleichgesetzt werden kann, folgt daraus, dass die Temperatur mit $T = mv^2/(k_{\text{B}} f)$ quadratisch abhängig von der Geschwindigkeit ist.\\ 
+				Erhaltung der Energie die Wärmeenergie $E_{\text{W}} = \frac{f}{2}k_{\text{B}}T$ der Bewegungsenergie $E_{\text{kin}} = \frac{1}{2}mv^2$ gleichgesetzt werden kann, folgt daraus, dass die Temperatur mit $T = \frac{mv^2}{k_{\text{B}} f}$ quadratisch abhängig von der Geschwindigkeit ist.\\ 
 				Soll ein atomares Ensemble gekühlt werden, muss die relative Geschwindigkeit der einzelnen Atome zueinander
 				verringert werden. Im Falle der Laserkühlung nutzt man hierzu die Wechselwirkung zwischen Atomen und
 				elektromagnetischer Strahlung definierter Richtung, Frequenz und Polarisation.
@@ -567,41 +567,34 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				\vec{F}_D = \hbar \vec{k} \cdot \varGamma_{sc}
 				\end{equation}
 				
-				Mit Gleichung \eqref{equa:6-1} folgt
-				
+				Mit Gleichung \eqref{equa:6-1} folgt				
 				\begin{equation}\label{equa:6-3}
 				\vec{F}_D = \hbar \vec{k} \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}
 				\end{equation}
-				
+
 				\begin{figure}[htb!]
 					\centering
-					\includegraphics[width=350px]{graphics/SK.jpg}
+					\includegraphics[width=0.9\textwidth]{graphics/SK.jpg}
 					\caption{Skizze zum Prinzip der Spontankraft}
 					\label{fig:SK}
 				\end{figure}
 				
-				\subsubsection{Dopplerkühlung - Optische Melasse}
-				
+				\subsection{Dopplerkühlung - Optische Melasse}				
 				Um eine Kühlung eines atomaren Gases zu realisieren, muss die auf die Atome wirkende Kraft abhängig vom Betrag und Richtung der atomaren Geschwindigkeiten sein. Eine entsprechende Konfiguration des Lichtfeldes wird durch sechs aus allen Raumrichtungen kommenden, gegenüber der atomaren Resonanz rotverstimmten Laserstrahlen implementiert.\\
 				Da die Kühlung entlang der drei Raumachsen voneinander unabhängig ist, wird der Einfachheit halber
 				nur die Wirkung der Laserstrahlen in einer Dimension \textit{x} erläutert. Ergänzt wird die Betrachtung der Kraftausübung eines Laserstrahls auf Atome aus Abschnitt \ref{ssec:SK} durch das Hinzuziehen eines weiteren, diesem Strahl entgegengerichteten Laserstrahls. Die auf ein Atom resultierende Gesamtkraft ergibt sich dann aus der Überlagerung der beiden in Richtung \textit{-x} und \textit{+x} wirkenden Kräfte $F_{x-}$ und $F_{x+}$ (aus Gleichung \eqref{equa:6-3}) zu
 				
 				\begin{equation}
 				F_{OM} = F_{x+} + F_{x-}
-				\end{equation}
-				
+				\end{equation}			
 				mit
-				
 				\begin{equation}\label{equa:6-5}
 				F_{x+\backslash x-} = \pm \hbar k \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta_{OM\pm}/\varGamma)^2} 
 				\end{equation}
-				
-				Die Geschwindigkeitsabhängikeit der Kraft wird im Parameter
-				
+				Die Geschwindigkeitsabhängikeit der Kraft wird im Parameter			
 				\begin{equation}
 				\varDelta_{OM\pm} = \varDelta \mp k v_{x}
 				\end{equation}
-				
 				berücksichtigt, wobei $v_x$ die Geschwindigkeit der Atome in x-Richtung ist. Er korrigiert die Verstimmung des Lichtes um die Dopplerverschiebung, bedingt durch die Geschwindigkeit der Atome. Die Summe der beiden Kräfte ergibt sich nach Entwicklung für kleine Geschwindigkeiten unter Vernachlässigung der Terme ab der Ordnung $(kv/\varGamma)^4$ zu
 				
 				\begin{equation}\label{equa:6-7}
@@ -611,7 +604,7 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				Ist das Licht rotverstimmt ($\varDelta < 0$), so sieht ein in positive x-Richtung fliegendes Atom das entgegenkommende Licht zur Resonanz hin dopplerverschoben, wobei die Wahrscheinlichkeit der Absorption eines Photons zunimmt.\\
 				Es erfährt eine lineare rücktreibende Kraft ($\beta > 0$), die zur Abbremsung führt. Die Kraft auf das Teilchen ist genau dann maximal, wenn die Verstimmung des Lasers die Dopplerverschiebung kompensiert: $\varDelta = k v_x$ .
 				Wegen der Analogie des Abbremsvorgangs (Gleichung \eqref{equa:6-7}) zur viskosen Dämpfung in einer nahen Umgebung
-				von $v_x = 0$, wird dieser Prozess \textit{optische Melasse} genannt. Auf Grund der zentralen Bedeutung des Dopplereffektes bei dieser Art von Kühlung spricht man von $Doppler-Kühlung$. Die Temperatur der optischen Melasse ergibt sich aus dem Gleichgewicht aus Dopplerkühlung und Aufheizen des Ensembles durch die remittierten Photonen.\\ 
+				von $v_x = 0$, wird dieser Prozess \textit{optische Melasse} genannt. Auf Grund der zentralen Bedeutung des Dopplereffektes bei dieser Art von Kühlung spricht man von \emph{Doppler-Kühlung}. Die Temperatur der optischen Melasse ergibt sich aus dem Gleichgewicht aus Dopplerkühlung und Aufheizen des Ensembles durch die remittierten Photonen.\\ 
 				Die minimal erreichbare Temperatur, die mittels der Dopplerkühlung erreicht werden kann, das so genannte
 				Dopplerlimit, beträgt
 				
@@ -621,66 +614,53 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				
 				\begin{figure}[htb!]
 					\centering
-					\includegraphics[width=350px]{graphics/MOTSS.jpg}
+					\includegraphics[width=0.9\textwidth]{graphics/MOTSS.jpg}
 					\caption{Schematische Skizze der MOT: Durch das Spulenpaar wird ein Quadrupolfeld induziert, das im Mittelpunkt der MOT - dem Schnittpunkt der drei senkrecht zueinander stehenden Strahlenpaare - Null
 						ist. Jedes antiparallele Strahlenpaar besteht aus einem $\sigma^+$- und einem $\sigma^-$-polarisierten Strahl.}
 					\label{fig:MOTSS}
 				\end{figure}
 				
-				\subsection{Fangen der Atome}
-				
+				\section{Fangen der Atome}		
 				Mit dem oben beschriebenen Verfahren lassen sich Atome kühlen. Jedoch stellt es noch keine Falle für Atome dar. Teilchen werden zwar im Impulsraum gefangen, haben aber im Ortsraum volle Bewegungsfreiheit, so dass sie nach einer gewissen Zeit aus der optischen Melasse herausdiffundieren können. Um Atome zu fangen, wird der oben beschriebene rotverstimmten Strahlenkonfiguration in ihrem Schnittpunkt ein inhomogenes magnetisches Feld überlagert (siehe Abbildung \ref{fig:MOTSS}). Dieses Feld (Quadrupolfeld) wird durch zwei stromdurchflossene Spulen in Anti-Helmholtz-Konfiguration erzeugt. Das Prinzip der so erzeugten MOT wird nachfolgend in einer Dimension \textit{x} anhand eines atomaren Übergangs von einem Grundzustand $\lvert \phi_{n,F=0,m_F}\rangle$ in einen angeregten Zustand $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ erklärt.
 				\textit{n} ist hierbei die Hauptquantenzahl, \textit{F} bzw. \textit{F'} ist der Gesamtdrehimpuls des entsprechenden Zustandes und $m_F$ bzw. $m_{F'}$ die dazugehörige magnetische Quantenzahl. Diese hat für den Zustand $\lvert \phi_{n,F=0,m_F}\rangle$ den Wert $m_F=0$ und für den Zustand $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ die Werte $m_F \in \{-1,0,1\}$. Zur Erklärung des Mechanismus muss die Polarisation der Strahlen, welche zirkular ist, mitbetrachtet werden.\\
 				Das durch die Spulen hervorgerufene Quadrupolfeld kann in der Fallenmitte linearisiert und mit der Gleichung
-				
 				\begin{equation}
 				B_x = B(x) = B_0 \cdot x
-				\end{equation}
-				
-				beschrieben werden, wobei $B_0$ der Gradient des Magnetfeldes in x-Richtung ist. Durch den Zeemaneffekt wird innerhalb des Zustandes $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ eine energetische Aufspaltung der drei magnetischen Unterzustände $m_{F'}$ um den Term $\varDelta E$ hervorgerufen:
-				
+				\end{equation}			
+				beschrieben werden, wobei $B_0$ der Gradient des Magnetfeldes in x-Richtung ist. Durch den Zeemaneffekt wird innerhalb des Zustandes $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ eine energetische Aufspaltung der drei magnetischen Unterzustände $m_{F'}$ um den Term $\varDelta E$ hervorgerufen:			
 				\begin{equation}
 				\varDelta E = g_{F'} m_{F'} \mu_B B_x
-				\end{equation}
-				
+				\end{equation}				
 				Hierbei ist $\mu_B = e \hbar / 2 m_e$ das Bohrsche Magneton mit der Elektronenmasse $m_e$ und $g_{F'}$ der Landé-Faktor des Zustands $\lvert \phi_{n,F'=1,m_{F'}}\rangle$. Abbildung \ref{fig:FA} zeigt die Falle. Bewegt sich ein Atom aus der Fallenmitte heraus, so wird je nach Bewegungsrichtung der Zustand $m_{F'} = \pm 1$ energetisch abgesenkt, so dass die atomare Resonanz zur eingestrahlten Lichtfrequenz hin verschoben wird. Fliegt bespielsweise ein Atom in positive x-Richtung, so steigt die Wahrscheinlichkeit der Absorption eines $\sigma^-$-Photons, welches einen elektronischen Übergang in den Zustand $m_{F'} = -1$ induziert. Da dieses Photon in negative x-Richtung fliegt, erfährt das Teilchen einen Rückstoß in Richtung
 				Fallenmitte. Ensprechend verhält es sich mit Teilchen, die in die entgegengesetzte Richtung propagieren.
 				Durch diesen Mechanismus, der sowohl im Impuls-, als auch im Ortsraum wirkt, wird sowohl eine Kühlung, als
-				auch eine Verdichtung der Atome erreicht. Die in Gleichung \eqref{equa:6-5} hergeleitete Kraft wird ortsabhängig:
-				
+				auch eine Verdichtung der Atome erreicht. Die in Gleichung \eqref{equa:6-5} hergeleitete Kraft wird ortsabhängig:				
 				\begin{equation}\label{equa:6-11}
 				F_{x+\backslash x-} = \pm \hbar k \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta_{OM\pm}/\varGamma)^2} 
-				\end{equation}
-				
-				wobei
-				
+				\end{equation}				
+				wobei			
 				\begin{equation}
 				\varDelta_{OM\pm} = \varDelta \mp k v_{x} \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}
-				\end{equation}
-				
-				gilt. Wird dies in $F_{MOT} = F_{x_+} + F_{x_-}$ eingesetzt und entwickelt unter der Annahme, die Teilchen hätten kleine Geschwindigkeiten und befänden sich nahe der Fallenmitte, so lässt sich unter Vernachlässigung höherer Ordnungen, vereinfacht schreiben:
-				
+				\end{equation}				
+				gilt. Wird dies in $F_{MOT} = F_{x_+} + F_{x_-}$ eingesetzt und entwickelt unter der Annahme, die Teilchen hätten kleine Geschwindigkeiten und befänden sich nahe der Fallenmitte, so lässt sich unter Vernachlässigung höherer Ordnungen, vereinfacht schreiben:			
 				\begin{equation}\label{equa:6-13}
 				F_{MOT} = -\beta v_x  -\kappa x
-				\end{equation}
-				
+				\end{equation}				
 				mit $\beta$ wie in Gleichung \eqref{equa:6-7} und $\kappa = \frac{g_{F'} m_{F'} \mu_B B_0}{\hbar k}$. Gleichung \eqref{equa:6-13} zeigt, dass sich die Teilchen im MOT-Betrieb wie gedämpfte harmonische Oszillatoren verhalten.\\
 				
 				\begin{figure}[htb!]
 					\centering
-					\includegraphics[width=350px]{graphics/FA.jpg}
+					\includegraphics[width = 0.9\textwidth]{graphics/FA.jpg}
 					\caption{Durch Anlegen eines Magnetfeldes spaltet der angeregte Zustand auf. Für das rotverstimmte Kühllicht ($\omega_L$) ist die Resonanzgbedingung erfüllt, wenn die Atome weit genug von der Fallenmitte entfernt sind. Sie ist auf Grund der Dopplerverschiebung (-kv) ebenfalls auch für Atome mit hohen Geschwindigkeiten erfüllt. Die Absorption der Photonen bewirkt eine Kraft in Richtung Fallenmitte.}
 					\label{fig:FA}
-				\end{figure}
-				
-				\fbox{\parbox[c]{17,2cm}{
+				\end{figure}				
+				\fbox{\parbox[c]{0.985\textwidth}{
 						\begin{frage}\label{f4-1}
 							Welche Aufbaukomponenten werden zur Erzeugung einer MOT benötigt? Wo wird das Licht in die drei Strahlen aufgeteilt? Wie verlaufen die Strahlen?
 						\end{frage}
 					}}\\
-					
-					\subsection{Rubidium-MOT}
-					
+				
+					\section{Rubidium-MOT}					
 					Bei Rubidium handelt es sich um ein Alkalimetall, welches verschiedene Isotope besitzt. Das im Versuch verwendete stabile Isotop ist \isotope[85]{Rb}. Aus diesem Grund soll auf dessen Termschema kurz etwas genauer eingegangen werden.\\
 					Für den Versuch spielt insbesondere die Aufspaltung des Energieniveaus in die Fein- und Hyperfeinstruktur eine zentrale Rolle (siehe Abbildung \ref{fig:TS}).\\
 					Um sich die Aufspaltung in die Fein- beziehungsweise Hyperfeinstruktur herzuleiten ist es zudem noch wichtig zu wissen, dass \isotope[85]{Rb} einen Kernspin von I=5/2 besitzt.\\ 
@@ -693,189 +673,133 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 					Um die nun betrachteten Übergänge jedoch in Einklang mit dem Spektroskopiesignal zu bringen, muss ein weiterer Effekt beachtet werden. Bei diesem handelt es sich um sogenannte Crossover-Resonanzen. Diese treten auf, wenn sich die Frequenz des Laserlichtes gerade zwischen zwei oberen Energieniveaus befindet. Dies ist in Abbildung \ref{fig:TS} durch den \textcolor{green}{grünen} Pfeil dargestellt.\\
 					Bei dieser Anregungsfrequenz ``sehen'' Atome, die sich dem Sättigungsstrahl beispielsweise entgegen bewegen, eine Frequenz die dem Übergang  von F=2 nach F'=3 entspricht und werden angeregt. Für den zurücklaufenden Probestrahl bewegen sich diese angeregten Atome gerade vom Strahl weg und so entspricht die Frequenz durch die Dopplerverschiebung der Übergangsfrequenz von F=2 nach F'=2. Da die Atome aber bereits angeregt sind kommt es wiederum zu einem Einbruch der Absorption und es entsteht ein weiterer Lambdip.\\
 					Ein solches Sättigungsspektrum kann Abbildung \ref{fig:COF} (von F=2 nach F' für $^{85}$Rb) entnommen werden.\\ 
-					
-					
+										
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/TS_korrigiert.jpg}
+						\includegraphics[width = \textwidth]{graphics/TS_korrigiert.jpg}
 						\caption{Ausschnitt aus dem Termschema von $^{85}$Rb (D2-Linie) mit entsprechenden Übergangsfrequenzen}
 						\label{fig:TS}
 					\end{figure}
-					
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/SCO.jpg}
+						\includegraphics[width = \textwidth]{graphics/SCO.jpg}
 						\caption{Spektroskopiesignal mit markierten Übergängen (F' für normale Übergänge und COF' für Crossover-Resonanzen)}
 						\label{fig:COF}
 					\end{figure}
 					
+					\chapter{Fragenkatalog}\label{sec:FK}
 					
-					\newpage
-					
-					\section{Fragenkatalog}\label{sec:FK}
-					
-					\subsection{Vorbereitungsfragen}
+					\section{Vorbereitungsfragen}
 					
 					\begin{itemize}
-						\item \textbf{Frage 4.1:} Welchen Vorteil bietet es, den Aufbau der MOT durch ein Glasfaserkabel von dem Aufbau der Laserstabilisierung zu trennen?
-						
+						\item \textbf{Frage 4.1:} Welchen Vorteil bietet es, den Aufbau der MOT durch ein Glasfaserkabel von dem Aufbau der Laserstabilisierung zu trennen?		
 						\item \textbf{Frage 5.1:} Inwiefern ist die durch den AOM verursachte Frequenzverschiebung des Laserlichts in Bezug auf die Stabilisierung des Rückpump- und Kühllasers bzw. die an der MOT benötigte Frequenz relevant?
-						
 						\item \textbf{Frage 5.2:} Zu welchem Zweck werden die in den schematischen Skizzen zur Laserstabilisierung und der MOT eingezeichneten Verzögerungsplatten jeweils verwendet?
-						
 						\item \textbf{Frage 5.3:} Zu welchem Zweck werden die PST verwendet und warum kommen sie stets in Kombination mit einer $\lambda/2$-Platte vor? 
-						
 						\item \textbf{Frage 6.1:} Durch welche Größen/Faktoren werden die Laserfrequenzen beeinflusst? Welche dieser Faktoren sind gewollt beziehungsweise ungewollt und wie können diese beseitigt werden?
-						
 						\item \textbf{Frage 7.1:} Welche Elemente werden zur Erzeugung einer MOT benötigt? Wo wird das Licht in die drei Strahlen aufgeteilt? Wie verlaufen die Strahlen?
 					\end{itemize}
 					
-					\subsection{Fakultative Fragen zum Selbsttest}
-					
+					\section{Fakultative Fragen zum Selbsttest}
 					\begin{itemize}
 						\item Zur Aufnahme der Signale: Wie funktioniert die Triggerung eines Oszilloskopes und was bewirken die Kanaleinstellungen AC bzw. DC? 
-						
 						\item Beschreiben Sie den Aufbau des Lasersystems. Welche Funktion haben die einzelnen Elemente? Wo befinden sich die Elemente zur Stabilisierung der Laser? 
-						
-						\item Wo kann das Licht geschaltet werden?
-						
+						\item Wo kann das Licht geschaltet werden?				
 						\item Welche Stabilisierungstechniken werden verwendet und wie funktionieren diese?
-						
 						\item Wie ist es möglich, die Laserfrequenz für die Spektroskopie kontrolliert durchzustimmen?
-						
 						\item Welche Möglichkeiten gibt es für die Aufnahme einer Messreihe zur Temperaturbestimmung?
-						
 						\item Welche Funktionen erfüllen die Elemente der MOT und warum werden diese benötigt, um Atome zu fangen?
-						
 						\item Welcher Temperatur entspricht das Dopplerlimit für $^{85}$Rb?
-						
 						\item Auf welchem Prinzip beruht die sogenannte Sub-Dopplerkühlung und welche Möglichkeiten eröffnet diese?
-						
 						\item Welche Übergänge von $^{85}$Rb werden zur Laserstabilisierung beziehungsweise zum Kühlen der Atome verwendet und warum ist dies sinnvoll?
-						
 						\item Welche natürliche Linienbreite und Lebensdauer ist für die D2-Linie von $^{85}$Rb charakteristisch?
-						
 						\item Welche Verstimmung des Laserlichts ist zum Kühlen der Atome ideal und welchen Wert muss diese für $^{85}$Rb annehmen?
-						
-						
 					\end{itemize}
+
+\printbibliography
+Internetquellen letztmalig im März 2023 aufgerufen				
 					
-									
-					
-					\newpage
-					
-					\appendix
-					
-					\section{Anhang}
-					
-					\subsection{Fotos des Versuchsaufbaus}
-					
+					\appendix				
+					\chapter{Fotos des Versuchsaufbaus}				
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/SL.jpg}
+						\includegraphics[width=\textwidth]{graphics/SL.jpg}
 						\caption{\textcolor[cmyk]{0.86,0.77,0,0}{Spiegel der Laserstabilisierung} und \textcolor[cmyk]{0.52,0,0.16,0}{Spiegel der MOT}}
 						\label{fig:SL}
-					\end{figure} 
-					
-					~\\
-					~\\
-					~\\
-					
-					
+					\end{figure} 			
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/ST.jpg}
+						\includegraphics[width=\textwidth]{graphics/ST.jpg}
 						\caption{\textcolor[cmyk]{0.11,1,0.47,0.01}{Strahlteiler} und \textcolor[cmyk]{0.1,0,0.99,0}{Rubidiumdampfzelle}}
 						\label{fig:SW}
 					\end{figure} 
-					
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/PDUK.jpg}
+						\includegraphics[width=\textwidth]{graphics/PDUK.jpg}
 						\caption{\textcolor[cmyk]{0,0.99,1,0}{Photodioden} und \textcolor[cmyk]{0,0.56,1,0}{USB-Kamera}}
 						\label{fig:PD}
 					\end{figure}
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/LHLV.jpg}
+						\includegraphics[width=\textwidth]{graphics/LHLV.jpg}
 						\caption{\textcolor[cmyk]{0,0.68,0.98,0}{$\lambda/2$}- und \textcolor[cmyk]{0.75,0.19,0.03,0}{$\lambda/4$}-Platten}
 						\label{fig:LH}
 					\end{figure}
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/LN.jpg}
+						\includegraphics[width=\textwidth]{graphics/LN.jpg}
 						\caption{\textcolor[cmyk]{0.84,0.30,1,0.2}{Linsen}}
 						\label{fig:LI}
 					\end{figure}
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/SPM.jpg}
+						\includegraphics[width=\textwidth]{graphics/SPM.jpg}
 						\caption{Strahlengang für die \textcolor[cmyk]{0.71,0,0.4,0}{Spektroskopie des Rückpumplasers}}
 						\label{fig:SPM}
 					\end{figure}
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/SPS.jpg}
+						\includegraphics[width=\textwidth]{graphics/SPS.jpg}
 						\caption{Strahlengang für die \textcolor[cmyk]{0.6,0,1,0}{Spektroskopie des Kühllasers}}
 						\label{fig:SPS}
 					\end{figure}
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/OFL.jpg}
+						\includegraphics[width=\textwidth]{graphics/OFL.jpg}
 						\caption{Strahlengang für den Offsetlock des Kühllasers}
 						\label{fig:OFL}
 					\end{figure}
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/MM.jpg}
+						\includegraphics[width=\textwidth]{graphics/MM.jpg}
 						\caption{Strahlengang des \textcolor[cmyk]{0.71,0,0.4,0}{Rückpumplichtes zum Glasfaserkabel} für die MOT}
 						\label{fig:MM}
 					\end{figure}
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/SZM.jpg}
+						\includegraphics[width=\textwidth]{graphics/SZM.jpg}
 						\caption{Strahlengang des  \textcolor[cmyk]{0.6,0,1,0}{Kühllichtes zum Glasfaserkabel} für die MOT}
 						\label{fig:SZM}
-					\end{figure}
-					
-					\clearpage
-					
-					~\\
-					
+					\end{figure}					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/MOTSTG.jpg}
+						\includegraphics[width=\textwidth]{graphics/MOTSTG.jpg}
 						\caption{Strahlengang \textcolor[cmyk]{0,0.96,0.55,0}{der MOT} nach dem Glasfaserkabel}
 						\label{fig:MOTSTG}
 					\end{figure}
-					
-					~\\
-					~\\
-					~\\
-					
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width=480px]{graphics/STGK.jpg}
+						\includegraphics[width=\textwidth]{graphics/STGK.jpg}
 						\caption{alle Strahlengänge}
 						\label{fig:STGK}
 					\end{figure}
 					
 					\begin{figure}
 						\centering
-						\includegraphics[width=320px]{graphics/AEGBg.jpg}
+						\includegraphics[width=0.7\textwidth]{graphics/AEGBg.jpg}
 						\caption{alle Strahlengänge und alle Elemente}
 						\label{fig:AEGB}
 					\end{figure}
-					
 
 \newpage
 
@@ -886,8 +810,7 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 %\printbibliography[keyword=bild,heading=subbibliography,title={Bildquellen}]%
 %\printbibliography[keyword=lit,heading=subbibliography,title={Literatur}]
 %\printbibliography[keyword=erg,heading=subbibliography,title={Ergänzende Literatur}]
-\printbibliography
-Internetquellen letztmalig im März 2023 aufgerufen
+
 
 %	\renewcommand{\bibname}{Wesentliche Literatur}
 %	\bibliographystyleq{osa_mod}	
@@ -897,9 +820,7 @@ Internetquellen letztmalig im März 2023 aufgerufen
 %	\bibliographystyleerg{osa_mod}	
 %	\bibliographyerg{mybib}
 
-%	\cleardoublepage
-	
-\newpage
+	\cleardoublepage
 \subsection*{Wichtige Punkte zum Laserschutz}
 Ganz allgemein gilt: \textbf{Im Umgang mit Lasern ist der gesunde Menschenverstand nicht zu ersetzen!} Einige
 spezielle Hinweise werden im folgenden angeführt.
