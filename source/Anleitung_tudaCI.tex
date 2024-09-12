@@ -83,8 +83,8 @@ pdfa=false % Problem mit Paket pdfx
 	nomarginpar
 }
 
-\usepackage{hyperref} % Immer als letztes laden
-\def\UrlFont{\normalfont}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=TUDa-1b,citecolor=TUDa-1b}
+\urlstyle{same}
 % % % % % % % %
 %Weitere Änderungen
 \DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
@@ -120,8 +120,8 @@ pdfa=false % Problem mit Paket pdfx
 	%%%% Hat der Titel nur zwei Zeilen, ist ein Zeillenumbruch (\\) einzufügen, um den Titel oben bündig zu positionieren
 	%%%% Ist der Titel einzeilig sind zwei Freizeilen (\\ \ \\) anzuhängen.
 	%%%% Ludwig Lind 03.02.2021
-	\title{Fortgeschrittenenpraktikum \\ Abteilung A \\ 4.18 Mikro- und Fourieroptik}
-	\subtitle{Micro and Fourier Optics}
+	\title{Fortgeschrittenenpraktikum - Abteilung A \\ 4.3 Kühlen und Fangen von Rubidiumatomen in einer magneto-optische Falle}
+	\subtitle{Cooling and trapping of Rubidium atoms in a magneto-optical trap}
 	%\author[Max Mustermann]{Max Mustermann}%optionales Argument ist die Signatur,
 	%\birthplace{Geburtsort}%Geburtsort, bei Dissertationen zwingend notwendig
 	%\reviewer{Prof. Dr. Gerhard Birkl \and 2ter Gutachter}%Gutachter
@@ -134,7 +134,7 @@ pdfa=false % Problem mit Paket pdfx
 	
 	\submissiondate{\today}
 	\examdate{\today} %\today
-	\thesisdate{Stand Oktober 2023}
+	\thesisdate{Stand September 2024}
 	
 	%	\tuprints{urn=1234,printid=12345}
 	%	\dedication{Für alle, die \TeX{} nutzen.}
@@ -169,23 +169,21 @@ pdfa=false % Problem mit Paket pdfx
 	
 	
 	
-\section{Warnhinweise und Spielregeln}
-
+\chapter{Warnhinweise und Spielregeln}
 Die folgenden Warnhinweise dienen der eigenen Sicherheit und sollten daher unbedingt beachtet werden.
-
 \begin{itemize}
 	\item Während der gesamten Versuchsdurchführung ist eine geeignete Laserschutzbrille zu tragen!
 	
-	\item Achtung, Laserlicht! Die Laser haben zusammen überlagert etwa eine Gesamtleistung von 15mW, was bei
-	einer Wellenlänge von 780nm ausreicht, um die menschliche Netzhaut nachhaltig zu schädigen. Beim Justieren
+	\item Achtung, Laserlicht! Die Laser haben zusammen überlagert etwa eine Gesamtleistung von \qty{15}{\milli\watt}, was bei
+	einer Wellenlänge von \qty{780}{\nano\metre} ausreicht, um die menschliche Netzhaut nachhaltig zu schädigen. Beim Justieren
 	darf daher kein Schmuck getragen werden und die Augen dürfen sich nie auf Strahlhöhe befinden.
 	Es sind unbedingt die Richtlinien zum Laserschutz auf der letzten Seite dieser Anleitung zu beachten.
 	
 	Weitere Informationen sind online verfügbar:
 	
-	\url{www.iap.tu-darmstadt.de/lto/lp/laserschutz/lss_frames.html}
+	\href{https://www.iap.tu-darmstadt.de/infrastruktur_iap/laser_und_arbeitsschutz_iap/index.de.jsp}{IAP Laser- und Arbeitsschutz}
 	
-	\item Achtung, Hochspannung! Die Ionen-Getter-Pumpe wird mit einer Hochspannung von 7kV betrieben. Die
+	\item Achtung, Hochspannung! Die Ionen-Getter-Pumpe wird mit einer Hochspannung von \qty{7}{\kilo\volt} betrieben. Die
 	Pumpe und das Hochspannungskabel sollten daher mit dem nötigen Respekt behandelt werden.
 	
 	\item Achtung, Magnetfelder! Von der Ionen-Getter-Pumpe gehen hohe Magnetfelder aus. Die Warnhinweise an
@@ -193,15 +191,13 @@ Die folgenden Warnhinweise dienen der eigenen Sicherheit und sollten daher unbed
 \end{itemize}
 
 Zu den Spielregeln.
-
 \begin{itemize}
 	\item Beide Praktikumspartner müssen gleichwertig und zu allen Themen auf den Versuch vorbereitet sein.
 	
-	\item Weitere Informationen können \url{http://www.fkp.tu-darmstadt.de/media/fachbereich_physik/phys_studium/phys_studium_bachelor/phys_studium_bsc_praktika/fpspielregeln.pdf} entnommen werden.
+	\item Weitere Informationen können den \href{https://www.physik.tu-darmstadt.de/media/ipkm/studium_ipkm/f_praktikum/fprakt/fpspielregeln.pdf}{FP-Spielregeln} entnommen werden.
 \end{itemize}
 
-\section{Einleitung}
-
+\chapter{Einleitung}
 Betrachtet man die Themen der aktuellen Grundlagenforschung, so erkennt man, dass ein besonderer Fokus auf
 Präzisionsmessungen mit ultra-kalten Atomen gerichtet ist. Zu diesen Experimenten zählen zum Beispiel die Untersuchung von kalten Stößen, die Realisierung von Atomuhren sowie die Quanteninformationsverarbeitung und
 die Erzeugung eines Bose-Einstein-Kondensats.\\
@@ -247,7 +243,7 @@ Zur Vorbereitung auf den Versuch sind sich einerseits die in 1. bis 4. aufgelist
 
 \textbf{Fragen:}  
 
-In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantworten sollen (Frage 4.1 bis 7.1 (siehe unten)). In \autoref{sec:FK} finden Sie zudem einen Fragenkatalog mit zusätzlichen fakultativen Fragen, welchen Sie zur Überprüfung Ihres Vorbereitungsstandes nutzen können.
+In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantworten sollen (Frage 4.1 bis 7.1 (siehe unten)). In Abschnitt \ref{sec:FK} finden Sie zudem einen Fragenkatalog mit zusätzlichen fakultativen Fragen, welchen Sie zur Überprüfung Ihres Vorbereitungsstandes nutzen können.
 
 \begin{itemize}
 	\item \textbf{Frage 4.1:} Welchen Vorteil bietet es den Aufbau der MOT durch ein Glasfaserkabel von dem Aufbau der Laserstabilisierung zu trennen?
