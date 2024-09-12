@@ -47,7 +47,7 @@ pdfa=false % Problem mit Paket pdfx
 %\newcites{erg}{Ergänzende Literatur}
 %\newcites{wes}{Wesentliche Literatur}
 
-\newtheorem{satz}{Satz}[section]
+\newtheorem{satz}{Satz}[chapter]
 \newtheorem{lemma}[satz]{Lemma}
 \newtheorem{kor}[satz]{Korollar}
 \newtheorem{prop}[satz]{Proposition}
@@ -173,7 +173,7 @@ pdfa=false % Problem mit Paket pdfx
 	
 	
 	
-\chapter{Warnhinweise und Spielregeln}
+\chapter*{Warnhinweise und Spielregeln}
 Die folgenden Warnhinweise dienen der eigenen Sicherheit und sollten daher unbedingt beachtet werden.
 \begin{itemize}
 	\item Während der gesamten Versuchsdurchführung ist eine geeignete Laserschutzbrille zu tragen!
@@ -325,16 +325,14 @@ Um den Versuch zu verstehen und möglichst viel aus der Durchführung mitzunehme
 Eine detaillierte Beschreibung des Aufbaus sowie der Strahlführung findet sich in den entsprechenden Theoriekapiteln. Hier wird wiederum, wie zu Beginn erwähnt, Bezug auf dieses Kapitel genommen, um die Details in Bezug zum Gesamtaufbau zu betrachten.\\
 Dieser ist mit allen markierten Elementen ebenfalls auf der nächsten Seite und im Anhang noch einmal dargestellt (siehe Abbildung \ref{fig:AEGBv}).\\
 
-\fbox{\parbox[c]{17,2cm}{
+\fbox{\parbox[c]{0.985\textwidth}{
 		\begin{frage}\label{f:4-1}
 			Welchen Vorteil bietet es, den Aufbau der MOT durch ein Glasfaserkabel von dem Aufbau der Laserstabilisierung zu trennen?
 		\end{frage}
 	}}\\
 ~\\
 
-\centering
-
-
+\begin{center}
 
 \begin{tabular}{lll}
 	& \textbf{Markierte Elemente} & \textbf{Abbildung}\\
@@ -364,14 +362,11 @@ Dieser ist mit allen markierten Elementen ebenfalls auf der nächsten Seite und 
 	\includegraphics[width=8px]{graphics/Kaestchen/AM.jpg} & alle Strahlengänge und alle Elemente  & Abbildung \ref{fig:AEGB}\\
 	& (vgl. Abbildung ??) &
 \end{tabular}
-
-~\\
-~\\
-~\\
+\end{center}
 
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[width=480px]{graphics/AEGB.jpg}
+	\includegraphics[width=\textwidth]{graphics/AEGB.jpg}
 	\caption{Alle Strahlengänge und alle Elemente}
 	\label{fig:AEGBv}
 \end{figure}
@@ -387,9 +382,9 @@ Für die Variation der einzelnen Phasen des Versuchsablaufs in Dauer und Vorkomm
 
 \newpage
 
-\section{Wichtige Bauteile}
+\chapter{Wichtige Bauteile}
 
-\subsection{Akusto-optischer Modulator (AOM)}
+\section{Akusto-optischer Modulator (AOM)}
 
 Ein akusto-optischer Modulator besteht im Wesentlichen aus einem Kristall, an dessen beiden Enden zum einen ein Piezoelement zur Erzeugung von Schallwellen und zum anderen ein Schallabsorber zum Verhindern von Reflexionen oder stehenden Wellen angebracht ist (siehe Abbildung \ref{fig:AOM}).\\
 Die durch den Kristall propagierende Schallwelle, welche durch eine mechanische Schwingung des Piezoelements hervorgerufen wird, verursacht in diesem periodische Dichteschwankungen, welche eine ebenfalls periodische Variation der Brechzahl im Kristall zur Folge hat \cite{OLL}.\\
@@ -397,7 +392,7 @@ Diese Modulation wirkt für das einfallende Licht wie ein bewegtes optisches Git
 Bei Phononen handelt es sich in dieser Betrachtung um Quasiteilchen, mit welchen die den Kristall durchlaufenden Schallwellen beschrieben werden können \cite{OFI}.\\
 Im Versuch wird der AOM im Wesentlichen als Schalter verwendet, um das Laserlicht zur MOT hin gezielt an- und abschalten zu können.\\
 
-\fbox{\parbox[c]{17,2cm}{
+\fbox{\parbox[c]{0.985\textwidth}{
 		\begin{frage}\label{f:4-1}
 			Inwiefern ist die durch den AOM verursachte Frequenzverschiebung des Laserlichts in Bezug auf die Stabilisierung des Rückpump- und Kühllasers bzw. die an der MOT benötigte Frequenz relevant?
 		\end{frage}
@@ -405,16 +400,13 @@ Im Versuch wird der AOM im Wesentlichen als Schalter verwendet, um das Laserlich
 	
 	\begin{figure}[htb!]
 		\centering
-		\includegraphics[width=480px]{graphics/AOM2.pdf}
+		\includegraphics[width=\textwidth]{graphics/AOM2.pdf}
 		\caption{Schematischer Aufbau eines AOMs mit skizziertem Strahlenverlauf des Laserlichts (links)
 			und Darstellung des AOM-Gehäuses aus dem Versuchsaufbau (rechts)}
 		\label{fig:AOM}
 	\end{figure}
 	
-	\newpage
-	
-	\subsection{Verzögerungsplatten} \label{ssec:lambdaplatte}
-	
+	\section{Verzögerungsplatten} \label{ssec:lambdaplatte}
 Verzögerungsplättchen funktionieren nach dem Prinzip der Doppelbrechung und spielen sowohl bei der Erzeugung als auch bei der Analyse verschiedener Polarisationsformen des Lichtes eine zentrale Rolle.\\
 Dabei liegt die optische Achse des Kristalls parallel zur Eintrittsfläche beziehungsweise senkrecht zur Ausbreitungsrichtung des einfallenden Lichts. Aus diesem Grund verlaufen sowohl der außerordentliche als auch der ordentliche Strahl, in welche der einfallende Lichtstrahl innerhalb des Materials durch Projektion auf die optische Achse zerlegt wird, parallel durch den Kristall.
 Allerdings besitzen die beiden Strahlen dort unterschiedliche Ausbreitungsgeschwindigkeiten.\\
@@ -422,29 +414,25 @@ Aufgrund der Dicke des Kristalls und der damit verbundenen optischen Weglänge, 
 Falls nun linear polarisiertes Licht auf das Verzögerungsplättchen trifft, kann beispielsweise zirkular, elliptisch, oder wieder linear polarisiertes Licht mit veränderter Polarisation erzeugt werden \cite{OLL}.\\
 Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispiel einer $\lambda/4$-Platte dargestellt.\\
 	
-\fbox{\parbox[c]{17,2cm}{
+\fbox{\parbox[c]{0.985\textwidth}{
 	\begin{frage}\label{f4-1}
 				Zu welchem Zweck werden die in den schematischen Skizzen zur Laserstabilisierung und der MOT eingezeichneten Verzögerungsplatten jeweils verwendet? 
 	\end{frage}
 }}\\
-		
 	\begin{figure}[htb!]
 			\centering
-			\includegraphics[width=480px]{graphics/LVPT.jpg}
+			\includegraphics[width=\textwidth]{graphics/LVPT.jpg}
 			\caption{Schematische Skizze zur Funktion einer $\lambda/4$-Platte (links)
 				und Darstellung der im Versuch verwendeten $\lambda/4$-Platte (rechts)}
 			\label{fig:LVPT}
 		\end{figure}
 		
-		\newpage
-		
-		\subsection{Polarisationsstrahlteilerwürfel (PST)}
-		
+		\section{Polarisationsstrahlteilerwürfel (PST)}	
 		Zur Realisierung von Strahlteilerwürfeln gibt es unterschiedliche Möglichkeiten. Eine dieser Möglichkeiten beruht auf dem zuvor diskutierten Prinzip der Doppelbrechung. Hier wird der unterschiedliche Brechungsindex für die beiden Polarisationsrichtungen verwendet, um die Bedingungen für Totalreflexion für eine dieser Komponenten zu erfüllen.\\
 		Es gibt allerdings auch andere Möglichkeiten Strahlteilerwürfel herzustellen. Diese zweite Realisierungsmöglichkeit entspricht dem Aufbau der im Versuch verwendeten Strahlteilerwürfel (siehe Abbildung \ref{fig:PST}).\\ 
 		Statt doppelbrechenden Kristallen werden hier Dünnschichtpolarisatoren verwendet. Der zugehörige Aufbau besteht aus einem Würfel aus isotropem Glas, welcher diagonal aufgeschnitten wird. Zwischen die beiden entstandenen Prismen wird ein Dünnschichtpolarisator eingebracht, bevor alles wieder miteinander verkittet wird. Dieser besteht, ähnlich einem Bragg-Spiegel, aus vielen dünnen dielektrischen Schichten, welche ein unterschiedliches Reflexionsvermögen für die beiden betrachteten Polarisationsrichtungen besitzen (siehe Abbildung \ref{fig:PST}). Wählt man die Schichtdicke so, dass sich die an den einzelnen Schichten reflektierten (s-polarisierten) Anteile konstruktiv überlagern, hat man die Bedingungen für eine erfolgreiche Polarisationstrennung erfüllt \cite{EX}.\\
 		
-		\fbox{\parbox[c]{17,2cm}{
+		\fbox{\parbox[c]{0.985\textwidth}{
 				\begin{frage}\label{f4-1}
 					Zu welchem Zweck werden die PST verwendet und warum kommen sie stets in Kombination mit einer $\lambda/2$-Platte vor?  
 				\end{frage}
@@ -452,52 +440,41 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 			
 			\begin{figure}[htb!]
 				\centering
-				\includegraphics[width=480px]{graphics/DP.jpg}
+				\includegraphics[width=\textwidth]{graphics/DP.jpg}
 				\caption{Reflektivität in Abhängigkeit von der Wellenlänge füt s- und p-Polarisation (links) \cite{POL}
 				und Darstellung eines im Versuch verwendeten Strahlteilerwürfels (rechts)}
 				\label{fig:PST}
 			\end{figure}
-			
-			\newpage
-			
-			\subsection{Photodiode}
-			
+
+			\section{Photodiode}
 			In diesem Kapitel soll kurz auf den Aufbau und das Funktionsprinzip einer Photodiode eingegangen werden, da diese sowohl zur Aufnahme des Spektroskopiesignals des Rückpump- und Kühllasers als auch zur Aufnahme des Schwebungssignals für den \nameref{ssec:Offsetlock} zur Stabilisierung des Kühllasers verwendet wird.\\
 			Dies soll am Beispiel einer pin-Photodiode erfolgen. Diese besteht aus einem n-dotierten Halbleiter, der un- oder sehr schwach dotierten i-Schicht, welche zur Vergrößerung der Raumladungszone führt und einem p-dotierten Halbleiter (siehe Abbildung \ref{fig:PDI}). Durch Rekombination der Elektronen des n-dotierten Halbleiters mit den Löchern des p-dotierten Halbleiters kommt es zur Ausbildung einer Raumladungszone, bis die entstehende Diffusionsspannung ein weiteres Eindringen der jeweiligen Ladungsträger in das andere Gebiet verhindert. Wird nun die Diode mit Licht bestrahlt, kommt es bei der Absorption von Photonen zur Ausbildung von Elektron-Loch-Paaren, welche im elektrischen Feld der Raumladungszone (in der i-Schicht) voneinander getrennt werden. Diese Ladungsträger fließen als messbarer Photostrom über die Kontakte ab.\\
-			Die p-Schicht der Diode ist hier vergleichsweise dünn ausgeführt, damit in dieser möglichst wenig Licht absorbiert wird und dieses ungehindert in die i-Schicht gelangen kann, um die dort benötigten Elektron-Loch-Paare zu erzeugen.\\
+			Die p-Schicht der Diode ist hier vergleichsweise dünn ausgeführt, damit in dieser möglichst wenig Licht absorbiert wird und dieses ungehindert in die i-Schicht gelangen kann, um die dort benötigten Elektron-Loch-Paare zu erzeugen.
 			
 			\begin{figure}[htb!]
 				\centering
-				\includegraphics[width=480px]{graphics/PDI.jpg}
+				\includegraphics[width=\textwidth]{graphics/PDI.jpg}
 				\caption{Aufbau einer pin-Photodiode (links)
 					und Darstellung einer im Versuch verbauten Version (rechts)}
 				\label{fig:PDI}
 			\end{figure}
-			
-			
-			
-			\subsection{Ionen-Getter-Pumpe}
-			
+
+			\section{Ionen-Getter-Pumpe}			
 			Eine wichtige Rolle für den Versuch spielt die sogenannte Ionen-Getter-Pumpe, da diese einerseits zur Erzeugung und andererseits zur Aufrechterhaltung des für die Realisierung der MOT benötigten Vakuums verwendet wird.\\
 			Aus diesem Grund ist die Pumpe auch ständig in Betrieb, um die Leckrate des Systems zu kompensieren. Der etwas komplexere Aufbau der Ionen-Getter-Pumpe lässt sich in mehrere benötigte Komponenten zerlegen. Der Hauptteil der Pumpe besteht aus vielen aneinandergeschweißten Metallröhrchen, welche sich zwischen zwei äußeren Blechen befinden (siehe Abbildung \ref{fig:IGP}). Zwischen den Röhrchen und den Blechen existiert ein kleiner Spalt, welcher einerseits dem Gas erlaubt in die Röhrchen einzuströmen und andererseits zur elektrischen Isolation (in Kombination mit Keramikisolatoren) zwischen Röhrchen und Blechen dient. Nun wird zwischen den Blechen (Kathoden) und den Röhrchen (Anode) eine Hochspannung angelegt, wobei die Bleche auf gleichem Potential sind. Dadurch wird eine Elektronenwolke erzeugt. Durch zwei von außen angebrachte Permanentmagnete und das daraus resultierende Magnetfeld werden die freien Elektronen auf eine Spiralbahn gezwungen.\\
-			
-			\newpage
-			
+
 			Treffen diese nun auf Atome des eingeströmten Gases (hier Rubidium) kommt es zu einer Stoßionisation dieser Atome. Die zurückbleibenden positiven Ionen werden durch das elektrische Feld in Richtung Kathode beschleunigt. Auf ihrem Weg zur Kathode besteht die Möglichkeit, dass sie durch Stöße mit neutralen Atomen weitere Ionen erzeugen. Im Idealfall treffen die Ionen schließlich mit hoher kinetischer Energie auf das Kathodenmaterial, dass sie durch den Aufprall ``aufwirbeln'' und so dafür sorgen, dass stets frisches Material an der Oberfläche zur Verfügung steht. Letztendlich gehen sie nach dem Aufprall eine chemische Bindung mit dem Kathodenmaterial ein und stehen dadurch nicht mehr im gasförmigen Zustand bereit \cite{IGP}.\\ 
 			
-			\textbf{ACHTUNG:} Für die Vorbereitung muss nur das grundlegende Prinzip der Pumpe verstanden sein. Die detaillierten Ausführungen bezüglich der technischen Details sind für besonders Interessierte gedacht.\\
+			\emph{ACHTUNG:} Für die Vorbereitung muss nur das grundlegende Prinzip der Pumpe verstanden sein. Die detaillierten Ausführungen bezüglich der technischen Details sind für besonders Interessierte gedacht.
 			
 			\begin{figure}[htb!]
 				\centering
-				\includegraphics[width=480px]{graphics/IGP.jpg}
+				\includegraphics[width=\textwidth]{graphics/IGP.jpg}
 				\caption{Schematische Skizze des Aufbaus einer Ionen-Getter-Pumpe (links) und Darstellung der im Versuch verwendeten Ionen-Getter-Pumpe (rechts)}
 				\label{fig:IGP}
 			\end{figure}
-			
-			\newpage
-			
-			\subsection{PID-Regler}
-			
+
+			\section{PID-Regler}			
 			Der PID-Regler ist ein Element, welches zur Stabilisierung der Laser verwendet wird. Dabei setzt sich dieser aus drei einzelnen Regeleinrichtungen (der proportionalen, der integrierenden und der differenzierenden Regeleinrichtung) zusammen.\\
 			Erst das Zusammenspiel dieser drei einzelnen Regeleinrichtungen in Hinblick auf ihr jeweiliges charakteristisches Verhalten führt zu den gewünschten positiven Eigenschaften des PID-Reglers. Darum sollen zunächst die einzelnen Komponenten mit ihren Charakteristika kurz andiskutiert werden.\\
 			Hierzu muss jedoch zuerst der Aufbau eines Regelkreises beziehungsweise dessen Funktionsweise verstanden werden. Ziel des Regelkreises ist es eine physikalische Größe \textit{x} (die Regelgröße) unabhängig von wirkenden Störgrößen \textit{z} auf einen gewählten Sollwert $x_S$ zu stabilisieren. Um dies zu gewährleisten wird der Istwert der Regelgröße $x_i$ (also der momentane tatsächliche Wert) mit dem Sollwert verglichen. Die Abweichung dieser beiden Größen voneinander (die Regelabweichung $x_W$) bestimmt letztlich die Ausgabe der sogenannten Regelgröße \textit{y}, durch deren Einfluss auf die Regelstrecke mögliche Abweichungen vom Sollwert ausgeglichen werden sollen.\\ 
@@ -507,31 +484,27 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 			
 			\begin{figure}[htb!]
 				\centering
-				\includegraphics[width=480px]{graphics/PID.jpg}
+				\includegraphics[width=\textwidth]{graphics/PID.jpg}
 				\caption{Schematische Skizze des Funktionsweise bzw. Zusammensetzung eines PID-Reglers (links)
 					und Darstellung der im Versuch verbauten Version (rechts)}
 				\label{fig:PID}
 			\end{figure}
 			
-			\newpage
+			\chapter{Theorie zur Laserstabilisierung}
 			
-			\section{Theorie zur Laserstabilisierung}
-			
-			\subsection{Aufbau der Laserstabilisierung}
-			
-			Das Lasersystem befindet sich auf der einen Hälfte einer optischen Tischplatte und wurde auf eine Strahlhöhe von 100mm einjustiert. Im Wesentlichen besteht es aus den zwei Lasern und deren Stabilisierungen. Ein Laser wird durch eine dopplerfreie Sättigungspektroskopie auf die Frequenz des Rückpumpübergangs stabilisiert. Er soll im Folgenden als Rückpumplaser bezeichnet werden. Der zweite Laser soll auf die Frequenz des Kühlübergangs gelockt werden. Diese Stabilisierung erfolgt durch einen Offsetlock relativ zur Frequenz des Rückpumplasers. Er soll im Folgenden Kühllaser genannt werden.\\
-			In Abbildung \ref{fig:TZ} ist der Aufbau des Systems schematisch dargestellt. Das Licht des Rückpumplasers durchläuft zuerst einen Faraday-Isolator, um Rückreflexe in den Laser zu unterdrücken. Anschließend werden aus dem Strahl des Rückpumplasers 4\% für die Spektroskopie ausgekoppelt. Der transmittierte Teil des Lichts trifft nach Durchlaufen einer $\lambda/2$-Verzögerungsplatte auf einen polarisierenden Strahlteiler. In dem Strahlteiler wird der Strahl des Rückpumplasers mit dem des Kühllasers überlagert. Ein ausgehender Strahl bestehend aus Kühl- und Rückpumplicht wird durch einen akusto-optischen Modulator (AOM) gestrahlt, um dann in eine Glasfaser eingekoppelt zu werden, in der das Licht zur MOT geleitet wird.\\
+			\section{Aufbau der Laserstabilisierung}	
+			Das Lasersystem befindet sich auf der einen Hälfte einer optischen Tischplatte und wurde auf eine Strahlhöhe von \qty{100}{\milli\metre} einjustiert. Im Wesentlichen besteht es aus den zwei Lasern und deren Stabilisierungen. Ein Laser wird durch eine dopplerfreie Sättigungspektroskopie auf die Frequenz des Rückpumpübergangs stabilisiert. Er soll im Folgenden als Rückpumplaser bezeichnet werden. Der zweite Laser soll auf die Frequenz des Kühlübergangs gelockt werden. Diese Stabilisierung erfolgt durch einen Offsetlock relativ zur Frequenz des Rückpumplasers. Er soll im Folgenden Kühllaser genannt werden.\\
+			In Abbildung \ref{fig:TZ} ist der Aufbau des Systems schematisch dargestellt. Das Licht des Rückpumplasers durchläuft zuerst einen Faraday-Isolator, um Rückreflexe in den Laser zu unterdrücken. Anschließend werden aus dem Strahl des Rückpumplasers \qty{4}{\percent} für die Spektroskopie ausgekoppelt. Der transmittierte Teil des Lichts trifft nach Durchlaufen einer $\lambda/2$-Verzögerungsplatte auf einen polarisierenden Strahlteiler. In dem Strahlteiler wird der Strahl des Rückpumplasers mit dem des Kühllasers überlagert. Ein ausgehender Strahl bestehend aus Kühl- und Rückpumplicht wird durch einen akusto-optischen Modulator (AOM) gestrahlt, um dann in eine Glasfaser eingekoppelt zu werden, in der das Licht zur MOT geleitet wird.\\
 			Der zweite ausgehende Strahl durchläuft wiederum eine $\lambda/2$-Verzögerungsplatte und trifft auf einen zweiten, polarisierenden Strahlteiler. Der s-polarisierte Anteil wird abgelenkt und mittels einer Linse auf eine schnelle Photodiode fokussiert. Das überlagerte Licht kann dort zur Stabilisierung des Kühllasers mittels eines Offsetlocks verwendet werden.\\
 			Das Licht, das durch den Strahlteiler transmittiert, kann, indem die Rubidiumdampfzelle verschoben wird, ebenfalls für eine dopplerfreie Sättigungsspektroskopie des Kühllasers eingesetzt werden.\\
 			
-			\subsection{Verwendete Lasertypen}
-			
+			\section{Verwendete Lasertypen}			
 			Zur Erzeugung des Lichts werden zwei Diodenlaser verwendet, deren Emissionswellenlänge mit Hilfe von Stromänderungen und Änderungen am externen Resonator beeinflusst werden kann.\\
 			Ein Diodenlaser ist in der so genannten Littrow-Anordnung aufgebaut (siehe Abbildung \ref{fig:LLA}).\\ 
 			Das Licht aus dem Halbleiter trifft so auf ein optisches Gitter, dass die minus erste Beugungsordnung in die Diode zurückreflektiert wird. Durch diese Anordnung bildet das Gitter zusammen mit der Rückseite der Diode den externen Resonator. Die nullte Beugungsordnung des Gitters wird aus dem Resonator ausgekoppelt. Zur groben Einstellung der Frequenz kann das Gitter gedreht, durch Längenänderung des Resonators kann die Frequenz fein eingestellt werden.\\
 			Der zweite Diodenlaser besitzt als frequenzselektives Element einen Interferenzfilter. Auch dieser Laser kann durch Längenänderung des externen Resonator (hier: ein Auskoppelspiegel auf einem Piezokristall) und dem Strom durch die Laserdiode in der emittierten Frequenz durchgestimmt werden.\\
 			
-			\fbox{\parbox[c]{17,2cm}{
+			\fbox{\parbox[c]{0.985\textwidth}{
 					\begin{frage}
 						Durch welche Größen/Faktoren werden die Laserfrequenzen beeinflusst? Welche dieser Faktoren sind gewollt beziehungsweise ungewollt und wie können diese beseitigt werden?
 					\end{frage}
@@ -539,63 +512,54 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				
 				\begin{figure}[htb!]
 					\centering
-					\includegraphics[width=480px]{graphics/LLA2.jpg}
+					\includegraphics[width=\textwidth]{graphics/LLA2.jpg}
 					\caption{Laser in Littrow Anordnung}
 					\label{fig:LLA}
 				\end{figure}
 				
-				\newpage
-				
-				\subsection{Dopplerfreie Sättigungsspektroskopie}
-				
+				\section{Dopplerfreie Sättigungsspektroskopie}			
 				Die Frequenz, auf welche der Rückpumplaser stabilisiert werden soll, muss, da es sich um eine absolute Stabilisierung handelt, klar definiert sein. Da der Laser einen atomaren Übergang von $^{85}$Rb anregen soll, liegt es nahe, mit Hilfe einer dopplerfreien Sättigungsspektroskopie einen atomaren Übergang von $^{85}$Rb als Referenz zu verwenden.\\
 				Dazu wird ein Teil des Laserlichts durch eine mit Rubidiumdampf gefüllte Glaszelle gestrahlt und anschließend in sich selbst zurückreflektiert. Der Strahl trifft, nachdem er auf dem gleichen Weg durch die Glaszelle zurück gestrahlt wurde, auf eine Photodiode (siehe Abbildung \ref{fig:DSS}). Ist das Licht in seiner Frequenz gegenüber der Resonanz zu einem atomaren Übergang rotverstimmt (geringere Frequenz), so ``sehen'' Atome, die sich mit der entsprechenden Geschwindigkeit dem Licht entgegen bewegen aufgrund des optischen Dopplereffekts, eine Frequenz des Lichts, die
 				der des Übergangs entspricht. Atome, die sich dem Strahl entgegen bewegen, können Photonen absorbieren. Aus der statistischen Verteilung der Bewegungsrichtung verschiedener Atome resultiert sowohl für den hinlaufenden als auch für den rücklaufenden Strahl Absorption. Analoges gilt für blauverstimmtes (höhere Frequenz) Licht.\\
-				Hat das Licht jedoch die Resonanzfrequenz zu dem Übergang, so werden die Photonen nur von ruhenden Atomen absorbiert. Dies hat auf Grund der Lebensdauer des daraus entstehenden angeregten Zustands eine Sättigung des Übergangs zu Folge. Durch den hinlaufenden Strahl angeregte Atome können keine Photonen des rücklaufenden Strahls absorbieren. Wird der Frequenzbereich des Lasers durchgestimmt, so ergeben sich an den Stellen des Absorptionsspektrums, an denen das Licht resonant zu einem atomaren Übergang ist, Einbrüche in der Absorption, so genannte ``Lampdips''.\\
-				Zur Stabilisierung des Lasers auf solch eine Resonanz wird das Absorptionssignal elektronisch abgeleitet. Dieses am Ausgang des Lock-in-Verstärkers anliegende (zur ersten Ableitung proportionale Signal), wird von der Regelbox (PID-Regler) zur Stabilisierung des Lasers verwendet. Dadurch kann die Frequenz der Laser auf einem solchen Lampdip ``gehalten'' werden.\\
+				Hat das Licht jedoch die Resonanzfrequenz zu dem Übergang, so werden die Photonen nur von ruhenden Atomen absorbiert. Dies hat auf Grund der Lebensdauer des daraus entstehenden angeregten Zustands eine Sättigung des Übergangs zu Folge. Durch den hinlaufenden Strahl angeregte Atome können keine Photonen des rücklaufenden Strahls absorbieren. Wird der Frequenzbereich des Lasers durchgestimmt, so ergeben sich an den Stellen des Absorptionsspektrums, an denen das Licht resonant zu einem atomaren Übergang ist, Einbrüche in der Absorption, so genannte \glqq Lambdips\grqq.\\
+				Zur Stabilisierung des Lasers auf solch eine Resonanz wird das Absorptionssignal elektronisch abgeleitet. Dieses am Ausgang des Lock-in-Verstärkers anliegende (zur ersten Ableitung proportionale Signal), wird von der Regelbox (PID-Regler) zur Stabilisierung des Lasers verwendet. Dadurch kann die Frequenz der Laser auf einem solchen Lambdip \glqq gehalten\grqq werden.\\
 				
 				\begin{figure}[htb!]
 					\centering
-					\includegraphics[width=320px]{graphics/DSS.jpg}
+					\includegraphics[width=0.8\textwidth]{graphics/DSS.jpg}
 					\caption{Schematische Skizze des Aufbaus einer dopplerfreien Sättigungsspektroskopie}
 					\label{fig:DSS}
 				\end{figure}
 				
-				\subsection{Offsetlock}\label{ssec:Offsetlock}
-				
+				\section{Offsetlock}\label{ssec:Offsetlock}			
 				Der Kühllaser wird über eine relative Stabilisierung zu dem Rückpumplaser auf seiner Frequenz gehalten. Dazu werden beide Strahlen überlagert und auf eine schnelle Photodiode fokussiert. Sind die beiden Laser nur um wenige GHz zueinander verstimmt, so kann auf der Diode ein Schwebungssignal der Intensität aufgenommen werden. Die Schwebung kann nun elektronisch aufgenommen und ausgewertet werden.
 				%In Abbildung 2.4 ist die Spannung, die der Frequenz-zu-Spannungs-Wandler aus der Frequenz des Schwebungssignals erzeugt, in Abhängigkeit zur Spannung am Piezokristall des Kühllasers dargestellt. Verschiedene Spannungen entsprechen verschiedenen Emissionsfrequenzen des Lasers (der Rückpumplaser bleibt konstant). Auch dieses Signal kann zur Stabilisierung verwendet werden.
 				Im Versuch ist ein Frequenz-zu-Spannungs-Wandler verbaut. Verschiedene Spannungen entsprechen verschiedenen Emissionsfrequenzen des Kühllasers (bei konstanter Frequenz des Rückpumplasers). Auch dieses Signal kann zur Stabilisierung verwendet werden.				
 				
-				\section{Theorie zur MOT}
-				
+				\chapter{Theorie zur MOT}	
 				Die Idee, mit Licht Atome zu kühlen, wurde erstmals 1975 formuliert und schon im gleichen Jahr nachgewiesen.
 				Eine magneto-optische Falle wurde 1987 erstmals realisiert und 1997 mit einem Nobelpreis ausgezeichnet. Zum
 				Verständnis einer MOT kann ihre Funktionsweise in zwei Aspekte unterteilt werden: zum einen das Kühlen, zum
 				anderen das Fangen der Atome.
 				
-				\subsection{Optisches Kühlen}
-				
+				\section{Optisches Kühlen}			
 				Die Temperatur eines Ensembles von Atomen entspricht der gemittelten Bewegung der Atome. Da auf Grund der
-				Erhaltung der Energie die Wärmeenergie $E_W = \frac{f}{2}k_BT$ der Bewegungsenergie $E_{kin} = \frac{1}{2}mv^2$ gleichgesetzt werden kann, folgt daraus, dass die Temperatur mit $T = mv^2/(k_Bf)$ quadratisch abhängig von der Geschwindigkeit ist.\\ 
+				Erhaltung der Energie die Wärmeenergie $E_W = \frac{f}{2}k_BT$ der Bewegungsenergie $E_{kin} = \frac{1}{2}mv^2$ gleichgesetzt werden kann, folgt daraus, dass die Temperatur mit $T = mv^2/(k_{\text{B}} f)$ quadratisch abhängig von der Geschwindigkeit ist.\\ 
 				Soll ein atomares Ensemble gekühlt werden, muss die relative Geschwindigkeit der einzelnen Atome zueinander
 				verringert werden. Im Falle der Laserkühlung nutzt man hierzu die Wechselwirkung zwischen Atomen und
 				elektromagnetischer Strahlung definierter Richtung, Frequenz und Polarisation.
 				
-				\subsubsection{Spontankraft}\label{ssec:SK}
-				
+				\subsection{Spontankraft}\label{ssec:SK}		
 				Ein Photon, dessen Energie der Energiedifferenz zwischen zwei Energieniveaus in einem Atom entspricht, kann von diesem Atom absorbiert werden. Die Spontankraft entsteht durch stimulierte Absorption von Photonen aus einem Laserstrahl und anschließende spontane Reemission. Beim Absorptionsvorgang wird sowohl der Impuls $\vec{p} = \hbar \vec{k}$ als auch die Energie $E = \hbar \omega$ des Photons an das Atom weitergegeben, wobei $\vert \vec{k} \vert = 2\pi/\lambda$ die Wellenzahl und $v = \omega/2\pi$ die Frequenz des Photons ist. Nach einer für die Atomart spezifischen Lebensdauer $\tau$ werden die Photonen
 				wieder unter spontaner Emission vom Atom abgegeben. Da der Impuls und die Energie Erhaltungsgrößen sind,
 				sind ihre Beträge bei Absorption und Emission konstant. Das spontan emittierte Photon verleiht dem Atom einen Rückstoßimpuls. Die Wahrscheinlichkeit der Rückstoßrichtung ist über den gesamten Raum gleichverteilt. Somit mittelt sich die atomare Nettoimpulsänderung bei Emission statistisch zu Null.\\ Werden Photonen aus einer festen Richtung eingestrahlt, so addieren sich die Impulsüberträge bei Absorpion derart, dass eine gerichtete Kraft auf das Atom entsteht (siehe Abbildung \ref{fig:SK}).\\
 				Zum Kühlen von Rubidiumatomen werden elektronische Übergänge im Atomspektrum verwendet. Diese können
 				vereinfacht als atomare Zweizustandssysteme im elektromagnetischen Strahlungsfeld einer festen Frequenz
 				betrachtet werden. Die Besetzungszustände können durch Absorption und spontane Reemission der Photonen des
-				Strahlungsfeldes beeinflusst werden. Eine quantenmechanische Beschreibung dieses Modells in Form von Bewegungsgleichungen bieten die optischen Blochgleichungen. Unter Betrachtung des Gleichgewichtszustandes der in diesen Gleichungen beschriebenen Dynamik, lässt sich die Streurate $\varGamma_{sc}$ der Photonen des Strahlungsfeldes an einem Zweiniveauatom herleiten:
-				
+				Strahlungsfeldes beeinflusst werden. Eine quantenmechanische Beschreibung dieses Modells in Form von Bewegungsgleichungen bieten die optischen Blochgleichungen. Unter Betrachtung des Gleichgewichtszustandes der in diesen Gleichungen beschriebenen Dynamik, lässt sich die Streurate $\varGamma_{sc}$ der Photonen des Strahlungsfeldes an einem Zweiniveauatom herleiten:			
 				\begin{equation}\label{equa:6-1}
 				\varGamma_{sc} = \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}
-				\end{equation}
-				
+				\end{equation}				
 				Hierbei ist $\varGamma$ die Zerfallsrate des angeregten Zustandes des Zweiniveausystems, $\varDelta = \omega_L - \omega_R $ ist die spektrale Verstimmung des Strahlungsfeldes der Frequenz $\omega_L$ gegenüber der atomaren Resonanz $\omega_R$ und $s_0$ ist der Sättigungsparameter im Falle der Resonanz. Er stellt das Verhältnis aus der Intensität des Lichtes \textit{I} und der Sättigungsintensität des atomaren Übergangs $I_0$ dar. Es gilt $s_0 = I/I_0$, wobei $I_0 = \pi hc\varGamma/(3\lambda^3)$.\\
 				Wird das Licht aus einer festen Richtung auf ruhende Atome eingestrahlt, so ergibt sich unter Beachtung des bei jedem Streuvorgang auf das Atom übertragenen Photonenimpulses $\vec{p} = \hbar \vec{k}$ eine gerichtete Kraft, die Spontankraft $\vec{F}_D$
 				
@@ -797,8 +761,7 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 						
 					\end{itemize}
 					
-					
-					
+									
 					
 					\newpage
 					
@@ -923,6 +886,7 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 %\printbibliography[keyword=bild,heading=subbibliography,title={Bildquellen}]%
 %\printbibliography[keyword=lit,heading=subbibliography,title={Literatur}]
 %\printbibliography[keyword=erg,heading=subbibliography,title={Ergänzende Literatur}]
+\printbibliography
 Internetquellen letztmalig im März 2023 aufgerufen
 
 %	\renewcommand{\bibname}{Wesentliche Literatur}
