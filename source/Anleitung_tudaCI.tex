@@ -386,17 +386,19 @@ Die Steuerung der einzelnen Phasen des Versuchsablaufs findet mittels \textit{la
 \section{Akusto-optischer Modulator (AOM)}
 
 Ein akusto-optischer Modulator besteht im Wesentlichen aus einem Kristall, an dessen beiden Enden zum einen ein Piezoelement zur Erzeugung von Schallwellen und zum anderen ein Schallabsorber zum Verhindern von Reflexionen oder stehenden Wellen angebracht ist (siehe Abbildung \ref{fig:AOM}).\\
-Die durch den Kristall propagierende Schallwelle, welche durch eine mechanische Schwingung des Piezoelements hervorgerufen wird, verursacht in diesem periodische Dichteschwankungen, welche eine ebenfalls periodische Variation der Brechzahl im Kristall zur Folge hat \cite{OLL}.\\
-Diese Modulation wirkt für das einfallende Licht wie ein bewegtes optisches Gitter, an welchem Beugung des einfallenden Lichtes stattfindet. Dabei kommt es beim Betrieb im sogenannten Bragg-Regime lediglich zur Ausbildung der ersten Beugungsordnung. An dieser kann außerdem eine Frequenzverschiebung entsprechend der Schallfrequenz beobachtet werden. Um dies zu verstehen, kann dass Phänomen entweder klassisch oder im Teilchenbild betrachtet werden. Entsprechend der Betrachtungsweise kann der Effekt entweder mit Hilfe des Dopplereffekts durch das sich in Relation zum einfallenden Licht ``bewegende Gitter'' oder unter Anwendung der Impuls- und Energierhaltung auf die wechselwirkenden Photonen und Phononen beschrieben werden.\\
-Bei Phononen handelt es sich in dieser Betrachtung um Quasiteilchen, mit welchen die den Kristall durchlaufenden Schallwellen beschrieben werden können \cite{OFI}.\\
-Im Versuch wird der AOM im Wesentlichen als Schalter verwendet, um das Laserlicht zur MOT hin gezielt an- und abschalten zu können.\\
+Die durch den Kristall propagierende Schallwelle, welche durch eine mechanische Schwingung des Piezoelements hervorgerufen wird, verursacht in diesem periodische Dichteschwankungen, welche eine ebenfalls periodische Variation der Brechzahl im Kristall zur Folge hat. \cite{OLL}
+Diese Modulation wirkt für das einfallende Licht wie ein bewegtes optisches Gitter, an welchem Beugung des einfallenden Lichtes stattfindet. 
+Dabei kommt es beim Betrieb im sogenannten Bragg-Regime lediglich zur Ausbildung der ersten Beugungsordnung. An dieser kann außerdem eine Frequenzverschiebung entsprechend der Schallfrequenz beobachtet werden. 
+Um dies zu verstehen, kann dass Phänomen entweder klassisch oder im Teilchenbild betrachtet werden. Entsprechend der Betrachtungsweise kann der Effekt entweder mit Hilfe des Dopplereffekts durch das sich in Relation zum einfallenden Licht \gqq{bewegende Gitter} oder unter Anwendung der Impuls- und Energierhaltung auf die wechselwirkenden Photonen und Phononen beschrieben werden.
+Bei Phononen handelt es sich um Quasiteilchen, mit welchen die den Kristall durchlaufenden Schallwellen beschrieben werden können. \cite{OFI}\\
+Im Versuch wird der AOM im Wesentlichen als Schalter verwendet, um das Laserlicht zur MOT hin gezielt an- und abschalten zu können.
+\vspace{7pt}
 
 \fbox{\parbox[c]{0.985\textwidth}{
 		\begin{frage}\label{f:4-1}
 			Inwiefern ist die durch den AOM verursachte Frequenzverschiebung des Laserlichts in Bezug auf die Stabilisierung des Rückpump- und Kühllasers bzw. die an der MOT benötigte Frequenz relevant?
 		\end{frage}
-	}}\\
-	
+	}}\\	
 	\begin{figure}[htb!]
 		\centering
 		\includegraphics[width=\textwidth]{graphics/AOM2.pdf}
@@ -406,13 +408,17 @@ Im Versuch wird der AOM im Wesentlichen als Schalter verwendet, um das Laserlich
 	\end{figure}
 	
 	\section{Verzögerungsplatten} \label{ssec:lambdaplatte}
-Verzögerungsplättchen funktionieren nach dem Prinzip der Doppelbrechung und spielen sowohl bei der Erzeugung als auch bei der Analyse verschiedener Polarisationsformen des Lichtes eine zentrale Rolle.\\
-Dabei liegt die optische Achse des Kristalls parallel zur Eintrittsfläche beziehungsweise senkrecht zur Ausbreitungsrichtung des einfallenden Lichts. Aus diesem Grund verlaufen sowohl der außerordentliche als auch der ordentliche Strahl, in welche der einfallende Lichtstrahl innerhalb des Materials durch Projektion auf die optische Achse zerlegt wird, parallel durch den Kristall.
-Allerdings besitzen die beiden Strahlen dort unterschiedliche Ausbreitungsgeschwindigkeiten.\\
-Aufgrund der Dicke des Kristalls und der damit verbundenen optischen Weglänge, welche beide Strahlen innerhalb des Kristalls zurücklegen, ergibt sich beim Austritt eine Phasendifferenz zwischen dem außerordentlichen und ordentlichen Anteil des Strahls. Dabei ist jedoch beispielsweise die einer Phasendifferenz von $\pi/2$ entsprechende Plättchendicke meist zu gering, um sie technisch realisieren zu können. Dies kann entweder dadurch behoben werden, dass auf die gewünschte Phasendifferenz ein Vielfaches von $2\pi$ addiert wird, um so eine größere Dicke zu erzielen oder man kombiniert zwei Plättchen mit gekreuzten optischen Achsen für den ordentlichen und außerordentlichen Strahl mit einer entsprechenden Gangdifferenz von $\pi$ oder $\pi/2$.\\
+Verzögerungsplättchen funktionieren nach dem Prinzip der Doppelbrechung und spielen sowohl bei der Erzeugung als auch bei der Analyse verschiedener Polarisationsformen des Lichtes eine zentrale Rolle.
+Dabei liegt die optische Achse des Kristalls parallel zur Eintrittsfläche beziehungsweise senkrecht zur Ausbreitungsrichtung des einfallenden Lichts. 
+Aus diesem Grund verlaufen sowohl der außerordentliche als auch der ordentliche Strahl, in welche der einfallende Lichtstrahl innerhalb des Materials durch Projektion auf die optische Achse zerlegt wird, parallel durch den Kristall.
+Allerdings besitzen die beiden Strahlen dort unterschiedliche Ausbreitungsgeschwindigkeiten.
+Aufgrund der Dicke des Kristalls und der damit verbundenen optischen Weglänge, welche beide Strahlen innerhalb des Kristalls zurücklegen, ergibt sich beim Austritt eine Phasendifferenz zwischen dem außerordentlichen und ordentlichen Anteil des Strahls. 
+Dabei ist jedoch beispielsweise die einer Phasendifferenz von $\pi/2$ entsprechende Plättchendicke meist zu gering, um sie technisch realisieren zu können. 
+Dies kann entweder dadurch behoben werden, dass auf die gewünschte Phasendifferenz ein Vielfaches von $2\pi$ addiert wird, um so eine größere Dicke zu erzielen oder man kombiniert zwei Plättchen mit gekreuzten optischen Achsen für den ordentlichen und außerordentlichen Strahl mit der gwünschten Gangdifferenz.
 Falls nun linear polarisiertes Licht auf das Verzögerungsplättchen trifft, kann beispielsweise zirkular, elliptisch, oder wieder linear polarisiertes Licht mit veränderter Polarisation erzeugt werden \cite{OLL}.\\
-Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispiel einer $\lambda/4$-Platte dargestellt.\\
-	
+Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispiel einer $\lambda/4$-Platte dargestellt.
+\vspace{7pt}
+
 \fbox{\parbox[c]{0.985\textwidth}{
 	\begin{frage}\label{f4-1}
 				Zu welchem Zweck werden die in den schematischen Skizzen zur Laserstabilisierung und der MOT eingezeichneten Verzögerungsplatten jeweils verwendet? 
@@ -429,7 +435,10 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 		\section{Polarisationsstrahlteilerwürfel (PST)}	
 		Zur Realisierung von Strahlteilerwürfeln gibt es unterschiedliche Möglichkeiten. Eine dieser Möglichkeiten beruht auf dem zuvor diskutierten Prinzip der Doppelbrechung. Hier wird der unterschiedliche Brechungsindex für die beiden Polarisationsrichtungen verwendet, um die Bedingungen für Totalreflexion für eine dieser Komponenten zu erfüllen.\\
 		Es gibt allerdings auch andere Möglichkeiten Strahlteilerwürfel herzustellen. Diese zweite Realisierungsmöglichkeit entspricht dem Aufbau der im Versuch verwendeten Strahlteilerwürfel (siehe Abbildung \ref{fig:PST}).\\ 
-		Statt doppelbrechenden Kristallen werden hier Dünnschichtpolarisatoren verwendet. Der zugehörige Aufbau besteht aus einem Würfel aus isotropem Glas, welcher diagonal aufgeschnitten wird. Zwischen die beiden entstandenen Prismen wird ein Dünnschichtpolarisator eingebracht, bevor alles wieder miteinander verkittet wird. Dieser besteht, ähnlich einem Bragg-Spiegel, aus vielen dünnen dielektrischen Schichten, welche ein unterschiedliches Reflexionsvermögen für die beiden betrachteten Polarisationsrichtungen besitzen (siehe Abbildung \ref{fig:PST}). Wählt man die Schichtdicke so, dass sich die an den einzelnen Schichten reflektierten (s-polarisierten) Anteile konstruktiv überlagern, hat man die Bedingungen für eine erfolgreiche Polarisationstrennung erfüllt \cite{EX}.\\
+		Statt doppelbrechenden Kristallen werden hier Dünnschichtpolarisatoren verwendet. 
+		Der zugehörige Aufbau besteht aus einem Würfel aus isotropem Glas, welcher diagonal aufgeschnitten wird. Zwischen die beiden entstandenen Prismen wird ein Dünnschichtpolarisator eingebracht, bevor alles wieder miteinander verkittet wird. Dieser besteht, ähnlich einem Bragg-Spiegel, aus vielen dünnen dielektrischen Schichten, welche ein unterschiedliches Reflexionsvermögen für die beiden betrachteten Polarisationsrichtungen besitzen (siehe Abbildung \ref{fig:PST}). 
+		Wählt man die Schichtdicke so, dass sich die an den einzelnen Schichten reflektierten (s-polarisierten) Anteile konstruktiv überlagern, hat man die Bedingungen für eine erfolgreiche Polarisationstrennung erfüllt. \cite{EX}
+\vspace{7pt}
 		
 		\fbox{\parbox[c]{0.985\textwidth}{
 				\begin{frage}\label{f4-1}
@@ -446,7 +455,7 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 			\end{figure}
 
 			\section{Photodiode}
-			In diesem Kapitel soll kurz auf den Aufbau und das Funktionsprinzip einer Photodiode eingegangen werden, da diese sowohl zur Aufnahme des Spektroskopiesignals des Rückpump- und Kühllasers als auch zur Aufnahme des Schwebungssignals für den \nameref{ssec:Offsetlock} zur Stabilisierung des Kühllasers verwendet wird.\\
+			In diesem Abschnitt soll kurz auf den Aufbau und das Funktionsprinzip einer Photodiode eingegangen werden, da diese sowohl zur Aufnahme des Spektroskopiesignals des Rückpump- und Kühllasers als auch zur Aufnahme des Schwebungssignals für den \nameref{ssec:Offsetlock} zur Stabilisierung des Kühllasers verwendet wird.\\
 			Dies soll am Beispiel einer pin-Photodiode erfolgen. Diese besteht aus einem n-dotierten Halbleiter, der un- oder sehr schwach dotierten i-Schicht, welche zur Vergrößerung der Raumladungszone führt und einem p-dotierten Halbleiter (siehe Abbildung \ref{fig:PDI}). Durch Rekombination der Elektronen des n-dotierten Halbleiters mit den Löchern des p-dotierten Halbleiters kommt es zur Ausbildung einer Raumladungszone, bis die entstehende Diffusionsspannung ein weiteres Eindringen der jeweiligen Ladungsträger in das andere Gebiet verhindert. Wird nun die Diode mit Licht bestrahlt, kommt es bei der Absorption von Photonen zur Ausbildung von Elektron-Loch-Paaren, welche im elektrischen Feld der Raumladungszone (in der i-Schicht) voneinander getrennt werden. Diese Ladungsträger fließen als messbarer Photostrom über die Kontakte ab.\\
 			Die p-Schicht der Diode ist hier vergleichsweise dünn ausgeführt, damit in dieser möglichst wenig Licht absorbiert wird und dieses ungehindert in die i-Schicht gelangen kann, um die dort benötigten Elektron-Loch-Paare zu erzeugen.
 			
