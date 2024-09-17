@@ -84,6 +84,7 @@ pdfa=false % Problem mit Paket pdfx
 }
 
 \renewcommand{\emph}[1]{\textcolor{TUDa-1b}{\textbf{#1}}}
+\newcommand{\gqq}[1]{\glqq{}#1\grqq{}}
 
 \usepackage{hyperref} % Immer als letztes laden
 \def\UrlFont{\normalfont}
@@ -219,24 +220,24 @@ zwei verschiedene Arten der Stabilisierung eingesetzt, die es einzustellen und z
 Teil des Versuchs wird eine MOT erzeugt und vermessen. Dabei sollen Daten zur Bestimmung der Laderate der
 Falle und die Temperatur der gefangenen Atome ermittelt werden.\\
 Zunächst wird ein kurzer Überblick über den gesamten Versuchsaufbau gegeben.\\ 
-Bevor dies stattfindet sollen jedoch die benötigten \emph{Voraussetzungen zur Versuchsteilnahme} und die Präsenzaufgaben spezifiziert werden. 
+Bevor dies stattfindet sollen jedoch die benötigten \textbf{Voraussetzungen zur Versuchsteilnahme} und die Präsenzaufgaben spezifiziert werden. 
 
 
 \chapter{Aufgaben}
 Die Aufgaben gliedern sich zum einen in die \textbf{Vorbereitungsaufgaben}, welche vor der Versuchsdurchführung zu Hause zu bearbeiten sind, die \textbf{Präsenzaufgaben}, welche am Tag der Versuchsdurchführung zu erledigen sind und die \textbf{Auswertungsaufgaben}, welche nach der Versuchsdurchführung wiederum zu Hause zu erledigen sind.\\
 
-\textbf{Hinweis:} Bringen Sie zur Versuchsdurchführung einen  \textbf{USB-Stick} mit, um die während der Versuchsdurchführung gewonnenen Daten mitnehmen zu können.
+\textbf{Hinweis:} Bringen Sie zur Versuchsdurchführung einen  \emph{USB-Stick} mit, um die während der Versuchsdurchführung gewonnenen Daten mitnehmen zu können.
 
 \section{Vorbereitungsaufgaben}
 
 Zur Vorbereitung auf den Versuch sind sich einerseits die in 1. bis 4. aufgelisteten Themen zu erarbeiten und andererseits ist sich mit den im Anschluss aufgeführten Fragen zu beschäftigen, sodass diese im Vorbereitungsgespräch am Versuchstag beantwortet werden können. 
 \begin{enumerate}
 	\item \textbf{Versuchsaufbau:} Übersicht über den gesamten Aufbau, Laserstabilisierung, MOT
-	\item \textbf{wichtige Bauteile:} Akusto-Optischer Modulator (AOM), Verzögerungsplatten ($\lambda/2$-, $\lambda/4$-Platten), Polarisationsstrahlteilerwürfel (PST), Photodiode, Ionen-Getter-Pumpe, PID-Regler
+	\item \textbf{wichtige Bauteile:} Akusto-optischer Modulator (AOM), Verzögerungsplatten ($\lambda/2$-, $\lambda/4$-Platten), Polarisationsstrahlteilerwürfel (PST), Photodiode, Ionen-Getter-Pumpe, PID-Regler
 	\item \textbf{Theorie Laserstabilisierung:} Diodenlaser mit externem Resonator, dopplerfreie Sättigungsspektroskopie, Offsetlock
-	\item \sloppy \textbf{Theorie MOT:} Dopplerkühlung, Energieniveaustruktur $^{85}$Rb, Quadrupolfeld, Sub-Dopplerkühlung   
+	\item \sloppy \textbf{Theorie MOT:} Dopplerkühlung, Energieniveaustruktur \isotope[85]{Rb}, Quadrupolfeld, Sub-Dopplerkühlung   
 \end{enumerate}
-\textbf{Anmerkung:} Die Anleitung zum Versuch stellt eine Einführung in das Thema dar. Um die Vorbereitung zu erleichtern sind die unter 1. und 2. aufgeführten Punkte in der Anleitung in der zur Versuchsdurchführung hinreichenden Tiefe dargestellt. Hier muss keine zusätzliche Literatur zurate gezogen werden. Die unter 3. und 4. aufgeführten Themen werden hingegen lediglich andiskutiert und zu deren Verständnis ist es \textit{unerlässlich} zusätzliche Literatur durchzuarbeiten. Hierzu existiert eine \nameref{sec:LE}. Insbesondere zum Thema der Subdopplerkühlung sei auf Quelle (v.) Seiten 218-226 hingewiesen.\\
+\textbf{Anmerkung:} Die Anleitung zum Versuch stellt eine Einführung in das Thema dar. Um die Vorbereitung zu erleichtern sind die unter 1. und 2. aufgeführten Punkte in der Anleitung in der zur Versuchsdurchführung hinreichenden Tiefe dargestellt. Hier muss keine zusätzliche Literatur zurate gezogen werden. Die unter 3. und 4. aufgeführten Themen werden hingegen lediglich andiskutiert und zu deren Verständnis ist es \textit{unerlässlich} zusätzliche Literatur durchzuarbeiten. Hierzu existiert eine \nameref{sec:LE}. Insbesondere zum Thema der Subdopplerkühlung sei auf Quelle v. Seiten 218-226 hingewiesen.\\
 
 \textbf{Fragen:}  
 
@@ -259,7 +260,7 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 \section{Präsenzaufgaben}
 
 \begin{itemize}	
-	\item \textbf{Stabilisierung der Laser:} Zur Stabilisierung der Laser betrachten Sie zunächst das Spektroskopiesignal des Rückpumplasers und stabilisieren Sie diesen auf den F=2 nach F'=1 Übergang. Betrachten Sie dazu das Spektroskopiesignal des Rückpumplasers und das zugehörige Dispersionssignal. Nehmen sie beide Signale mit Hilfe des digitalen Oszilloskops und der zugehörigen Computersoftware auf.
+	\item \textbf{Stabilisierung der Laser:} Zur Stabilisierung der Laser betrachten Sie zunächst das Spektroskopiesignal des Rückpumplasers und stabilisieren Sie diesen auf den F$=2$ nach F'$=1$ Übergang. Betrachten Sie dazu das Spektroskopiesignal des Rückpumplasers und das zugehörige Dispersionssignal. Nehmen sie beide Signale mit Hilfe des digitalen Oszilloskops und der zugehörigen Computersoftware auf.
 	
 	\item \textbf{Spektroskopie des Kühllasers:} Durch Verschieben der Rubidiumdampfzelle in den Strahlengang des Kühllasers können Sie eine Spektroskopie an diesem durchführen. Nehmen Sie dieses Signal ebenfalls mit Hilfe des digitalen Oszilloskops auf.
 	
@@ -267,7 +268,7 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 	
 	\item \textbf{Temperatur in der MOT:} Nehmen Sie eine geeignete Messreihe zur Bestimmung der Temperatur in der MOT auf.
 	
-	\item \textbf{Temperatur nach der Melassenphase:} Nehmen Sie eine Messreihe zur Bestimmung der Temperatur nach der Melassenphase auf.
+	\item \textbf{Temperatur nach der Melassephase:} Nehmen Sie eine Messreihe zur Bestimmung der Temperatur nach der Melassephase auf.
 \end{itemize}
 
 \section{Auswertungsaufgaben}
@@ -285,19 +286,19 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 \chapter{Literaturempfehlung}\label{sec:LE}
 
 \begin{enumerate}[label=\roman*.]
-	\item D. Meschede. \textit{Optik, Licht und Laser}. Vieweg-Teubner, 2008.
+	\item D. Meschede. \href{https://doi.org/10.1007/978-3-8348-9288-1}{\textit{Optik, Licht und Laser}}. Vieweg-Teubner, 2008.
 	
-	\item F. Pedrotti, L. Pedrotti, W. Bausch, and H. Schmidt. \textit{Optik für Ingenieure - Grundlagen (3. Auflage)}. Springer, 2005.
+	\item F. Pedrotti, L. Pedrotti, W. Bausch, and H. Schmidt. \href{https://doi.org/10.1007/b139018}{\textit{Optik für Ingenieure - Grundlagen (3. Auflage)}}. Springer, 2005.
 	
-	\item W. Demtröder. \textit{Laserspektroskopie - Grundlagen und Techniken}. Springer 2007. Seiten 328 - 335
+	\item W. Demtröder. \href{https://hds.hebis.de/ulbda/Record/HEB19139341X}{\textit{Laserspektroskopie - Grundlagen und Techniken}}. Springer 2007. Seiten 328 - 335
 	
-	\item H. Metcalf and P. van der Straten. \textit{Laser cooling and trapping}. Springer 2002. Kapitel 3, 4.1, 7, 8, 11.4
+	\item H. Metcalf and P. van der Straten. \href{https://link.springer.com/book/10.1007/978-1-4612-1470-0}{\textit{Laser cooling and trapping}}. Springer 1999. Kapitel 3, 4.1, 7, 8, 11.4
 	
 	\item W. D. Philips. \href{http://www.nobelprize.org/nobel_prizes/physics/laureates/1997/phillips-lecture.html}{\textit{Laser cooling and trapping of neutral altoms (Noble Prize Lecture)}.} Seiten 218 - 226
 \end{enumerate}
 
 \chapter{Überblick über den Versuchsaufbau}
-Ziel dieses Kapitels ist es, zunächst einen Überblick über den gesamten Versuchsaufbaus zu schaffen. Anschließend soll näher auf die beiden wesentlichen Teile, die Laserstabilisierung und die MOT eingegangen werden. Es empfiehlt sich dieses Kapitel als Lageplan ähnlich dem eines Reiseführers zu verstehen und diesen als Ausgangspunkt zur Beschäftigung mit den einzelnen \glqq Sehenswürdigkeiten\grqq zu verwenden.
+Ziel dieses Kapitels ist es, zunächst einen Überblick über den gesamten Versuchsaufbaus zu schaffen. Anschließend soll näher auf die beiden wesentlichen Teile, die Laserstabilisierung und die MOT eingegangen werden. Es empfiehlt sich dieses Kapitel als Lageplan ähnlich dem eines Reiseführers zu verstehen und diesen als Ausgangspunkt zur Beschäftigung mit den einzelnen \gqq{Sehenswürdigkeiten} zu verwenden.
 %Der Gesamtversuchsaufbau besteht aus drei Hauptteilen (siehe Gesamtbild auf Seite 1), dem optischen Versuchsaufbau (rechts), dem Elektronikrack zur Experimentsteuerung (Mitte) und dem Computersystem zur Datenaufnahme (links). Diese Teile werden im Folgenden genauer vorgestellt. ???
 \begin{figure}[htb!]
 	\centering
@@ -305,6 +306,7 @@ Ziel dieses Kapitels ist es, zunächst einen Überblick über den gesamten Versu
 	\caption{Übersicht über den Versuchsaufbau}
 	\label{fig:GUE}
 \end{figure}
+
 In Abbildung \ref{fig:GUE} ist auf der linken Seite (\textcolor{green}{grün} umrandet) der Aufbau zur Laserstabilisierung und auf der rechten Seite (\textcolor{blue}{blau} umrandet) der Aufbau zur MOT zu erkennen.
 \begin{figure}[htb!]
 	\centering
@@ -314,13 +316,14 @@ In Abbildung \ref{fig:GUE} ist auf der linken Seite (\textcolor{green}{grün} um
 \end{figure} 
 
 Im Folgenden soll ein Überblick über den Aufbau gegeben werden. Betrachten Sie dazu auch die technischen Zeichnungen des Aufbaus zur Laserstabilisierung und zur Strahlführung der MOT (in Abbildung \ref{fig:TZ} ebenfalls \textcolor{green}{grün} und \textcolor{blue}{blau} markiert) und vergleichen Sie diese mit den Bildern des Aufbaus.\\
-In Abbildung \ref{fig:Rack} ist der nicht minder wichtige Aufbau der Experimentensteuerung dargestellt, welcher ebenso in die Betrachtung mit eingeschlossen werden sollte.\\
+In Abbildung \ref{fig:Rack} ist der nicht minder wichtige Aufbau der Experimentensteuerung dargestellt, welcher ebenso in die Betrachtung mit eingeschlossen werden sollte.
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=\textwidth]{graphics/Rack2.jpg}
 	\caption{Aufbau des Racks}
 	\label{fig:Rack}
 \end{figure} 
+
 Um den Versuch zu verstehen und möglichst viel aus der Durchführung mitzunehmen, sollten Sie sich schon während der Vorbereitung intensiv mit der Realisierung des Versuchsaufbaus vertraut machen. Dazu existiert im Anhang eine Bilderreihe, in welcher unterschiedliche Elemente des Aufbaus markiert sind. Diese können über die Links auf der nächsten Seite aufgerufen und sollten in die jeweiligen Betrachtungen mit einbezogen werden.\\
 Eine detaillierte Beschreibung des Aufbaus sowie der Strahlführung findet sich in den entsprechenden Theoriekapiteln. Hier wird wiederum, wie zu Beginn erwähnt, Bezug auf dieses Kapitel genommen, um die Details in Bezug zum Gesamtaufbau zu betrachten.\\
 Dieser ist mit allen markierten Elementen ebenfalls auf der nächsten Seite und im Anhang noch einmal dargestellt (siehe Abbildung \ref{fig:AEGBv}).\\
@@ -359,8 +362,7 @@ Dieser ist mit allen markierten Elementen ebenfalls auf der nächsten Seite und 
 	\includegraphics[width=8px]{graphics/Kaestchen/ML.jpg} & MOT & Abbildung \ref{fig:MOTSTG}\\
 	\includegraphics[width=8px]{graphics/Kaestchen/AS.jpg} & alle Strahlengänge & Abbildung \ref{fig:STGK}\\
 	& ~ & ~\\
-	\includegraphics[width=8px]{graphics/Kaestchen/AM.jpg} & alle Strahlengänge und alle Elemente  & Abbildung \ref{fig:AEGB}\\
-	& (vgl. Abbildung ??) &
+	\includegraphics[width=8px]{graphics/Kaestchen/AM.jpg} & alle Strahlengänge und alle Elemente & Abbildung \ref{fig:AEGB}
 \end{tabular}
 \end{center}
 
