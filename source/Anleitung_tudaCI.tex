@@ -690,7 +690,7 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				\begin{figure}[htb!]
 					\centering
 					\includegraphics[width = 0.9\textwidth]{graphics/FA.jpg}
-					\caption{Durch Anlegen eines Magnetfeldes spaltet der angeregte Zustand auf. Für das rotverstimmte Kühllicht ($\omega_L$) ist die Resonanzgbedingung erfüllt, wenn die Atome weit genug von der Fallenmitte entfernt sind. Sie ist auf Grund der Dopplerverschiebung (-kv) ebenfalls auch für Atome mit hohen Geschwindigkeiten erfüllt. Die Absorption der Photonen bewirkt eine Kraft in Richtung Fallenmitte.}
+					\caption{Durch Anlegen eines Magnetfeldes spaltet der angeregte Zustand auf. Für das rotverstimmte Kühllicht ($\omega_{\text{L}}$) ist die Resonanzgbedingung erfüllt, wenn die Atome weit genug von der Fallenmitte entfernt sind. Sie ist auf Grund der Dopplerverschiebung ($-kv$) ebenfalls auch für Atome mit hohen Geschwindigkeiten erfüllt. Die Absorption der Photonen bewirkt eine Kraft in Richtung Fallenmitte.}
 					\label{fig:FA}
 				\end{figure}				
 				\fbox{\parbox[c]{0.985\textwidth}{
@@ -700,36 +700,42 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 					}}\\
 				
 					\section{Rubidium-MOT}					
-					Bei Rubidium handelt es sich um ein Alkalimetall, welches verschiedene Isotope besitzt. Das im Versuch verwendete stabile Isotop ist \isotope[85]{Rb}. Aus diesem Grund soll auf dessen Termschema kurz etwas genauer eingegangen werden.\\
+					Bei Rubidium handelt es sich um ein Alkalimetall, welches verschiedene Isotope besitzt. 
+					Das im Versuch verwendete stabile Isotop ist \isotope[85]{Rb}. Aus diesem Grund soll auf dessen Termschema kurz etwas genauer eingegangen werden.\\
 					Für den Versuch spielt insbesondere die Aufspaltung des Energieniveaus in die Fein- und Hyperfeinstruktur eine zentrale Rolle (siehe Abbildung \ref{fig:TS}).\\
-					Um sich die Aufspaltung in die Fein- beziehungsweise Hyperfeinstruktur herzuleiten ist es zudem noch wichtig zu wissen, dass \isotope[85]{Rb} einen Kernspin von I=5/2 besitzt.\\ 
-					Die verwendeten Übergänge zur Laserstabilisierung bzw. zur Anregung der Atome befinden sich zwischen dem $5^2S_{1/2}$ und dem $5^2P_{3/2}$ Niveau beziehungsweise deren Unterniveaus der Hyperfeinstruktur. Dies entspricht einer Wellenlänge von circa 780nm.\\
-					Der in \textcolor{red}{rot} eingezeichnete Übergang a) von F=2 nach F'=1 wird zur Stabilisierung des Rückpumplasers verwendet. Allerdings muss hierbei beachtet werden, dass durch den AOM eine Frequenzverschiebung um 96MHz (Blauverstimmung) stattfindet, sodass die Frequenz des Rückpumplasers nach Durchlaufen des AOMs der Frequenz des Übergangs von F=2 nach F'=3 (Übergang b)) entspricht, der als Rückpumpübergang verwendet werden soll.\\
-					Als Kühlübergang wird der Übergang von F=3 nach F'=4 verwendet (Übergang c)). Dessen Verstimmung in Bezug auf den Rückpumplaser kann entsprechend der Energiedifferenz zwischen Übergang b) und c) vor dem AOM eingestellt werden (2915MHz Rotverstimmung), da dieser beim Durchlaufen des AOMs die gleiche Frequenzverschiebung erfährt.\\   
+					Um sich die Aufspaltung in die Fein- beziehungsweise Hyperfeinstruktur herzuleiten ist es zudem noch wichtig zu wissen, dass \isotope[85]{Rb} einen Kernspin von $I=\frac{5}{2}$ besitzt.\\ 
+					Die verwendeten Übergänge zur Laserstabilisierung beziehungsweise zur Anregung der Atome befinden sich zwischen dem $5^2S_{1/2}$ und dem $5^2P_{3/2}$ Niveau beziehungsweise deren Unterniveaus der Hyperfeinstruktur. 
+					Dies entspricht einer Wellenlänge von circa \qty{780}{\nano\metre}.\\
+					Der in \textcolor{red}{rot} eingezeichnete Übergang a) von $F=2$ nach $F'=1$ wird zur Stabilisierung des Rückpumplasers verwendet. 
+					Allerdings muss hierbei beachtet werden, dass durch den AOM eine Frequenzverschiebung um \qty{96}{\mega\hertz} (Blauverstimmung) stattfindet, sodass die Frequenz des Rückpumplasers nach Durchlaufen des AOMs der Frequenz des Übergangs von $F=2$ nach $F'=3$ (Übergang b)) entspricht, der als Rückpumpübergang verwendet werden soll.\\
+					Als Kühlübergang wird der Übergang von $F=3$ nach $F'=4$ verwendet (Übergang c)). 
+					Dessen Verstimmung in Bezug auf den Rückpumplaser kann entsprechend der Energiedifferenz zwischen Übergang b) und c) vor dem AOM eingestellt werden (\qty{2915}{\mega\Hz} Rotverstimmung), da dieser beim Durchlaufen des AOMs die gleiche Frequenzverschiebung erfährt.\\   
 					Die Auswahl der Übergänge erscheint zunächst etwas willkürlich. Macht man sich jedoch klar, dass für die erfolgreiche Realisierung der MOT ein Zweiniveausystem ideal ist, legitimiert dies die Auswahl der Übergänge, da man durch diese einem Zweiniveausystem am nächsten kommt.\\
 					Betrachtet man als Erweiterung nun noch die Aufspaltung in die $m_F$ Niveaus gleicher Energie (siehe Abbildung \ref{fig:TS}), so sieht man, dass bei Anregung durch $\sigma^-$- oder $\sigma^+$-Licht nach wenigen Absorbtions- und Emissionsprozessen auch hier eine Festlegung in Richtung eines Zweiniveausystems stattfindet.\\  
-					Dies kann man sich anhand der Auswahlregeln für Dipolstrahlung überlegen. Vom F'=4 Niveau kann gemäß $\varDelta F=0,\pm1$ nur ein Zerfall nach F=3 stattfinden. Da jedoch der Laser eine endliche Linienbreite hat, existiert eine von  Null verschiedene Wahrscheinlichkeit, dass beim Kühlübergang ein Atom in den F'=3 Zustand gelangt, von welchem ein Zerfall nach F=2 möglich ist. Um also sowohl einen günstigen Anfangszustand herzustellen und diesen auch beizubehalten wird der Rückpumplaser benötigt, um die Atome wieder in das F=3 Niveau zu bringen.\\
-					Um die nun betrachteten Übergänge jedoch in Einklang mit dem Spektroskopiesignal zu bringen, muss ein weiterer Effekt beachtet werden. Bei diesem handelt es sich um sogenannte Crossover-Resonanzen. Diese treten auf, wenn sich die Frequenz des Laserlichtes gerade zwischen zwei oberen Energieniveaus befindet. Dies ist in Abbildung \ref{fig:TS} durch den \textcolor{green}{grünen} Pfeil dargestellt.\\
-					Bei dieser Anregungsfrequenz ``sehen'' Atome, die sich dem Sättigungsstrahl beispielsweise entgegen bewegen, eine Frequenz die dem Übergang  von F=2 nach F'=3 entspricht und werden angeregt. Für den zurücklaufenden Probestrahl bewegen sich diese angeregten Atome gerade vom Strahl weg und so entspricht die Frequenz durch die Dopplerverschiebung der Übergangsfrequenz von F=2 nach F'=2. Da die Atome aber bereits angeregt sind kommt es wiederum zu einem Einbruch der Absorption und es entsteht ein weiterer Lambdip.\\
-					Ein solches Sättigungsspektrum kann Abbildung \ref{fig:COF} (von F=2 nach F' für $^{85}$Rb) entnommen werden.\\ 
-										
+					Dies kann man sich anhand der Auswahlregeln für Dipolstrahlung überlegen. 
+					Vom $F'=4$ Niveau kann gemäß $\varDelta F=0,\pm1$ nur ein Zerfall nach $F=3$ stattfinden. Da jedoch der Laser eine endliche Linienbreite hat, existiert eine von Null verschiedene Wahrscheinlichkeit, dass beim Kühlübergang ein Atom in den $F'=3$ Zustand gelangt, von welchem ein Zerfall nach $F=2$ möglich ist. 
+					Um also sowohl einen günstigen Anfangszustand herzustellen und diesen auch beizubehalten wird der Rückpumplaser benötigt, um die Atome wieder in das $F=3$ Niveau zu bringen.\\
+					Um die nun betrachteten Übergänge jedoch in Einklang mit dem Spektroskopiesignal zu bringen, muss ein weiterer Effekt beachtet werden. 
+					Bei diesem handelt es sich um sogenannte Crossover-Resonanzen. Diese treten auf, wenn sich die Frequenz des Laserlichtes gerade zwischen zwei oberen Energieniveaus befindet. 
+					Dies ist in Abbildung \ref{fig:TS} durch den \textcolor{green}{grünen} Pfeil dargestellt.\\
+					Bei dieser Anregungsfrequenz \gqq{sehen} Atome, die sich dem Sättigungsstrahl beispielsweise entgegen bewegen, eine Frequenz die dem Übergang  von $F=2$ nach $F'=3$ entspricht und werden angeregt. 
+					Für den zurücklaufenden Probestrahl bewegen sich diese angeregten Atome gerade vom Strahl weg und so entspricht die Frequenz durch die Dopplerverschiebung der Übergangsfrequenz von $F=2$ nach $F'=2$. 
+					Da die Atome aber bereits angeregt sind kommt es wiederum zu einem Einbruch der Absorption und es entsteht ein weiterer Lambdip.\\
+					Ein solches Sättigungsspektrum kann Abbildung \ref{fig:COF} (von $F=2$ aus) für \isotope[85]{Rb} entnommen werden.\\ 									
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width = \textwidth]{graphics/TS_korrigiert.jpg}
+						\includegraphics[width = 0.9\textwidth]{graphics/TS_korrigiert.jpg}
 						\caption{Ausschnitt aus dem Termschema von $^{85}$Rb (D2-Linie) mit entsprechenden Übergangsfrequenzen}
 						\label{fig:TS}
 					\end{figure}
 					\begin{figure}[htb!]
 						\centering
-						\includegraphics[width = \textwidth]{graphics/SCO.jpg}
+						\includegraphics[width = 0.9\textwidth]{graphics/SCO.jpg}
 						\caption{Spektroskopiesignal mit markierten Übergängen (F' für normale Übergänge und COF' für Crossover-Resonanzen)}
 						\label{fig:COF}
 					\end{figure}
-					
-					\chapter{Fragenkatalog}\label{sec:FK}
-					
+					\chapter{Fragenkatalog}\label{sec:FK}			
 					\section{Vorbereitungsfragen}
-					
 					\begin{itemize}
 						\item \textbf{Frage 4.1:} Welchen Vorteil bietet es, den Aufbau der MOT durch ein Glasfaserkabel von dem Aufbau der Laserstabilisierung zu trennen?		
 						\item \textbf{Frage 5.1:} Inwiefern ist die durch den AOM verursachte Frequenzverschiebung des Laserlichts in Bezug auf die Stabilisierung des Rückpump- und Kühllasers bzw. die an der MOT benötigte Frequenz relevant?
@@ -748,11 +754,11 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 						\item Wie ist es möglich, die Laserfrequenz für die Spektroskopie kontrolliert durchzustimmen?
 						\item Welche Möglichkeiten gibt es für die Aufnahme einer Messreihe zur Temperaturbestimmung?
 						\item Welche Funktionen erfüllen die Elemente der MOT und warum werden diese benötigt, um Atome zu fangen?
-						\item Welcher Temperatur entspricht das Dopplerlimit für $^{85}$Rb?
+						\item Welcher Temperatur entspricht das Dopplerlimit für \isotope[85]{Rb}?
 						\item Auf welchem Prinzip beruht die sogenannte Sub-Dopplerkühlung und welche Möglichkeiten eröffnet diese?
-						\item Welche Übergänge von $^{85}$Rb werden zur Laserstabilisierung beziehungsweise zum Kühlen der Atome verwendet und warum ist dies sinnvoll?
-						\item Welche natürliche Linienbreite und Lebensdauer ist für die D2-Linie von $^{85}$Rb charakteristisch?
-						\item Welche Verstimmung des Laserlichts ist zum Kühlen der Atome ideal und welchen Wert muss diese für $^{85}$Rb annehmen?
+						\item Welche Übergänge von \isotope[85]{Rb} werden zur Laserstabilisierung beziehungsweise zum Kühlen der Atome verwendet und warum ist dies sinnvoll?
+						\item Welche natürliche Linienbreite und Lebensdauer ist für die D2-Linie von \isotope[85]{Rb} charakteristisch?
+						\item Welche Verstimmung des Laserlichts ist zum Kühlen der Atome ideal und welchen Wert muss diese für \isotope[85]{Rb} annehmen?
 					\end{itemize}
 
 \printbibliography
