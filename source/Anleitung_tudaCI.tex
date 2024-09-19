@@ -530,11 +530,18 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				}}\\
 				
 				\section{Dopplerfreie Sättigungsspektroskopie}			
-				Die Frequenz, auf welche der Rückpumplaser stabilisiert werden soll, muss, da es sich um eine absolute Stabilisierung handelt, klar definiert sein. Da der Laser einen atomaren Übergang von $^{85}$Rb anregen soll, liegt es nahe, mit Hilfe einer dopplerfreien Sättigungsspektroskopie einen atomaren Übergang von $^{85}$Rb als Referenz zu verwenden.\\
-				Dazu wird ein Teil des Laserlichts durch eine mit Rubidiumdampf gefüllte Glaszelle gestrahlt und anschließend in sich selbst zurückreflektiert. Der Strahl trifft, nachdem er auf dem gleichen Weg durch die Glaszelle zurück gestrahlt wurde, auf eine Photodiode (siehe Abbildung \ref{fig:DSS}). Ist das Licht in seiner Frequenz gegenüber der Resonanz zu einem atomaren Übergang rotverstimmt (geringere Frequenz), so ``sehen'' Atome, die sich mit der entsprechenden Geschwindigkeit dem Licht entgegen bewegen aufgrund des optischen Dopplereffekts, eine Frequenz des Lichts, die
-				der des Übergangs entspricht. Atome, die sich dem Strahl entgegen bewegen, können Photonen absorbieren. Aus der statistischen Verteilung der Bewegungsrichtung verschiedener Atome resultiert sowohl für den hinlaufenden als auch für den rücklaufenden Strahl Absorption. Analoges gilt für blauverstimmtes (höhere Frequenz) Licht.\\
-				Hat das Licht jedoch die Resonanzfrequenz zu dem Übergang, so werden die Photonen nur von ruhenden Atomen absorbiert. Dies hat auf Grund der Lebensdauer des daraus entstehenden angeregten Zustands eine Sättigung des Übergangs zu Folge. Durch den hinlaufenden Strahl angeregte Atome können keine Photonen des rücklaufenden Strahls absorbieren. Wird der Frequenzbereich des Lasers durchgestimmt, so ergeben sich an den Stellen des Absorptionsspektrums, an denen das Licht resonant zu einem atomaren Übergang ist, Einbrüche in der Absorption, so genannte \glqq Lambdips\grqq.\\
-				Zur Stabilisierung des Lasers auf solch eine Resonanz wird das Absorptionssignal elektronisch abgeleitet. Dieses am Ausgang des Lock-in-Verstärkers anliegende (zur ersten Ableitung proportionale Signal), wird von der Regelbox (PID-Regler) zur Stabilisierung des Lasers verwendet. Dadurch kann die Frequenz der Laser auf einem solchen Lambdip \glqq gehalten\grqq werden.\\
+				Die Frequenz, auf welche der Rückpumplaser stabilisiert werden soll, muss, da es sich um eine absolute Stabilisierung handelt, klar definiert sein. 
+				Da der Laser einen atomaren Übergang von \isotope[85]{Rb} anregen soll, liegt es nahe, mit Hilfe einer dopplerfreien Sättigungsspektroskopie einen atomaren Übergang von \isotope[85]{Rb} als Referenz zu verwenden.\\
+				Dazu wird ein Teil des Laserlichts durch eine mit Rubidiumdampf gefüllte Glaszelle gestrahlt und anschließend in sich selbst zurückreflektiert. 
+				Der Strahl trifft, nachdem er auf dem gleichen Weg durch die Glaszelle zurück gestrahlt wurde, auf eine Photodiode (siehe Abbildung \ref{fig:DSS}). 
+				Ist das Licht in seiner Frequenz gegenüber der Resonanz zu einem atomaren Übergang rotverstimmt (geringere Frequenz), so \gqq{sehen} Atome, die sich mit der entsprechenden Geschwindigkeit dem Licht entgegen bewegen aufgrund des optischen Dopplereffekts, eine Frequenz des Lichts, die der des Übergangs entspricht. Atome, die sich dem Strahl entgegen bewegen, können Photonen absorbieren. 
+				Aus der statistischen Verteilung der Bewegungsrichtung verschiedener Atome resultiert sowohl für den hinlaufenden als auch für den rücklaufenden Strahl Absorption. 
+				Analoges gilt für blauverstimmtes (höhere Frequenz) Licht.\\
+				Hat das Licht jedoch die Resonanzfrequenz zu dem Übergang, so werden die Photonen nur von ruhenden Atomen absorbiert. Dies hat auf Grund der Lebensdauer des daraus entstehenden angeregten Zustands eine Sättigung des Übergangs zu Folge. 
+				Durch den hinlaufenden Strahl angeregte Atome können keine Photonen des rücklaufenden Strahls absorbieren. 
+				Wird der Frequenzbereich des Lasers durchgestimmt, so ergeben sich an den Stellen des Absorptionsspektrums, an denen das Licht resonant zu einem atomaren Übergang ist, Einbrüche in der Absorption, so genannte \gqq{Lambdips}.\\
+				Zur Stabilisierung des Lasers auf solch eine Resonanz wird das Absorptionssignal elektronisch abgeleitet. 
+				Dieses am Ausgang des Lock-in-Verstärkers anliegende (zur ersten Ableitung proportionale Signal), wird von der Regelbox (PID-Regler) zur Stabilisierung des Lasers verwendet. Dadurch kann die Frequenz der Laser auf einem solchen Lambdip \gqq{gehalten} werden.\\
 				
 				\begin{figure}[htb!]
 					\centering
@@ -562,26 +569,31 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 				elektromagnetischer Strahlung definierter Richtung, Frequenz und Polarisation.
 				
 				\subsection{Spontankraft}\label{ssec:SK}		
-				Ein Photon, dessen Energie der Energiedifferenz zwischen zwei Energieniveaus in einem Atom entspricht, kann von diesem Atom absorbiert werden. Die Spontankraft entsteht durch stimulierte Absorption von Photonen aus einem Laserstrahl und anschließende spontane Reemission. Beim Absorptionsvorgang wird sowohl der Impuls $\vec{p} = \hbar \vec{k}$ als auch die Energie $E = \hbar \omega$ des Photons an das Atom weitergegeben, wobei $\vert \vec{k} \vert = 2\pi/\lambda$ die Wellenzahl und $v = \omega/2\pi$ die Frequenz des Photons ist. Nach einer für die Atomart spezifischen Lebensdauer $\tau$ werden die Photonen
-				wieder unter spontaner Emission vom Atom abgegeben. Da der Impuls und die Energie Erhaltungsgrößen sind,
-				sind ihre Beträge bei Absorption und Emission konstant. Das spontan emittierte Photon verleiht dem Atom einen Rückstoßimpuls. Die Wahrscheinlichkeit der Rückstoßrichtung ist über den gesamten Raum gleichverteilt. Somit mittelt sich die atomare Nettoimpulsänderung bei Emission statistisch zu Null.\\ Werden Photonen aus einer festen Richtung eingestrahlt, so addieren sich die Impulsüberträge bei Absorpion derart, dass eine gerichtete Kraft auf das Atom entsteht (siehe Abbildung \ref{fig:SK}).\\
-				Zum Kühlen von Rubidiumatomen werden elektronische Übergänge im Atomspektrum verwendet. Diese können
-				vereinfacht als atomare Zweizustandssysteme im elektromagnetischen Strahlungsfeld einer festen Frequenz
-				betrachtet werden. Die Besetzungszustände können durch Absorption und spontane Reemission der Photonen des
-				Strahlungsfeldes beeinflusst werden. Eine quantenmechanische Beschreibung dieses Modells in Form von Bewegungsgleichungen bieten die optischen Blochgleichungen. Unter Betrachtung des Gleichgewichtszustandes der in diesen Gleichungen beschriebenen Dynamik, lässt sich die Streurate $\varGamma_{sc}$ der Photonen des Strahlungsfeldes an einem Zweiniveauatom herleiten:			
+				Ein Photon, dessen Energie der Energiedifferenz zwischen zwei Energieniveaus in einem Atom entspricht, kann von diesem Atom absorbiert werden. Die Spontankraft entsteht durch stimulierte Absorption von Photonen aus einem Laserstrahl und anschließende spontane Reemission. 
+				Beim Absorptionsvorgang wird sowohl der Impuls $\vec{p} = \hbar \vec{k}$ als auch die Energie $E = \hbar \omega$ des Photons an das Atom weitergegeben, wobei $\vert \vec{k} \vert = 2\pi/\lambda$ die Wellenzahl und $\nu = \omega/2\pi$ die Frequenz des Photons ist. 
+				Nach einer für die Atomart spezifischen Lebensdauer $\tau$ werden die Photonen
+				wieder unter spontaner Emission vom Atom abgegeben. 
+				Da der Impuls und die Energie Erhaltungsgrößen sind, sind ihre Beträge bei Absorption und Emission konstant. 
+				Das spontan emittierte Photon verleiht dem Atom einen Rückstoßimpuls. Die Wahrscheinlichkeit der Rückstoßrichtung ist über den gesamten Raum gleichverteilt. Somit mittelt sich die atomare Nettoimpulsänderung bei Emission statistisch zu Null.\\ 
+				Werden Photonen aus einer festen Richtung eingestrahlt, so addieren sich die Impulsüberträge bei Absorpion derart, dass eine gerichtete Kraft auf das Atom entsteht (siehe Abbildung \ref{fig:SK}).\\
+				Zum Kühlen von Rubidiumatomen werden elektronische Übergänge im Atomspektrum verwendet. 
+				Diese können vereinfacht als atomare Zweizustandssysteme im elektromagnetischen Strahlungsfeld einer festen Frequenz
+				betrachtet werden. 
+				Die Besetzungszustände können durch Absorption und spontane Reemission der Photonen des
+				Strahlungsfeldes beeinflusst werden. 
+				Eine quantenmechanische Beschreibung dieses Modells in Form von Bewegungsgleichungen bieten die optischen Blochgleichungen. Unter Betrachtung des Gleichgewichtszustandes der in diesen Gleichungen beschriebenen Dynamik, lässt sich die Streurate $\varGamma_{\text{sc}}$ der Photonen des Strahlungsfeldes an einem Zweiniveauatom herleiten:			
 				\begin{equation}\label{equa:6-1}
-				\varGamma_{sc} = \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}
+				\varGamma_{\text{sc}} = \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}
 				\end{equation}				
-				Hierbei ist $\varGamma$ die Zerfallsrate des angeregten Zustandes des Zweiniveausystems, $\varDelta = \omega_L - \omega_R $ ist die spektrale Verstimmung des Strahlungsfeldes der Frequenz $\omega_L$ gegenüber der atomaren Resonanz $\omega_R$ und $s_0$ ist der Sättigungsparameter im Falle der Resonanz. Er stellt das Verhältnis aus der Intensität des Lichtes \textit{I} und der Sättigungsintensität des atomaren Übergangs $I_0$ dar. Es gilt $s_0 = I/I_0$, wobei $I_0 = \pi hc\varGamma/(3\lambda^3)$.\\
-				Wird das Licht aus einer festen Richtung auf ruhende Atome eingestrahlt, so ergibt sich unter Beachtung des bei jedem Streuvorgang auf das Atom übertragenen Photonenimpulses $\vec{p} = \hbar \vec{k}$ eine gerichtete Kraft, die Spontankraft $\vec{F}_D$
-				
+				Hierbei ist $\varGamma$ die Zerfallsrate des angeregten Zustandes des Zweiniveausystems, $\varDelta = \omega_{\text{L}} - \omega_{\text{R}} $ ist die spektrale Verstimmung des Strahlungsfeldes der Frequenz $\omega_{\text{L}}$ gegenüber der atomaren Resonanz $\omega_{\text{R}}$ und $s_0$ ist der Sättigungsparameter im Falle der Resonanz. 
+				Er stellt das Verhältnis aus der Intensität des Lichtes \textit{I} und der Sättigungsintensität des atomaren Übergangs $I_0$ dar. Es gilt $s_0 = I/I_0$, wobei $I_0 = \pi hc\varGamma/(3\lambda^3)$ gilt.\\
+				Wird das Licht aus einer festen Richtung auf ruhende Atome eingestrahlt, so ergibt sich unter Beachtung des bei jedem Streuvorgang auf das Atom übertragenen Photonenimpulses $\vec{p} = \hbar \vec{k}$ eine gerichtete Kraft, die Spontankraft	
 				\begin{equation}
-				\vec{F}_D = \hbar \vec{k} \cdot \varGamma_{sc}
+				\vec{F}_{\text{D}} = \hbar \vec{k} \cdot \varGamma_{\text{sc}}.
 				\end{equation}
-				
 				Mit Gleichung \eqref{equa:6-1} folgt				
 				\begin{equation}\label{equa:6-3}
-				\vec{F}_D = \hbar \vec{k} \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}
+				\vec{F}_{\text{D}} = \hbar \vec{k} \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}.
 				\end{equation}
 
 				\begin{figure}[htb!]
@@ -591,72 +603,87 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 					\label{fig:SK}
 				\end{figure}
 				
-				\subsection{Dopplerkühlung - Optische Melasse}				
+				\subsection{Optische Melasse}				
 				Um eine Kühlung eines atomaren Gases zu realisieren, muss die auf die Atome wirkende Kraft abhängig vom Betrag und Richtung der atomaren Geschwindigkeiten sein. Eine entsprechende Konfiguration des Lichtfeldes wird durch sechs aus allen Raumrichtungen kommenden, gegenüber der atomaren Resonanz rotverstimmten Laserstrahlen implementiert.\\
 				Da die Kühlung entlang der drei Raumachsen voneinander unabhängig ist, wird der Einfachheit halber
-				nur die Wirkung der Laserstrahlen in einer Dimension \textit{x} erläutert. Ergänzt wird die Betrachtung der Kraftausübung eines Laserstrahls auf Atome aus Abschnitt \ref{ssec:SK} durch das Hinzuziehen eines weiteren, diesem Strahl entgegengerichteten Laserstrahls. Die auf ein Atom resultierende Gesamtkraft ergibt sich dann aus der Überlagerung der beiden in Richtung \textit{-x} und \textit{+x} wirkenden Kräfte $F_{x-}$ und $F_{x+}$ (aus Gleichung \eqref{equa:6-3}) zu
+				nur die Wirkung der Laserstrahlen in einer Dimension $x$ erläutert. 
+				Ergänzt wird die Betrachtung der Kraftausübung eines Laserstrahls auf Atome aus Abschnitt \ref{ssec:SK} durch das Hinzuziehen eines weiteren, diesem Strahl entgegengerichteten Laserstrahls. 
+				Die auf ein Atom resultierende Gesamtkraft ergibt sich dann aus der Überlagerung der beiden in Richtung $-x$ und $+x$ wirkenden Kräfte $F_{x-}$ und $F_{x+}$ (aus Gleichung \eqref{equa:6-3}) zu
 				
 				\begin{equation}
-				F_{OM} = F_{x+} + F_{x-}
+				F_{\text{OM}} = F_{x+} + F_{x-}
 				\end{equation}			
 				mit
 				\begin{equation}\label{equa:6-5}
-				F_{x+\backslash x-} = \pm \hbar k \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta_{OM\pm}/\varGamma)^2} 
+				F_{x+\backslash x-} = \pm \hbar k \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta_{{\text{OM}}\pm}/\varGamma)^2} 
 				\end{equation}
 				Die Geschwindigkeitsabhängikeit der Kraft wird im Parameter			
 				\begin{equation}
-				\varDelta_{OM\pm} = \varDelta \mp k v_{x}
+				\varDelta_{\text{OM}\pm} = \varDelta \mp k v_{x}
 				\end{equation}
-				berücksichtigt, wobei $v_x$ die Geschwindigkeit der Atome in x-Richtung ist. Er korrigiert die Verstimmung des Lichtes um die Dopplerverschiebung, bedingt durch die Geschwindigkeit der Atome. Die Summe der beiden Kräfte ergibt sich nach Entwicklung für kleine Geschwindigkeiten unter Vernachlässigung der Terme ab der Ordnung $(kv/\varGamma)^4$ zu
+				berücksichtigt, wobei $v_x$ die Geschwindigkeit der Atome in $x$-Richtung ist. 
+				Er korrigiert die Verstimmung des Lichtes um die Dopplerverschiebung, bedingt durch die Geschwindigkeit der Atome. 
+				Die Summe der beiden Kräfte ergibt sich nach Entwicklung für kleine Geschwindigkeiten unter Vernachlässigung der Terme ab der Ordnung $(kv/\varGamma)^4$ zu
 				
 				\begin{equation}\label{equa:6-7}
-				F_{OM} = \frac{8 \hbar k^2 \varDelta s_0}{\varGamma (1+s_0 + (2\varDelta/\varGamma)^2)^2} v_x = -\beta v_x
+				F_{\text{OM}} = \frac{8 \hbar k^2 \varDelta s_0}{\varGamma (1+s_0 + (2\varDelta/\varGamma)^2)^2} v_x = -\beta v_x
 				\end{equation}
 				
-				Ist das Licht rotverstimmt ($\varDelta < 0$), so sieht ein in positive x-Richtung fliegendes Atom das entgegenkommende Licht zur Resonanz hin dopplerverschoben, wobei die Wahrscheinlichkeit der Absorption eines Photons zunimmt.\\
-				Es erfährt eine lineare rücktreibende Kraft ($\beta > 0$), die zur Abbremsung führt. Die Kraft auf das Teilchen ist genau dann maximal, wenn die Verstimmung des Lasers die Dopplerverschiebung kompensiert: $\varDelta = k v_x$ .
-				Wegen der Analogie des Abbremsvorgangs (Gleichung \eqref{equa:6-7}) zur viskosen Dämpfung in einer nahen Umgebung
-				von $v_x = 0$, wird dieser Prozess \textit{optische Melasse} genannt. Auf Grund der zentralen Bedeutung des Dopplereffektes bei dieser Art von Kühlung spricht man von \emph{Doppler-Kühlung}. Die Temperatur der optischen Melasse ergibt sich aus dem Gleichgewicht aus Dopplerkühlung und Aufheizen des Ensembles durch die remittierten Photonen.\\ 
-				Die minimal erreichbare Temperatur, die mittels der Dopplerkühlung erreicht werden kann, das so genannte
-				Dopplerlimit, beträgt
-				
+				Ist das Licht rotverstimmt ($\varDelta < 0$), so sieht ein in positive $x$-Richtung fliegendes Atom das entgegenkommende Licht zur Resonanz hin dopplerverschoben, wobei die Wahrscheinlichkeit der Absorption eines Photons zunimmt.\\
+				Es erfährt eine lineare rücktreibende Kraft ($\beta > 0$), die zur Abbremsung führt. 
+				Die Kraft auf das Teilchen ist genau dann maximal, wenn die Verstimmung des Lasers die Dopplerverschiebung kompensiert: $\varDelta = k v_x$ .
+				Wegen der Analogie des Abbremsvorgangs (Gleichung \eqref{equa:6-7}) zur viskosen Dämpfung in einer nahen Umgebung von $v_x = 0$, wird dieser Prozess \textbf{optische Melasse} genannt. 
+				Auf Grund der zentralen Bedeutung des Dopplereffektes bei dieser Art von Kühlung spricht man von \textbf{Doppler-Kühlung}. 
+				Die Temperatur der optischen Melasse ergibt sich aus dem Gleichgewicht aus Dopplerkühlung und Aufheizen des Ensembles durch die remittierten Photonen.\\ 
+				Die minimal erreichbare Temperatur, die mittels der Dopplerkühlung erreicht werden kann, das so genannte Dopplerlimit, beträgt				
 				\begin{equation}
-				T_D = \frac{\hbar \varGamma}{2 k_B}.
+				T_{\text{Doppler}} = \frac{\hbar \varGamma}{2 k_B}.
 				\end{equation}
 				
+				\section{Fangen der Atome}	
 				\begin{figure}[htb!]
 					\centering
 					\includegraphics[width=0.9\textwidth]{graphics/MOTSS.jpg}
 					\caption{Schematische Skizze der MOT: Durch das Spulenpaar wird ein Quadrupolfeld induziert, das im Mittelpunkt der MOT - dem Schnittpunkt der drei senkrecht zueinander stehenden Strahlenpaare - Null
 						ist. Jedes antiparallele Strahlenpaar besteht aus einem $\sigma^+$- und einem $\sigma^-$-polarisierten Strahl.}
 					\label{fig:MOTSS}
-				\end{figure}
-				
-				\section{Fangen der Atome}		
-				Mit dem oben beschriebenen Verfahren lassen sich Atome kühlen. Jedoch stellt es noch keine Falle für Atome dar. Teilchen werden zwar im Impulsraum gefangen, haben aber im Ortsraum volle Bewegungsfreiheit, so dass sie nach einer gewissen Zeit aus der optischen Melasse herausdiffundieren können. Um Atome zu fangen, wird der oben beschriebene rotverstimmten Strahlenkonfiguration in ihrem Schnittpunkt ein inhomogenes magnetisches Feld überlagert (siehe Abbildung \ref{fig:MOTSS}). Dieses Feld (Quadrupolfeld) wird durch zwei stromdurchflossene Spulen in Anti-Helmholtz-Konfiguration erzeugt. Das Prinzip der so erzeugten MOT wird nachfolgend in einer Dimension \textit{x} anhand eines atomaren Übergangs von einem Grundzustand $\lvert \phi_{n,F=0,m_F}\rangle$ in einen angeregten Zustand $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ erklärt.
-				\textit{n} ist hierbei die Hauptquantenzahl, \textit{F} bzw. \textit{F'} ist der Gesamtdrehimpuls des entsprechenden Zustandes und $m_F$ bzw. $m_{F'}$ die dazugehörige magnetische Quantenzahl. Diese hat für den Zustand $\lvert \phi_{n,F=0,m_F}\rangle$ den Wert $m_F=0$ und für den Zustand $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ die Werte $m_F \in \{-1,0,1\}$. Zur Erklärung des Mechanismus muss die Polarisation der Strahlen, welche zirkular ist, mitbetrachtet werden.\\
+				\end{figure}	
+				Mit dem oben beschriebenen Verfahren lassen sich Atome kühlen. 
+				Jedoch stellt es noch keine Falle für Atome dar. 
+				Teilchen werden zwar im Impulsraum gefangen, haben aber im Ortsraum volle Bewegungsfreiheit, so dass sie nach einer gewissen Zeit aus der optischen Melasse herausdiffundieren können. 
+				Um Atome zu fangen, wird der oben beschriebene rotverstimmten Strahlenkonfiguration in ihrem Schnittpunkt ein inhomogenes magnetisches Feld überlagert (siehe Abbildung \ref{fig:MOTSS}). 
+				Dieses Feld (Quadrupolfeld) wird durch zwei stromdurchflossene Spulen in Anti-Helmholtz-Konfiguration erzeugt. 
+				Das Prinzip der so erzeugten magneto-optischen Falle (MOT) wird nachfolgend in einer Dimension $x$ anhand eines atomaren Übergangs von einem Grundzustand $\lvert \phi_{n,F=0,m_F}\rangle$ in einen angeregten Zustand $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ erklärt.
+				$n$ ist hierbei die Hauptquantenzahl, $F$ bzw. $F'$ ist der Gesamtdrehimpuls des entsprechenden Zustandes und $m_F$ bzw. $m_{F'}$ die dazugehörige magnetische Quantenzahl. 
+				Diese hat für den Zustand $\lvert \phi_{n,F=0,m_F}\rangle$ den Wert $m_F=0$ und für den Zustand $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ die Werte $m_F \in \{-1,0,1\}$. 
+				Zur Erklärung des Mechanismus muss die Polarisation der Strahlen, welche zirkular ist, mitbetrachtet werden.\\
 				Das durch die Spulen hervorgerufene Quadrupolfeld kann in der Fallenmitte linearisiert und mit der Gleichung
 				\begin{equation}
 				B_x = B(x) = B_0 \cdot x
 				\end{equation}			
-				beschrieben werden, wobei $B_0$ der Gradient des Magnetfeldes in x-Richtung ist. Durch den Zeemaneffekt wird innerhalb des Zustandes $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ eine energetische Aufspaltung der drei magnetischen Unterzustände $m_{F'}$ um den Term $\varDelta E$ hervorgerufen:			
+				beschrieben werden, wobei $B_0$ der Gradient des Magnetfeldes in $x$-Richtung ist. 
+				Durch den Zeemaneffekt wird innerhalb des Zustandes $\lvert \phi_{n,F'=1,m_{F'}}\rangle$ eine energetische Aufspaltung der drei magnetischen Unterzustände $m_{F'}$ um den Term $\varDelta E$ hervorgerufen.		
 				\begin{equation}
 				\varDelta E = g_{F'} m_{F'} \mu_B B_x
 				\end{equation}				
-				Hierbei ist $\mu_B = e \hbar / 2 m_e$ das Bohrsche Magneton mit der Elektronenmasse $m_e$ und $g_{F'}$ der Landé-Faktor des Zustands $\lvert \phi_{n,F'=1,m_{F'}}\rangle$. Abbildung \ref{fig:FA} zeigt die Falle. Bewegt sich ein Atom aus der Fallenmitte heraus, so wird je nach Bewegungsrichtung der Zustand $m_{F'} = \pm 1$ energetisch abgesenkt, so dass die atomare Resonanz zur eingestrahlten Lichtfrequenz hin verschoben wird. Fliegt bespielsweise ein Atom in positive x-Richtung, so steigt die Wahrscheinlichkeit der Absorption eines $\sigma^-$-Photons, welches einen elektronischen Übergang in den Zustand $m_{F'} = -1$ induziert. Da dieses Photon in negative x-Richtung fliegt, erfährt das Teilchen einen Rückstoß in Richtung
-				Fallenmitte. Ensprechend verhält es sich mit Teilchen, die in die entgegengesetzte Richtung propagieren.
-				Durch diesen Mechanismus, der sowohl im Impuls-, als auch im Ortsraum wirkt, wird sowohl eine Kühlung, als
-				auch eine Verdichtung der Atome erreicht. Die in Gleichung \eqref{equa:6-5} hergeleitete Kraft wird ortsabhängig:				
+				Hierbei ist $\mu_B = \frac{e \hbar}{2 m_e}$ das Bohrsche Magneton mit der Elektronenmasse $m_e$ und $g_{F'}$ der Landé-Faktor des Zustands $\lvert \phi_{n,F'=1,m_{F'}}\rangle$. 
+				Abbildung \ref{fig:FA} visualisiert die Energieverschiebung durch den Zeemaneffekt sowie den sich daraus ergebenden Mechanismus einer MOT. 
+				Bewegt sich ein Atom aus der Fallenmitte heraus, so wird je nach Bewegungsrichtung der Zustand $m_{F'} = \pm 1$ energetisch abgesenkt, so dass die atomare Resonanz zur eingestrahlten Lichtfrequenz hin verschoben wird. 
+				Fliegt bespielsweise ein Atom in positive $x$-Richtung, so steigt die Wahrscheinlichkeit der Absorption eines $\sigma^-$-Photons, welches einen elektronischen Übergang in den Zustand $m_{F'} = -1$ induziert. 
+				Da dieses Photon in negative x-Richtung fliegt, erfährt das Teilchen einen Rückstoß in Richtung	Fallenmitte. 
+				Ensprechend verhält es sich mit Teilchen, die in die entgegengesetzte Richtung propagieren.
+				Durch diesen Mechanismus, der sowohl im Impuls-, als auch im Ortsraum wirkt, wird sowohl eine Kühlung, als auch eine Verdichtung der Atome erreicht.
+				Die in Gleichung \eqref{equa:6-5} hergeleitete Kraft wird ortsabhängig.			
 				\begin{equation}\label{equa:6-11}
-				F_{x+\backslash x-} = \pm \hbar k \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta_{OM\pm}/\varGamma)^2} 
+				F_{x+/ x-} = \pm \hbar k \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta_{\text{OM}\pm}/\varGamma)^2} 
 				\end{equation}				
-				wobei			
+				Dabei gilt		
 				\begin{equation}
-				\varDelta_{OM\pm} = \varDelta \mp k v_{x} \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}
+				\varDelta_{\text{OM}\pm} = \varDelta \mp k v_{x} \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}.
 				\end{equation}				
-				gilt. Wird dies in $F_{MOT} = F_{x_+} + F_{x_-}$ eingesetzt und entwickelt unter der Annahme, die Teilchen hätten kleine Geschwindigkeiten und befänden sich nahe der Fallenmitte, so lässt sich unter Vernachlässigung höherer Ordnungen, vereinfacht schreiben:			
+				Wird dies in $F_{\text{MOT}} = F_{x_+} + F_{x_-}$ eingesetzt und entwickelt unter der Annahme, die Teilchen hätten kleine Geschwindigkeiten und befänden sich nahe der Fallenmitte, so lässt sich unter Vernachlässigung höherer Ordnungen, vereinfacht schreiben:			
 				\begin{equation}\label{equa:6-13}
-				F_{MOT} = -\beta v_x  -\kappa x
+				F_{\text{MOT}} = -\beta v_x  -\kappa x
 				\end{equation}				
 				mit $\beta$ wie in Gleichung \eqref{equa:6-7} und $\kappa = \frac{g_{F'} m_{F'} \mu_B B_0}{\hbar k}$. Gleichung \eqref{equa:6-13} zeigt, dass sich die Teilchen im MOT-Betrieb wie gedämpfte harmonische Oszillatoren verhalten.\\
 				
