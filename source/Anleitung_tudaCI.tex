@@ -38,8 +38,11 @@ pdfa=false % Problem mit Paket pdfx
 \usepackage[section]{placeins}
 \usepackage{braket}
 
-
-%\usepackage[backend=bibtex, sorting=none, style=numeric-comp, defernumbers]{biblatex}
+%%%%%%%%
+% setting bibliography style
+\makeatletter
+\def\input@path{{./apqdesign/biblatex}}
+\makeatother
 \usepackage[backend=bibtex, sorting = none, maxnames=99, minbibnames = 2, giveninits=true, doi = false, isbn = false, date = year, url = false, abbreviate = false, bibstyle = numeric-apq]{biblatex}
 \addbibresource{Literatur}
 
