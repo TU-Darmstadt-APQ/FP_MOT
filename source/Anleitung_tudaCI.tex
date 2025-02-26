@@ -40,7 +40,7 @@ pdfa=false % Problem mit Paket pdfx
 
 
 %\usepackage[backend=bibtex, sorting=none, style=numeric-comp, defernumbers]{biblatex}
-\usepackage[backend=bibtex, sorting = none, maxnames=99, minbibnames = 2, giveninits=true, doi = false, isbn = false, date = year, url = false, abbreviate = false, bibstyle = numeric-apq]{biblatex}
+\usepackage[backend=biber, sorting = none, maxnames=99, minbibnames = 2, giveninits=true, doi = false, isbn = false, date = year, url = false, abbreviate = false, bibstyle = numeric-apq]{biblatex}
 \addbibresource{Literatur}
 
 %\usepackage{multibib}
@@ -89,7 +89,7 @@ pdfa=false % Problem mit Paket pdfx
 
 \usepackage{hyperref} % Immer als letztes laden
 \def\UrlFont{\normalfont}
-\hypersetup{colorlinks=true,linkcolor=black,urlcolor=TUDa-1b,citecolor=TUDa-1b}
+\hypersetup{colorlinks=true,linkcolor=TUDa-1b,urlcolor=TUDa-1b,citecolor=TUDa-1b}
 \urlstyle{same}
 % % % % % % % %
 %Weitere Änderungen
@@ -209,8 +209,8 @@ Präzisionsmessungen mit ultrakalten Atomen gerichtet ist. Zu diesen Experimente
 die Erzeugung eines Bose-Einstein-Kondensats.\\
 Das Kühlen bzw. Vorkühlen dieser Atome erfolgt dabei stets durch den Einsatz von Laserlicht. Eine spezielle Art
 zum Kühlen und Fangen von neutralen Atomen ist die magneto-optische Falle (engl.: magneto-optical trap, kurz: MOT). In
-diesem Praktikumsversuch soll eine MOT erzeugt und \isotope[85]{Rb} gefangen werden. Ziel ist es zu messen wie kalt die
-Atome in der MOT schließlich sind.\\
+diesem Praktikumsversuch soll eine MOT für \isotope[85]{Rb}-Atome gefangen werden. Ziel ist es zu messen, welche Temperatur die
+Atome in der MOT schließlich haben.\\
 Die Falle besteht, wie ihr Name schon sagt, aus zwei wesentlichen Komponenten: der optischen und der magnetischen.\\
 Während es sich bei der magnetischen Komponente um ein Quadrupolfeld handelt, besteht die optische Komponente
 aus Laserlicht sehr genau definierter Frequenzen. Da die Wellenlänge des Lichts auf wenige Pikometer genau stabil
@@ -220,11 +220,12 @@ Im ersten Teil soll auf die beiden Diodenlaser sowie deren Stabilisierungen eing
 zwei verschiedene Arten der Stabilisierung eingesetzt, die es einzustellen und zu vermessen gilt. Im zweiten
 Teil des Versuchs wird eine MOT erzeugt und vermessen. Dabei sollen Daten zur Bestimmung der Laderate der
 Falle und die Temperatur der gefangenen Atome ermittelt werden.\\
-Zunächst wird ein kurzer Überblick über den gesamten Versuchsaufbau gegeben.\\ 
-Bevor dies stattfindet sollen jedoch die benötigten \textbf{Voraussetzungen zur Versuchsteilnahme} und die Präsenzaufgaben spezifiziert werden. 
+In \hyperref[ueberblick]{Kapitel \ref{ueberblick}} wird ein Überblick über den gesamten Versuchsaufbau gegeben.\\ 
+Zuvor sollen jedoch im folgenden \hyperref[aufgaben]{Kapitel \ref{aufgaben}} die benötigten \textbf{Voraussetzungen zur Versuchsteilnahme} und die Präsenzaufgaben spezifiziert werden. 
 
 
 \chapter{Aufgaben}
+\label{aufgaben}
 Die Aufgaben gliedern sich zum einen in die \textbf{Vorbereitungsaufgaben}, welche vor der Versuchsdurchführung zu Hause zu bearbeiten sind, die \textbf{Präsenzaufgaben}, welche am Tag der Versuchsdurchführung zu erledigen sind und die \textbf{Auswertungsaufgaben}, welche nach der Versuchsdurchführung wiederum zu Hause zu erledigen sind.\\
 
 \textbf{Hinweis:} Bringen Sie zur Versuchsdurchführung einen  \emph{USB-Stick} mit, um die während der Versuchsdurchführung gewonnenen Daten mitnehmen zu können.
@@ -299,6 +300,7 @@ In den jeweiligen Abschnitten finden Sie Fragen, die Sie zur Vorbereitung beantw
 \end{enumerate}
 
 \chapter{Überblick über den Versuchsaufbau}
+\label{ueberblick}
 Ziel dieses Kapitels ist es, zunächst einen Überblick über den gesamten Versuchsaufbaus zu schaffen. Anschließend soll näher auf die beiden wesentlichen Teile, die Laserstabilisierung und die MOT eingegangen werden. Es empfiehlt sich dieses Kapitel als Lageplan ähnlich dem eines Reiseführers zu verstehen und diesen als Ausgangspunkt zur Beschäftigung mit den einzelnen \gqq{Sehenswürdigkeiten} zu verwenden.
 %Der Gesamtversuchsaufbau besteht aus drei Hauptteilen (siehe Gesamtbild auf Seite 1), dem optischen Versuchsaufbau (rechts), dem Elektronikrack zur Experimentsteuerung (Mitte) und dem Computersystem zur Datenaufnahme (links). Diese Teile werden im Folgenden genauer vorgestellt. ???
 \begin{figure}[htb!]
