@@ -41,7 +41,7 @@ pdfa=false % Problem mit Paket pdfx
 
 %\usepackage[backend=bibtex, sorting=none, style=numeric-comp, defernumbers]{biblatex}
 \usepackage[backend=biber, sorting = none, maxnames=99, minbibnames = 2, giveninits=true, doi = false, isbn = false, date = year, url = false, abbreviate = false, bibstyle = numeric-apq]{biblatex}
-\addbibresource{Literatur}
+\addbibresource{Literatur.bib}
 
 %\usepackage{multibib}
 %\newcites{q}{Quellen}
@@ -406,19 +406,20 @@ Die Benutzeroberfläche ist beispielhaft in \hyperref[fig:ES]{Abbildung \ref{fig
 
 \chapter{Wichtige Bauteile}
 
-\section{Akusto-optischer Modulator (AOM)}
+\section{Akustooptischer Modulator (AOM)}
 
-Ein akusto-optischer Modulator besteht im Wesentlichen aus einem Kristall, an dessen beiden Enden zum einen ein Piezoelement zur Erzeugung von Schallwellen und zum anderen ein Schallabsorber zum Verhindern von Reflexionen oder stehenden Wellen angebracht ist (siehe Abbildung \ref{fig:AOM}).\\
+Ein akustooptischer Modulator besteht im Wesentlichen aus einem Kristall, an dessen einer Seite ein Piezoelement zur Erzeugung von Schallwellen und an der anderen Seite ein Schallabsorber zur Unterdrückung von Reflexionen oder stehenden Wellen angebracht ist (siehe \hyperref[fig:AOM]{Abbildung \ref{fig:AOM}}).
 Die durch den Kristall propagierende Schallwelle, welche durch eine mechanische Schwingung des Piezoelements hervorgerufen wird, verursacht in diesem periodische Dichteschwankungen, welche eine ebenfalls periodische Variation der Brechzahl im Kristall zur Folge hat. \cite{OLL}
 Diese Modulation wirkt für das einfallende Licht wie ein bewegtes optisches Gitter, an welchem Beugung des einfallenden Lichtes stattfindet. 
 Dabei kommt es beim Betrieb im sogenannten Bragg-Regime lediglich zur Ausbildung der ersten Beugungsordnung. An dieser kann außerdem eine Frequenzverschiebung entsprechend der Schallfrequenz beobachtet werden. 
-Um dies zu verstehen, kann dass Phänomen entweder klassisch oder im Teilchenbild betrachtet werden. Entsprechend der Betrachtungsweise kann der Effekt entweder mit Hilfe des Dopplereffekts durch das sich in Relation zum einfallenden Licht \gqq{bewegende Gitter} oder unter Anwendung der Impuls- und Energierhaltung auf die wechselwirkenden Photonen und Phononen beschrieben werden.
-Bei Phononen handelt es sich um Quasiteilchen, mit welchen die den Kristall durchlaufenden Schallwellen beschrieben werden können. \cite{OFI}\\
+Um dies zu verstehen, kann das Phänomen entweder klassisch oder im Teilchenbild betrachtet werden. 
+Abhängig von der Betrachtungsweise kann der Effekt entweder mit Hilfe des Dopplereffekts durch das sich in Relation zum einfallenden Licht \gqq{bewegende Gitter} oder unter Anwendung der Impuls- und Energierhaltung auf die wechselwirkenden Photonen und Phononen beschrieben werden.
+Bei Phononen handelt es sich um Quasiteilchen, mit welchen die den Kristall durchlaufenden Schallwellen beschrieben werden können. \cite{OFI}
 Im Versuch wird der AOM im Wesentlichen als Schalter verwendet, um das Laserlicht zur MOT hin gezielt an- und abschalten zu können.
 \vspace{7pt}
 
 \fbox{\parbox[c]{0.985\textwidth}{
-		\begin{frage}\label{f:4-1}
+		\begin{frage}\label{f:5-1}
 			Inwiefern ist die durch den AOM verursachte Frequenzverschiebung des Laserlichts in Bezug auf die Stabilisierung des Rückpump- und Kühllasers bzw. die an der MOT benötigte Frequenz relevant?
 		\end{frage}
 	}}\\	
@@ -783,11 +784,12 @@ Das Prinzip einer Verzögerungsplatte ist in Abbildung \ref{fig:LVPT} am Beispie
 						\item Welche natürliche Linienbreite und Lebensdauer ist für die D2-Linie von \isotope[85]{Rb} charakteristisch?
 						\item Welche Verstimmung des Laserlichts ist zum Kühlen der Atome ideal und welchen Wert muss diese für \isotope[85]{Rb} annehmen?
 					\end{itemize}
-
+\newpage
+\appendix	
 \printbibliography
-Internetquellen letztmalig im September 2024 aufgerufen				
+Internetquellen letztmalig im September 2024 aufgerufen.		
 					
-					\appendix				
+								
 					\chapter{Fotos des Versuchsaufbaus}				
 					\begin{figure}[htb!]
 						\centering
@@ -874,7 +876,8 @@ Internetquellen letztmalig im September 2024 aufgerufen
 %	\appendix
 %	\newpage
 %	\nocite{*}
-%\printbibheading[title = {Literaturverzeichnis}]
+%	\printbibliography
+%\printbibliography[title = {Quellen}]
 %\printbibliography[keyword=bild,heading=subbibliography,title={Bildquellen}]%
 %\printbibliography[keyword=lit,heading=subbibliography,title={Literatur}]
 %\printbibliography[keyword=erg,heading=subbibliography,title={Ergänzende Literatur}]
