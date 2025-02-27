@@ -612,50 +612,49 @@ Das Prinzip einer Verzögerungsplatte ist in \hyperref[fig:LVPT]{Abbildung \ref{
 				Dieses Signal kann zur Stabilisierung des Kühllasers verwendet werden, wenn der Rückpumper selbst stabil auf der gwünschten Frequenz läuft.				
 				
 				\chapter{Theorie zur MOT}	
-				Die Idee, mit Licht Atome zu kühlen, wurde erstmals 1975 formuliert und schon im gleichen Jahr nachgewiesen.
-				Eine magneto-optische Falle wurde 1987 erstmals realisiert und 1997 mit einem Nobelpreis ausgezeichnet. Zum
-				Verständnis einer MOT kann ihre Funktionsweise in zwei Aspekte unterteilt werden: zum einen das Kühlen, zum
-				anderen das Fangen der Atome.
+				Die Idee, mit Licht Atome zu kühlen, wurde erstmals 1975 formuliert und schon im gleichen Jahr nachgewiesen. \cite{pap:hansch}
+				Eine magnetooptische Falle wurde 1987 erstmals realisiert und 1997 mit einem Nobelpreis ausgezeichnet. \cite{pap:nobel}
+				Zum	Verständnis einer MOT kann ihre Funktionsweise in zwei Aspekte unterteilt werden: einerseits das Kühlen, andererseits das Fangen der Atome.
 				
 				\section{Optisches Kühlen}			
-				Die Temperatur eines Ensembles von Atomen entspricht der gemittelten Bewegung der Atome. Da auf Grund der
-				Erhaltung der Energie die Wärmeenergie $E_{\text{W}} = \frac{f}{2}k_{\text{B}}T$ der Bewegungsenergie $E_{\text{kin}} = \frac{1}{2}mv^2$ gleichgesetzt werden kann, folgt daraus, dass die Temperatur mit $T = \frac{mv^2}{k_{\text{B}} f}$ quadratisch abhängig von der Geschwindigkeit ist.\\ 
-				Soll ein atomares Ensemble gekühlt werden, muss die relative Geschwindigkeit der einzelnen Atome zueinander
-				verringert werden. Im Falle der Laserkühlung nutzt man hierzu die Wechselwirkung zwischen Atomen und
-				elektromagnetischer Strahlung definierter Richtung, Frequenz und Polarisation.
+				Die Temperatur eines Ensembles von Atomen entspricht der gemittelten Bewegung der Atome. 
+				Da aufgrund der	Erhaltung der Energie die Wärmeenergie $E_{\text{W}} = \frac{f}{2}k_{\text{B}}T$ der Bewegungsenergie $E_{\text{kin}} = \frac{1}{2}mv^2$ gleichgesetzt werden kann, folgt, dass die Temperatur mit $T = \frac{mv^2}{k_{\text{B}} f}$ quadratisch abhängig von der Geschwindigkeit ist.\\ 
+				Soll ein atomares Ensemble gekühlt werden, muss die relative Geschwindigkeit der einzelnen Atome zueinander	verringert werden. 
+				Im Falle der Laserkühlung nutzt man hierzu die Wechselwirkung zwischen Atomen und elektromagnetischer Strahlung definierter Richtung, Frequenz und Polarisation.
 				
 				\subsection{Spontankraft}\label{ssec:SK}		
-				Ein Photon, dessen Energie der Energiedifferenz zwischen zwei Energieniveaus in einem Atom entspricht, kann von diesem Atom absorbiert werden. Die Spontankraft entsteht durch stimulierte Absorption von Photonen aus einem Laserstrahl und anschließende spontane Reemission. 
-				Beim Absorptionsvorgang wird sowohl der Impuls $\vec{p} = \hbar \vec{k}$ als auch die Energie $E = \hbar \omega$ des Photons an das Atom weitergegeben, wobei $\vert \vec{k} \vert = 2\pi/\lambda$ die Wellenzahl und $\nu = \omega/2\pi$ die Frequenz des Photons ist. 
-				Nach einer für die Atomart spezifischen Lebensdauer $\tau$ werden die Photonen
-				wieder unter spontaner Emission vom Atom abgegeben. 
+				Ein Photon, dessen Energie der Energiedifferenz zwischen zwei Energieniveaus in einem Atom entspricht, kann von diesem Atom absorbiert werden. 
+				Die Spontankraft entsteht durch stimulierte Absorption von Photonen aus einem Laserstrahl und anschließende spontane Reemission. 
+				Beim Absorptionsvorgang wird sowohl der Impuls $\vec{p} = \hbar \vec{k}$ als auch die Energie $E = \hbar \omega$ des Photons an das Atom weitergegeben, wobei $\vert \vec{k} \vert = \nicefrac{2\pi}{\lambda}$ die Wellenzahl und $\nu = \nicefrac{\omega}{2\pi}$ die Frequenz des Photons ist. 
+				Nach einer von Atom und Übergang abhängigen Lebensdauer $\tau$ werden die Photonen wieder unter spontaner Emission vom Atom abgegeben. 
 				Da der Impuls und die Energie Erhaltungsgrößen sind, sind ihre Beträge bei Absorption und Emission konstant. 
-				Das spontan emittierte Photon verleiht dem Atom einen Rückstoßimpuls. Die Wahrscheinlichkeit der Rückstoßrichtung ist über den gesamten Raum gleichverteilt. Somit mittelt sich die atomare Nettoimpulsänderung bei Emission statistisch zu Null.\\ 
-				Werden Photonen aus einer festen Richtung eingestrahlt, so addieren sich die Impulsüberträge bei Absorpion derart, dass eine gerichtete Kraft auf das Atom entsteht (siehe Abbildung \ref{fig:SK}).\\
+				Das spontan emittierte Photon verleiht dem Atom einen Rückstoßimpuls. 
+				Die Wahrscheinlichkeit der Rückstoßrichtung ist über den gesamten Raum gleichverteilt. 
+				Somit mittelt sich die atomare Nettoimpulsänderung bei Emission statistisch zu Null.\\ 
+				Werden Photonen aus einer festen Richtung eingestrahlt, so addieren sich die Impulsüberträge bei Absorpion derart, dass eine gerichtete Kraft auf das Atom entsteht (siehe \hyperref[fig:SK]{Abbildung \ref{fig:SK}}).
 				Zum Kühlen von Rubidiumatomen werden elektronische Übergänge im Atomspektrum verwendet. 
-				Diese können vereinfacht als atomare Zweizustandssysteme im elektromagnetischen Strahlungsfeld einer festen Frequenz
-				betrachtet werden. 
-				Die Besetzungszustände können durch Absorption und spontane Reemission der Photonen des
-				Strahlungsfeldes beeinflusst werden. 
-				Eine quantenmechanische Beschreibung dieses Modells in Form von Bewegungsgleichungen bieten die optischen Blochgleichungen. Unter Betrachtung des Gleichgewichtszustandes der in diesen Gleichungen beschriebenen Dynamik, lässt sich die Streurate $\varGamma_{\text{sc}}$ der Photonen des Strahlungsfeldes an einem Zweiniveauatom herleiten:			
+				Diese können vereinfacht als atomare Zweizustandssysteme im elektromagnetischen Strahlungsfeld einer festen Frequenz betrachtet werden. 
+				Die Besetzungszustände können durch Absorption und spontane Reemission der Photonen des	Strahlungsfeldes beeinflusst werden. 
+				Eine quantenmechanische Beschreibung dieses Modells in Form von Bewegungsgleichungen bieten die optischen Blochgleichungen. 
+				Unter Betrachtung des Gleichgewichtszustandes der in diesen Gleichungen beschriebenen Dynamik, lässt sich die Streurate $\varGamma_{\text{sc}}$ der Photonen des Strahlungsfeldes an einem Zweiniveauatom herleiten:			
 				\begin{equation}\label{equa:6-1}
-				\varGamma_{\text{sc}} = \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}
+				\Gamma_{\text{sc}} = \frac{\Gamma}{2} \frac{s_0}{1+s_0+\left(\frac{2\Delta}{\Gamma}\right)^2}
 				\end{equation}				
-				Hierbei ist $\varGamma$ die Zerfallsrate des angeregten Zustandes des Zweiniveausystems, $\varDelta = \omega_{\text{L}} - \omega_{\text{R}} $ ist die spektrale Verstimmung des Strahlungsfeldes der Frequenz $\omega_{\text{L}}$ gegenüber der atomaren Resonanz $\omega_{\text{R}}$ und $s_0$ ist der Sättigungsparameter im Falle der Resonanz. 
-				Er stellt das Verhältnis aus der Intensität des Lichtes \textit{I} und der Sättigungsintensität des atomaren Übergangs $I_0$ dar. Es gilt $s_0 = I/I_0$, wobei $I_0 = \pi hc\varGamma/(3\lambda^3)$ gilt.\\
+				Hierbei ist $\Gamma$ die Zerfallsrate des angeregten Zustandes des Zweiniveausystems, $\Delta = \omega_{\text{L}} - \omega_{\text{R}} $ ist die spektrale Verstimmung des Strahlungsfeldes der Frequenz $\omega_{\text{L}}$ gegenüber der atomaren Resonanz $\omega_{\text{R}}$ und $s_0$ ist der Sättigungsparameter im Falle der Resonanz. 
+				Er stellt das Verhältnis aus der Intensität des Lichtes $I$ und der Sättigungsintensität des atomaren Übergangs $I_0$ dar. Es gilt $s_0 = \nicefrac{I}{I_0}$, wobei $I_0 = \frac{\pi hc\Gamma}{3\lambda^3}$ gilt.\\
 				Wird das Licht aus einer festen Richtung auf ruhende Atome eingestrahlt, so ergibt sich unter Beachtung des bei jedem Streuvorgang auf das Atom übertragenen Photonenimpulses $\vec{p} = \hbar \vec{k}$ eine gerichtete Kraft, die Spontankraft	
 				\begin{equation}
-				\vec{F}_{\text{D}} = \hbar \vec{k} \cdot \varGamma_{\text{sc}}.
+				\vec{F}_{\text{D}} = \hbar \vec{k} \cdot \Gamma_{\text{sc}}.
 				\end{equation}
 				Mit Gleichung \eqref{equa:6-1} folgt				
 				\begin{equation}\label{equa:6-3}
-				\vec{F}_{\text{D}} = \hbar \vec{k} \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta/\varGamma)^2}.
+				\vec{F}_{\text{D}} = \hbar \vec{k} \cdot \frac{\Gamma}{2} \frac{s_0}{1+s_0+\left(\frac{2\Delta}{\Gamma}\right)^2}.
 				\end{equation}
 
 				\begin{figure}[htb!]
 					\centering
 					\includegraphics[width=0.9\textwidth]{graphics/SK.jpg}
-					\caption{Skizze zum Prinzip der Spontankraft}
+					\caption{Skizze zum Prinzip der Spontankraft.}
 					\label{fig:SK}
 				\end{figure}
 				
@@ -663,7 +662,7 @@ Das Prinzip einer Verzögerungsplatte ist in \hyperref[fig:LVPT]{Abbildung \ref{
 				Um eine Kühlung eines atomaren Gases zu realisieren, muss die auf die Atome wirkende Kraft abhängig vom Betrag und Richtung der atomaren Geschwindigkeiten sein. Eine entsprechende Konfiguration des Lichtfeldes wird durch sechs aus allen Raumrichtungen kommenden, gegenüber der atomaren Resonanz rotverstimmten Laserstrahlen implementiert.\\
 				Da die Kühlung entlang der drei Raumachsen voneinander unabhängig ist, wird der Einfachheit halber
 				nur die Wirkung der Laserstrahlen in einer Dimension $x$ erläutert. 
-				Ergänzt wird die Betrachtung der Kraftausübung eines Laserstrahls auf Atome aus Abschnitt \ref{ssec:SK} durch das Hinzuziehen eines weiteren, diesem Strahl entgegengerichteten Laserstrahls. 
+				Ergänzt wird die Betrachtung der Kraftausübung eines Laserstrahls auf Atome aus \hyperref[ssec:SK]{Abschnitt \ref{ssec:SK}} durch das Hinzuziehen eines weiteren, diesem Strahl entgegengerichteten, Laserstrahls. 
 				Die auf ein Atom resultierende Gesamtkraft ergibt sich dann aus der Überlagerung der beiden in Richtung $-x$ und $+x$ wirkenden Kräfte $F_{x-}$ und $F_{x+}$ (aus Gleichung \eqref{equa:6-3}) zu
 				
 				\begin{equation}
@@ -671,29 +670,29 @@ Das Prinzip einer Verzögerungsplatte ist in \hyperref[fig:LVPT]{Abbildung \ref{
 				\end{equation}			
 				mit
 				\begin{equation}\label{equa:6-5}
-				F_{x+\backslash x-} = \pm \hbar k \cdot \frac{\varGamma}{2} \frac{s_0}{1+s_0+(2\varDelta_{{\text{OM}}\pm}/\varGamma)^2} 
+				F_{x+\backslash x-} = \pm \hbar k \cdot \frac{\Gamma}{2} \frac{s_0}{1+s_0+\left(\frac{2\Delta_{{\text{OM}}\pm}}{\Gamma}\right)^2} 
 				\end{equation}
 				Die Geschwindigkeitsabhängikeit der Kraft wird im Parameter			
 				\begin{equation}
-				\varDelta_{\text{OM}\pm} = \varDelta \mp k v_{x}
+				\Delta_{\text{OM}\pm} = \Delta \mp k v_{x}
 				\end{equation}
 				berücksichtigt, wobei $v_x$ die Geschwindigkeit der Atome in $x$-Richtung ist. 
 				Er korrigiert die Verstimmung des Lichtes um die Dopplerverschiebung, bedingt durch die Geschwindigkeit der Atome. 
-				Die Summe der beiden Kräfte ergibt sich nach Entwicklung für kleine Geschwindigkeiten unter Vernachlässigung der Terme ab der Ordnung $(kv/\varGamma)^4$ zu
+				Die Summe der beiden Kräfte ergibt sich nach Entwicklung für kleine Geschwindigkeiten unter Vernachlässigung der Terme ab der Ordnung $\left(\nicefrac{kv}{\Gamma}\right)^4$ zu
 				
 				\begin{equation}\label{equa:6-7}
-				F_{\text{OM}} = \frac{8 \hbar k^2 \varDelta s_0}{\varGamma (1+s_0 + (2\varDelta/\varGamma)^2)^2} v_x = -\beta v_x
+				F_{\text{OM}} = \frac{8 \hbar k^2 \Delta s_0}{\Gamma \left[1+s_0 + \left(\frac{2\Delta}{\Gamma}\right)^2\right]^2} \cdot v_x = -\beta v_x
 				\end{equation}
 				
-				Ist das Licht rotverstimmt ($\varDelta < 0$), so sieht ein in positive $x$-Richtung fliegendes Atom das entgegenkommende Licht zur Resonanz hin dopplerverschoben, wobei die Wahrscheinlichkeit der Absorption eines Photons zunimmt.\\
+				Ist das Licht rotverstimmt ($\varDelta < 0$), so sieht ein in positive $x$-Richtung fliegendes Atom das entgegenkommende Licht zur Resonanz hin dopplerverschoben, womit die Wahrscheinlichkeit der Absorption eines Photons zunimmt.\\
 				Es erfährt eine lineare rücktreibende Kraft ($\beta > 0$), die zur Abbremsung führt. 
-				Die Kraft auf das Teilchen ist genau dann maximal, wenn die Verstimmung des Lasers die Dopplerverschiebung kompensiert: $\varDelta = k v_x$ .
+				Die Kraft auf das Teilchen ist genau dann maximal, wenn die Verstimmung des Lasers die Dopplerverschiebung kompensiert: $\Delta = k v_x$ .
 				Wegen der Analogie des Abbremsvorgangs (Gleichung \eqref{equa:6-7}) zur viskosen Dämpfung in einer nahen Umgebung von $v_x = 0$, wird dieser Prozess \textbf{optische Melasse} genannt. 
 				Auf Grund der zentralen Bedeutung des Dopplereffektes bei dieser Art von Kühlung spricht man von \textbf{Doppler-Kühlung}. 
 				Die Temperatur der optischen Melasse ergibt sich aus dem Gleichgewicht aus Dopplerkühlung und Aufheizen des Ensembles durch die remittierten Photonen.\\ 
 				Die minimal erreichbare Temperatur, die mittels der Dopplerkühlung erreicht werden kann, das so genannte Dopplerlimit, beträgt				
 				\begin{equation}
-				T_{\text{Doppler}} = \frac{\hbar \varGamma}{2 k_B}.
+				T_{\text{Doppler}} = \frac{\hbar \Gamma}{2 k_{\text{B}}}.
 				\end{equation}
 				
 				\section{Fangen der Atome}	
