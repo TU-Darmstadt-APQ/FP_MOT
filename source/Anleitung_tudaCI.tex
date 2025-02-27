@@ -518,31 +518,35 @@ Das Prinzip einer Verzögerungsplatte ist in \hyperref[fig:LVPT]{Abbildung \ref{
 				\label{fig:IGP}
 			\end{figure}
 
-			\section{PID-Regler}			
-			Der PID-Regler ist ein Element, welches zur Stabilisierung der Laser verwendet wird. Dabei setzt sich dieser aus drei einzelnen Regeleinrichtungen (der proportionalen, der integrierenden und der differenzierenden Regeleinrichtung) zusammen.\\
-			Erst das Zusammenspiel dieser drei einzelnen Regeleinrichtungen in Hinblick auf ihr jeweiliges charakteristisches Verhalten führt zu den gewünschten positiven Eigenschaften des PID-Reglers. 
-			Darum sollen zunächst die einzelnen Komponenten mit ihren Charakteristika kurz andiskutiert werden.\\
-			Hierzu muss jedoch zuerst der Aufbau eines Regelkreises beziehungsweise dessen Funktionsweise verstanden werden. Ziel des Regelkreises ist es eine physikalische Größe $x$ (die Regelgröße) unabhängig von wirkenden Störgrößen $z$ auf einen gewählten Sollwert $x_S$ zu stabilisieren. 
-			Um dies zu gewährleisten wird der Istwert der Regelgröße $x_i$ (also der momentane tatsächliche Wert) mit dem Sollwert verglichen. Die Abweichung dieser beiden Größen voneinander (die Regelabweichung $x_W$) bestimmt letztlich die Ausgabe der sogenannten Regelgröße $y$, durch deren Einfluss auf die Regelstrecke mögliche Abweichungen vom Sollwert ausgeglichen werden sollen.\\ 
+			\section{Regelung}			
+			Zur Stabilisierung der Frequenz beider Laser werden im Versuch PI-Regler verwendet. 
+			Drei der einfachsten und wichtigsten Regeleinrichtungen bei der Regelung einer Messgröße auf einen Sollwert sind der proportionale (P-), der integrierende (I-) und der differenzierende (D-) Regler.
+			In realen Anwendungen werden häufig, so auch in diesem Versuch, Kombinationen dieser einzelnen Regelelemente verwendet.\\			
+			Ziel eines Regelkreises ist es eine physikalische Größe $x$ (die Regelgröße) unabhängig von wirkenden Störgrößen $z$ auf einen gewählten Sollwert $x_S$ zu stabilisieren.
+			Um dies zu gewährleisten wird der Istwert der Regelgröße $x_i$ (also der momentane tatsächliche Wert) mit dem Sollwert verglichen. 
+			Die Abweichung dieser beiden Größen voneinander (die Regelabweichung $x_W$) bestimmt abhängig von der Art des Reglers die Ausgabe der sogenannten Stellgröße $y$, durch deren Einfluss auf die Regelstrecke der Istwert verändert wird, um möglichst die Abweichungen vom Sollwert auszugleichen.\\ 
 			Der Proportionalregler (kurz P-Regler) ist der einfachste bekannte stetige Regler. 
-			Er gibt eine Ausgangsgröße $y$ (Regelgröße) aus, welche proportional zur Eingangsgröße $x_W$ (Regelabweichung) ist. 
-			Die Vorteile dieses Reglers liegen in seiner schnellen Stellgeschwindigkeit. 
-			Der entscheidende Nachteil des Reglers liegt jedoch darin, dass er eine bleibende Regelabweichung mit sich bringt. 
+			Seine Ausgabegröße $y$ (Stellgröße) ist proportional zur Eingangsgröße $x_W$ (Regelabweichung). 
+			Die Vorteile dieses Reglers liegen in seiner zuverlässigen Regelung und relativ schnellen Stellgeschwindigkeit, sofern der Proportionalitätsfaktor zur Regelung passend gewählt ist. 
+			Der entscheidende Nachteil des Reglers liegt jedoch darin, dass er eine mögliche bleibende Regelabweichung mit sich bringt.		
+			Dies ist beispielsweise der Fall, wenn die zur Regelabweichung $x_W$ passende Stellgröße $y$ über die Zeit konstant bleibt, weil sie eine zeitlich konstante Änderung des Istwertes genau kompensiert.
+			In diesem Fall ist das System dann stabil gergelt, Ist- und Sollwert sind aber nicht identisch.
 			Das heißt, dass eine Regelabweichung nur eingeschränkt, jedoch nicht vollständig beseitigt werden kann.\\
 			Dafür ist der Integralregler (kurz I-Regler) zuständig. 
 			Er gibt eine Stellgröße $y$ aus, welche proportional dem zeitlichen Integral über die Regelabweichung $x_W$ ist. 
-			Dadurch ist er in der Lage, auch kleine durch den P-Regler nicht beseitigte Abweichungen zu eliminieren, wenn auch vergleichsweise langsam.
-			Um nun die Reaktionsgeschwindigkeit, speziell bei schnell entstehenden großen Abweichungen zu verbessern, wird noch der Differentialanteil (D-Anteil) benötigt. 
-			Er zeichnet sich dadurch aus, dass er eine Regelgröße $y$ ausgibt, die durch die Änderungsgeschwindigkeit der Regelgröße bestimmt wird. 
+			Dadurch ist er in der Lage, auch kleine durch den P-Regler nicht beseitigte Abweichungen zu eliminieren.
+			Dabei ist der I-Regler allerdings vergleichsweise langsam und würde als alleiniger Regler schwingendes Verhalten zeigen. \\
+			Ein differentieller Regler wird verwendet, um die Reaktionsgeschwindigkeit, speziell bei schnell entstehenden großen Abweichungen zu verbessern. 
+			Er zeichnet sich dadurch aus, dass er eine Stellgröße $y$ ausgibt, die durch die Änderungsgeschwindigkeit der Regelgröße bestimmt wird. 
 			Er reagiert also auf den Differentialquotienten der Regelabweichung $x_W$. 
-			Der Einsatz dieses Reglers ist jedoch nur in Kombination mit den anderen Anteilen sinnvoll, da er auf eine zeitlich konstante (auch sehr große) Abweichung gar nicht reagiert. 
-			In Summe (siehe Abbildung \ref{fig:PID}) ergibt sich nun aber ein guter schneller Regler - der PID-Regler. \cite{PID} 
-			
+			Offensichtlich ist der D-Regler in alleiniger Verwendung nicht sinnvoll, da er auf eine zeitlich konstante (auch sehr große) Regelabweichungen gar nicht reagiert.\\
+			Erst das Zusammenspiel dieser drei einzelnen Regeleinrichtungen in Hinblick auf ihr jeweiliges charakteristisches Verhalten führt zu den gewünschten positiven Eigenschaften eines PID-Reglers, wie er vielfach Anwendung findet. \cite{PID}\\
+			Bei der Frequenzstabilisierung im Versuch selbst wird der Einfachheit wegen ein PI-Regler verwendet, da die schnelle Reaktionszeit eines D-Anteils nicht benötigt wird. 
+			\hyperref[fig:PID]{Abbildung \ref{fig:PID}} zeigt das Schema eines PI Reglers, wie er im Versuch verwendet wird.
 			\begin{figure}[htb!]
 				\centering
 				\includegraphics[width=\textwidth]{graphics/PID.jpg}
-				\caption{Schematische Skizze des Funktionsweise bzw. Zusammensetzung eines PID-Reglers (links)
-					und Darstellung der im Versuch verbauten Version (rechts)}
+				\caption{Schematische Skizze der Funktionsweise eines PI-Reglers.}
 				\label{fig:PID}
 			\end{figure}
 			
