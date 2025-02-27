@@ -553,10 +553,21 @@ Das Prinzip einer Verzögerungsplatte ist in \hyperref[fig:LVPT]{Abbildung \ref{
 			\chapter{Theorie zur Laserstabilisierung}
 			
 			\section{Aufbau der Laserstabilisierung}	
-			Das Lasersystem befindet sich auf der einen Hälfte einer optischen Tischplatte und wurde auf eine Strahlhöhe von \qty{100}{\milli\metre} einjustiert. Im Wesentlichen besteht es aus den zwei Lasern und deren Stabilisierungen. Ein Laser wird durch eine dopplerfreie Sättigungspektroskopie auf die Frequenz des Rückpumpübergangs stabilisiert. Er soll im Folgenden als Rückpumplaser bezeichnet werden. Der zweite Laser soll auf die Frequenz des Kühlübergangs gelockt werden. Diese Stabilisierung erfolgt durch einen Offsetlock relativ zur Frequenz des Rückpumplasers. Er soll im Folgenden Kühllaser genannt werden.\\
-			In Abbildung \ref{fig:TZ} ist der Aufbau des Systems schematisch dargestellt. Das Licht des Rückpumplasers durchläuft zuerst einen Faraday-Isolator, um Rückreflexe in den Laser zu unterdrücken. Anschließend werden aus dem Strahl des Rückpumplasers \qty{4}{\percent} für die Spektroskopie ausgekoppelt. Der transmittierte Teil des Lichts trifft nach Durchlaufen einer $\lambda/2$-Verzögerungsplatte auf einen polarisierenden Strahlteiler. In dem Strahlteiler wird der Strahl des Rückpumplasers mit dem des Kühllasers überlagert. Ein ausgehender Strahl bestehend aus Kühl- und Rückpumplicht wird durch einen akusto-optischen Modulator (AOM) gestrahlt, um dann in eine Glasfaser eingekoppelt zu werden, in der das Licht zur MOT geleitet wird.\\
-			Der zweite ausgehende Strahl durchläuft wiederum eine $\lambda/2$-Verzögerungsplatte und trifft auf einen zweiten, polarisierenden Strahlteiler. Der s-polarisierte Anteil wird abgelenkt und mittels einer Linse auf eine schnelle Photodiode fokussiert. Das überlagerte Licht kann dort zur Stabilisierung des Kühllasers mittels eines Offsetlocks verwendet werden.\\
-			Das Licht, das durch den Strahlteiler transmittiert, kann, indem die Rubidiumdampfzelle verschoben wird, ebenfalls für eine dopplerfreie Sättigungsspektroskopie des Kühllasers eingesetzt werden.\\
+			Das Lasersystem befindet sich auf der einen Hälfte einer optischen Tischplatte und wurde auf eine Strahlhöhe von \qty{100}{\milli\metre} einjustiert. 
+			Im Wesentlichen besteht es aus den zwei Lasern und deren Stabilisierungen. 
+			Ein Laser wird durch eine dopplerfreie Sättigungspektroskopie auf die Frequenz des Rückpumpübergangs stabilisiert. 
+			Er soll im Folgenden als Rückpumplaser bezeichnet werden. Der zweite Laser soll auf die Frequenz des Kühlübergangs gelockt werden. 
+			Diese Stabilisierung erfolgt durch einen Offsetlock relativ zur Frequenz des Rückpumplasers. Er soll im Folgenden Kühllaser genannt werden.\\
+			In \hyperref[fig:TZ]{Abbildung \ref{fig:TZ}} ist der Aufbau des Systems schematisch dargestellt. 
+			Das Licht des Rückpumplasers durchläuft zuerst einen Faraday-Isolator, um Rückreflexe in den Laser zu unterdrücken, und wird dann in eine Glasfaser eingekoppelt. 
+			Nach der Auskopplung aus der Faser werden von dem Strahl des Rückpumplasers etwa \qty{4}{\percent} für die Spektroskopie über eine geringfügig reflektierende Glasplatte abgezweigt.\\
+			Der transmittierte Hauptteil des Lichts trifft nach Durchlaufen einer $\nicefrac{\lambda}{2}$-Verzögerungsplatte auf einen polarisierenden Strahlteiler. 
+			In dem Strahlteiler wird der Strahl des Rückpumplasers mit dem des Kühllasers überlagert.\\
+			Ein ausgehender Strahl bestehend aus Kühl- und Rückpumplicht wird durch einen akustooptischen Modulator (AOM) geleite, um dann in die Glasfaser eingekoppelt zu werden, in der das Licht zur MOT geleitet wird.
+			Der zweite ausgehende Strahl durchläuft wiederum eine $\nicefrac{\lambda}{2}$-Verzögerungsplatte und trifft auf einen zweiten, polarisierenden Strahlteiler.\\
+			Der s-polarisierte Anteil wird abgelenkt und mittels einer Linse auf eine schnelle Photodiode fokussiert. 
+			Das überlagerte Licht kann dort zur Stabilisierung des Kühllasers mittels eines Offsetlocks verwendet werden.
+			Das Licht, das durch den zweiten Strahlteiler transmittiert, kann, indem die Rubidiumdampfzelle verschoben wird, ebenfalls für eine dopplerfreie Sättigungsspektroskopie des Kühllasers eingesetzt werden.
 			
 			\section{Verwendete Lasertypen}			
 			Zur Erzeugung des Lichts werden zwei Diodenlaser verwendet, deren Emissionswellenlänge mit Hilfe von Stromänderungen und Änderungen am externen Resonator beeinflusst werden kann.\\
@@ -573,27 +584,32 @@ Das Prinzip einer Verzögerungsplatte ist in \hyperref[fig:LVPT]{Abbildung \ref{
 				Die Frequenz, auf welche der Rückpumplaser stabilisiert werden soll, muss, da es sich um eine absolute Stabilisierung handelt, klar definiert sein. 
 				Da der Laser einen atomaren Übergang von \isotope[85]{Rb} anregen soll, liegt es nahe, mit Hilfe einer dopplerfreien Sättigungsspektroskopie einen atomaren Übergang von \isotope[85]{Rb} als Referenz zu verwenden.\\
 				Dazu wird ein Teil des Laserlichts durch eine mit Rubidiumdampf gefüllte Glaszelle gestrahlt und anschließend in sich selbst zurückreflektiert. 
-				Der Strahl trifft, nachdem er auf dem gleichen Weg durch die Glaszelle zurück gestrahlt wurde, auf eine Photodiode (siehe Abbildung \ref{fig:DSS}). 
-				Ist das Licht in seiner Frequenz gegenüber der Resonanz zu einem atomaren Übergang rotverstimmt (geringere Frequenz), so \gqq{sehen} Atome, die sich mit der entsprechenden Geschwindigkeit dem Licht entgegen bewegen aufgrund des optischen Dopplereffekts, eine Frequenz des Lichts, die der des Übergangs entspricht. Atome, die sich dem Strahl entgegen bewegen, können Photonen absorbieren. 
+				Der Strahl trifft, nachdem er auf dem gleichen Weg durch die Glaszelle zurück gestrahlt wurde, auf eine Photodiode (siehe \hyperref[fig:DSS]{Abbildung \ref{fig:DSS}}). 
+				Ist das Licht in seiner Frequenz gegenüber der Resonanz zu einem atomaren Übergang rotverstimmt (geringere Frequenz), so \gqq{sehen} Atome, die sich mit der entsprechenden Geschwindigkeit dem Licht entgegen bewegen, aufgrund des optischen Dopplereffekts, eine Frequenz des Lichts, die der des Übergangs entspricht. 
+				Atome, die sich dem Strahl entgegen bewegen, können Photonen absorbieren. 
 				Aus der statistischen Verteilung der Bewegungsrichtung verschiedener Atome resultiert sowohl für den hinlaufenden als auch für den rücklaufenden Strahl Absorption. 
 				Analoges gilt für blauverstimmtes (höhere Frequenz) Licht.\\
-				Hat das Licht jedoch die Resonanzfrequenz zu dem Übergang, so werden die Photonen nur von ruhenden Atomen absorbiert. Dies hat auf Grund der Lebensdauer des daraus entstehenden angeregten Zustands eine Sättigung des Übergangs zu Folge. 
+				Hat das Licht jedoch die Resonanzfrequenz zu dem Übergang, so werden die Photonen nur von Atomen absorbiert, die bezüglich der Raumrichtung der Propagation des Lichtes ruhen. 
+				Dies hat auf Grund der Lebensdauer des daraus entstehenden angeregten Zustands eine Sättigung des Übergangs zu Folge. 
 				Durch den hinlaufenden Strahl angeregte Atome können keine Photonen des rücklaufenden Strahls absorbieren. 
 				Wird der Frequenzbereich des Lasers durchgestimmt, so ergeben sich an den Stellen des Absorptionsspektrums, an denen das Licht resonant zu einem atomaren Übergang ist, Einbrüche in der Absorption, so genannte \gqq{Lambdips}.\\
 				Zur Stabilisierung des Lasers auf solch eine Resonanz wird das Absorptionssignal elektronisch abgeleitet. 
-				Dieses am Ausgang des Lock-in-Verstärkers anliegende (zur ersten Ableitung proportionale Signal), wird von der Regelbox (PID-Regler) zur Stabilisierung des Lasers verwendet. Dadurch kann die Frequenz der Laser auf einem solchen Lambdip \gqq{gehalten} werden.\\
+				Dieses am Ausgang des Lock-in-Verstärkers anliegende (zur ersten Ableitung proportionale Signal), wird von der Regelbox (PI-Regler) zur Stabilisierung des Lasers verwendet. 
+				Dadurch kann die Frequenz der Laser auf einem solchen Lambdip \gqq{gehalten} werden.\\
 				
 				\begin{figure}[htb!]
 					\centering
 					\includegraphics[width=0.8\textwidth]{graphics/DSS.jpg}
-					\caption{Schematische Skizze des Aufbaus einer dopplerfreien Sättigungsspektroskopie}
+					\caption{Schematische Skizze des Aufbaus einer dopplerfreien Sättigungsspektroskopie.}
 					\label{fig:DSS}
 				\end{figure}
 				
 				\section{Offsetlock}\label{ssec:Offsetlock}			
 				Der Kühllaser wird über eine relative Stabilisierung zu dem Rückpumplaser auf seiner Frequenz gehalten. Dazu werden beide Strahlen überlagert und auf eine schnelle Photodiode fokussiert. Sind die beiden Laser nur um wenige GHz zueinander verstimmt, so kann auf der Diode ein Schwebungssignal der Intensität aufgenommen werden. Die Schwebung kann nun elektronisch aufgenommen und ausgewertet werden.
 				%In Abbildung 2.4 ist die Spannung, die der Frequenz-zu-Spannungs-Wandler aus der Frequenz des Schwebungssignals erzeugt, in Abhängigkeit zur Spannung am Piezokristall des Kühllasers dargestellt. Verschiedene Spannungen entsprechen verschiedenen Emissionsfrequenzen des Lasers (der Rückpumplaser bleibt konstant). Auch dieses Signal kann zur Stabilisierung verwendet werden.
-				Im Versuch ist ein Frequenz-zu-Spannungs-Wandler verbaut. Verschiedene Spannungen entsprechen verschiedenen Emissionsfrequenzen des Kühllasers (bei konstanter Frequenz des Rückpumplasers). Auch dieses Signal kann zur Stabilisierung verwendet werden.				
+				Im Versuch ist ein Frequenz-zu-Spannungs-Wandler verbaut. 
+				Im relevanten Arbeitsbereich geben diese eine Spannung aus, die proportional zur eingehenden Frequenz, hier von der Schwebung stammend, ist. 
+				Dieses Signal kann zur Stabilisierung des Kühllasers verwendet werden, wenn der Rückpumper selbst stabil auf der gwünschten Frequenz läuft.				
 				
 				\chapter{Theorie zur MOT}	
 				Die Idee, mit Licht Atome zu kühlen, wurde erstmals 1975 formuliert und schon im gleichen Jahr nachgewiesen.
