@@ -314,45 +314,43 @@ Erklären Sie auftretende Abweichungen im Vergleich zu der Temperatur der Atome 
 
 \chapter{Überblick über den Versuchsaufbau}
 \label{chap:ueberblick}
-Ziel dieses Kapitels ist es, einen Überblick über den gesamten Versuchsaufbaus zu schaffen. 
-Anschließend soll näher auf die beiden wesentlichen Teile, die Laserstabilisierung und die MOT eingegangen werden. 
-Es empfiehlt sich dieses Kapitel als Lageplan ähnlich dem eines Reiseführers zu verstehen und diesen als Ausgangspunkt zur Beschäftigung mit den einzelnen \gqq{Sehenswürdigkeiten} zu verwenden.
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=\textwidth]{graphics/setup_real_cropped_marked.jpg}
 	\caption{Übersicht über den Versuchsaufbau. Die linke grün markierte Seite dient der Bereitstellung und Stabilisierung des Lichtes, das dann auf der rechten orange markierten Seite für die MOt benötigt wird.}
 	\label{fig:GUE}
 \end{figure}
-
-In \hyperref[fig:GUE]{Abbildung \ref{fig:GUE}} ist auf der linken Seite (\textcolor{green}{grün} umrandet) der Aufbau zur Laserstabilisierung und auf der rechten Seite (\textcolor{blue}{blau} umrandet) der Aufbau zur MOT zu erkennen.
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=\textwidth]{graphics/setup_fp_mot.pdf}
 	\caption{Schematische Skizze des Aufbaus.}
 	\label{fig:TZ}
 \end{figure} 
-
+Ziel dieses Kapitels ist es, einen Überblick über den gesamten Versuchsaufbaus zu schaffen. 
+Anschließend soll näher auf die beiden wesentlichen Teile, die Laserstabilisierung und die MOT eingegangen werden. 
+Es empfiehlt sich dieses Kapitel als Lageplan ähnlich dem eines Reiseführers zu verstehen und diesen als Ausgangspunkt zur Beschäftigung mit den einzelnen \gqq{Sehenswürdigkeiten} zu verwenden.\\
+In \hyperref[fig:GUE]{Abbildung \ref{fig:GUE}} ist auf der linken Seite (\textcolor{green}{grün} umrandet) der Aufbau zur Laserstabilisierung und auf der rechten Seite (\textcolor{orange}{orange} umrandet) der Aufbau zur MOT zu erkennen.
+In \hyperref[fig:TZ]{Abbildung \ref{fig:TZ}} ist der Aufbau zur besseren Übersichtlichkeit zusätzlich als schematische Skizze dargestellt.
 %Im Folgenden soll ein Überblick über den Aufbau gegeben werden. Betrachten Sie dazu auch die technischen Zeichnungen des Aufbaus zur Laserstabilisierung und zur Strahlführung der MOT (in Abbildung \ref{fig:TZ} ebenfalls \textcolor{green}{grün} und \textcolor{blue}{blau} markiert) und vergleichen Sie diese mit den Bildern des Aufbaus.\\
 In \hyperref[fig:Rack]{Abbildung \ref{fig:Rack}} ist das Rack zu sehen, in dem die Elektronik zur Versorgung und Stabilisierung der Laser untergebracht ist.
 \begin{figure}[htb!]
 	\centering
-	\includegraphics[width=\textwidth]{graphics/Rack_new.jpg}
-	\caption{Ausschnitt des Racks inklusiver der Stromtreiber und Lockboxen zur Frequenzstabiliserung der Laser. Weiterhin sind die Controller für die temüeraturstabilisierung der Laser zu sehen.}
+	\includegraphics[width=0.7\textwidth]{graphics/Rack_new.jpg}
+	\caption{Ausschnitt des Racks inklusive der Stromtreiber und Lockboxen zur Frequenzstabiliserung der Laser. Weiterhin sind die Controller für die temüeraturstabilisierung der Laser zu sehen.}
 	\label{fig:Rack}
 \end{figure} 
-
 Um den Versuch zu verstehen und möglichst viel aus der Durchführung mitzunehmen, sollten Sie sich schon während der Vorbereitung intensiv mit der Realisierung des Versuchsaufbaus vertraut machen. 
-
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{graphics/BLACS.jpg}
+	\caption{Beispielhafte Benutzeroberfläche zur Experimentensteuerung mittels \textit{labscript}}
+	\label{fig:ES}
+\end{figure}
 Die Steuerung der einzelnen Phasen des Versuchsablaufs findet mittels \textit{labscript} satt. 
 Die Ansteuerung der der einzelnen steuerbaren Elemente des Versuchs erfolgt über \textit{BLACS}, während über den \textit{runmanager} vollständige Experimentabläufe geladen werden. 
 Die Auswertung beziehungsweise Weiterverarbeitung der Daten erfolgt mittels \textit{lyse}. 
 Die Benutzeroberfläche ist beispielhaft in \hyperref[fig:ES]{Abbildung \ref{fig:ES}} dargestellt.
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[width=\textwidth]{graphics/dummy.png}
-	\caption{Beispielhafte Benutzeroberfläche zur Experimentensteuerung mittels \textit{labscript}}
-	\label{fig:ES}
-\end{figure}
+
 
 \chapter{Wichtige Bauteile}
 
@@ -769,89 +767,6 @@ Das Prinzip einer Verzögerungsplatte ist in \hyperref[fig:LVPT]{Abbildung \ref{
 \printbibliography
 Internetquellen letztmalig im September 2024 aufgerufen.		
 					
-								
-					\chapter{Fotos des Versuchsaufbaus}				
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/SL.jpg}
-						\caption{\textcolor[cmyk]{0.86,0.77,0,0}{Spiegel der Laserstabilisierung} und \textcolor[cmyk]{0.52,0,0.16,0}{Spiegel der MOT}}
-						\label{fig:SL}
-					\end{figure} 			
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/ST.jpg}
-						\caption{\textcolor[cmyk]{0.11,1,0.47,0.01}{Strahlteiler} und \textcolor[cmyk]{0.1,0,0.99,0}{Rubidiumdampfzelle}}
-						\label{fig:SW}
-					\end{figure} 
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/PDUK.jpg}
-						\caption{\textcolor[cmyk]{0,0.99,1,0}{Photodioden} und \textcolor[cmyk]{0,0.56,1,0}{USB-Kamera}}
-						\label{fig:PD}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/LHLV.jpg}
-						\caption{\textcolor[cmyk]{0,0.68,0.98,0}{$\lambda/2$}- und \textcolor[cmyk]{0.75,0.19,0.03,0}{$\lambda/4$}-Platten}
-						\label{fig:LH}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/LN.jpg}
-						\caption{\textcolor[cmyk]{0.84,0.30,1,0.2}{Linsen}}
-						\label{fig:LI}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/SPM.jpg}
-						\caption{Strahlengang für die \textcolor[cmyk]{0.71,0,0.4,0}{Spektroskopie des Rückpumplasers}}
-						\label{fig:SPM}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/SPS.jpg}
-						\caption{Strahlengang für die \textcolor[cmyk]{0.6,0,1,0}{Spektroskopie des Kühllasers}}
-						\label{fig:SPS}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/OFL.jpg}
-						\caption{Strahlengang für den Offsetlock des Kühllasers}
-						\label{fig:OFL}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/MM.jpg}
-						\caption{Strahlengang des \textcolor[cmyk]{0.71,0,0.4,0}{Rückpumplichtes zum Glasfaserkabel} für die MOT}
-						\label{fig:MM}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/SZM.jpg}
-						\caption{Strahlengang des  \textcolor[cmyk]{0.6,0,1,0}{Kühllichtes zum Glasfaserkabel} für die MOT}
-						\label{fig:SZM}
-					\end{figure}					
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/MOTSTG.jpg}
-						\caption{Strahlengang \textcolor[cmyk]{0,0.96,0.55,0}{der MOT} nach dem Glasfaserkabel}
-						\label{fig:MOTSTG}
-					\end{figure}
-					\begin{figure}[htb!]
-						\centering
-						\includegraphics[width=\textwidth]{graphics/STGK.jpg}
-						\caption{alle Strahlengänge}
-						\label{fig:STGK}
-					\end{figure}
-					
-					\begin{figure}
-						\centering
-						\includegraphics[width=0.7\textwidth]{graphics/AEGBg.jpg}
-						\caption{alle Strahlengänge und alle Elemente}
-						\label{fig:AEGB}
-					\end{figure}
-
-\newpage
 
 %	\appendix
 %	\newpage
