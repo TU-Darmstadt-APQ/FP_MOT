@@ -7,6 +7,7 @@
 \usepackage{units}
 \usepackage{nicefrac}
 \usepackage{graphicx}
+\usepackage{upgreek}
 
 % Adjust page margins
 \geometry{
@@ -30,14 +31,14 @@ textheight = 24.7cm,
 \item Welche Wellenlänge benötigen wir ungefähr? 
 \item Niveaustruktur \isotope[85]{Rb}, Kernspin $I=\frac{5}{2}$ \\ 
 Grundzustand: $5^2\rm{S}_{1/2}$ ($n=5$, $S=\frac{1}{2}$, $L=0$ $\Rightarrow$ $J=\frac{1}{2}$) \\
-angeregter Zustand: $L=1 \Rightarrow$ $5^2\rm{P}_{1/2}$($J=\frac{1}{2}$; D2-Linie) oder $5^2\rm{P}_{3/2}$ ($J=\frac{3}{2}$; D1-Linie) \\
+angeregter Zustand: $L=1 \Rightarrow$ $5^2\rm{P}_{1/2}$ ($J=\frac{1}{2}$; D2-Linie) oder $5^2\rm{P}_{3/2}$ ($J=\frac{3}{2}$; D1-Linie) \\
 Hyperfeinstrukturaufspaltung wegen Entartung des Gesamtdrehimpuls: $|J-I|<F<J+I$ \\
 Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =1/\tau$ mit  $\tau=\unit[26]{ns}$ Lebensdauer
 \end{itemize}
 
 \subsection*{Laser und Laserstabilisierung:}
 \begin{itemize}
-\item Diodenlaser mit externem Resonator (Littrow-Anordnung und Interferenzfilter);
+\item Diodenlaser mit externem Resonator (Interferenzfilter);
 \item Laserschutz: Schutzbrille; Reflektierende Gegenstände ausziehen; Kopf nicht auf Strahlhöhe; nicht mit reflektierende Werkzeugen im Strahlengang
 \item Dopplerfreie Sättigungsspektroskopie;
 \item Offset-Lock
@@ -50,24 +51,26 @@ Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =1/\tau$ mit  $\tau=\un
 \subsection*{Kühlen und Fangen $\leftrightarrow$ MOT}
 \subsubsection*{Optisches Kühlen (Spontankraft, Dopplerkühlung, Dopplerlimit)}
 \begin{itemize}
-\item Spontankraft: $F = \hbar k \Gamma_{sc}$ mit $\Gamma_{sc} =  \Gamma/2 \frac{s_0}{1+s_0+(2\Delta/\Gamma)^2}$ mit $\Delta = \omega_L – \omega_R$ ; $s_0= I/I_0$; Sättigungsintensität $I_0=\pi h c \Gamma/(3\lambda^3)$
-\item Dopplerkühlung: $F_{OM} = F_{x+} + F_{x-}$ wobei $\Delta_{OM} = \Delta \mp k v_x$
-Entwicklung für kleine Geschwindigkeiten: $F_{OM} = \frac{8 \hbar k^2 \Delta s_0}{\Gamma (1+s_0 + (2 \Delta/\Gamma)^2)^2} v_x = -\beta v_x $
-Dopplerlimit : $T_D = \frac{\hbar \Gamma}{2 k_B} = \unit[144]{uK}$
+\item Spontankraft: $F = \hbar k \Gamma_{\text{sc}}$ mit $\Gamma_{\text{sc}} =  \frac{\Gamma}{2} \frac{s_0}{1+s_0+\left(2\frac{\Delta}{\Gamma}\right)^2}$ mit $\Delta = \omega_L – \omega_R$ ; $s_0= \frac{I}{I_0}$; Sättigungsintensität $I_0=\frac{\pi h c \Gamma}{3\lambda^3}$
+\item Dopplerkühlung: $F_{\text{OM}} = F_{x+} + F_{x-}$ wobei $\Delta_{\text{OM}} = \Delta \mp k v_x$
+Entwicklung für kleine Geschwindigkeiten: $F_{\text{OM}} = \frac{8 \hbar k^2 \Delta s_0}{\Gamma (1+s_0 + \left(2 \frac{\Delta}{\Gamma}\right)^2)^2} v_x = -\beta v_x $
+Dopplerlimit : $T_{\text{D}} = \frac{\hbar \Gamma}{2 k_B} = \unit[144]{\upmu K}$
 \item Fangen von Atomen (Quadrupolfeld, Zeeman-Shift; Fangen)
-Quadrupolfeld :  $B_x = B(x) = B_0 x$
-Zeeman-Aufspaltung: $\Delta E = g_{F'} m_{F'} \mu_B B_x$
-Verstimmung: $\Delta_{OM} = \Delta \mp k v_x \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}$
-Entwicklung für kleine Geschwindigkeiten und nahe Fallenmittelpunkt: $F_{MOT} = - \beta v_x - \kappa x$ gedämpfter harmonischer Oszillator
-\item Sub-Doppler-Kühlung: Lin/lin-Konfig: Sisiphus-Kühlung genannt; Energieverschiebung des Grundzustandes je nach Laserpolarisation (Bei $\sigma^-$ ist $m_F=+1/2$ maximal und umgekehrt). Spontane Emission im Mittel keine Drehimpulsänderung. Recoil-Limit: $\frac{1}{2} k_B T_R = \frac{\hbar^2 k^2}{2m} \leftrightarrow T_{\mathrm{recoil}} = \unit[370]{nK}$.
-\item Sub-Doppler-Kühlung: Sigma/Sigma-Konfiguration: Stehende Welle, immer linear polarisiert; Keine Energieverschiebung; Besetzungsgleichgewicht der $m_F$ Unterzustände hängt von Bewegungsrichtung ab; Dadurch mehr Streuung von entgegenkommenden Photonen und bremsende Wirkung.
+\begin{itemize}
+\item Quadrupolfeld:  $B_x = B(x) = B_0 x$
+\item Zeeman-Aufspaltung: $\Delta E = g_{F'} m_{F'} \mu_B B_x$
+\item Verstimmung: $\Delta_{OM} = \Delta \mp k v_x \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}$
+\item Entwicklung für kleine Geschwindigkeiten und nahe Fallenmittelpunkt: $F_{MOT} = - \beta v_x - \kappa x$ gedämpfter harmonischer Oszillator
+\end{itemize}
+\item Sub-Doppler-Kühlung: lin/lin-Konfig: Sisiphus-Kühlung genannt; Energieverschiebung des Grundzustandes je nach Laserpolarisation (Bei $\sigma^-$ ist $m_F=+1/2$ maximal und umgekehrt). Spontane Emission im Mittel keine Drehimpulsänderung. Recoil-Limit: $\frac{1}{2} k_B T_R = \frac{\hbar^2 k^2}{2m} \leftrightarrow T_{\mathrm{recoil}} = \unit[370]{nK}$.
+\item Sub-Doppler-Kühlung: $\sigma$/$\sigma$-Konfiguration: Stehende Welle, immer linear polarisiert; Keine Energieverschiebung; Besetzungsgleichgewicht der $m_F$ Unterzustände hängt von Bewegungsrichtung ab; Dadurch mehr Streuung von entgegenkommenden Photonen und bremsende Wirkung.
 \end{itemize}
 
 \subsection*{Versuchsaufbau}
 \begin{itemize}
 \item AOM und Glasfaser
-\item Aufbau MOT mit $\lambda/2$
-\item PBS sowie $\lambda/4$
+\item Aufbau MOT mit $\frac{\lambda}{2}$
+\item PBS sowie $\frac{\lambda}{4}$
 \item Ionen-Getter-Pumpe und Dispenser
 \end{itemize}
 
@@ -76,7 +79,7 @@ Entwicklung für kleine Geschwindigkeiten und nahe Fallenmittelpunkt: $F_{MOT} =
 \item Welchen Vorteil bietet es, den Aufbau der MOT durch ein Glasfaserkabel von dem Aufbau der Laserstabilisierung zu trennen?
 \item In wiefern ist die durch den AOM verursachte Frequenzverschiebung des Laserlichtes in Bezug auf die Stabilisierung des Rückpump- und Kühllasers bzw. die in der MOT benötigte Frequenz relevant?
 \item Zu welchem Zweck werden die in der Laserstabilisierung und in der MOT eingezeichneten Verzögerungsplatten jeweils verwendet
-\item Zu welchem Zweck werden die PST verwendet und warum kommen sie immer in Kombination mit einer $\lambda/2$-Platte vor?
+\item Zu welchem Zweck werden die PST verwendet und warum kommen sie immer in Kombination mit einer $\frac{\lambda}{2}$-Platte vor?
 \item Durch welche Größen/Faktoren werden die Laserfrequenzen beeinflusst? Welche dieser Faktoren sind gewollt bzw. ungewollt und wie können diese beseitigt werden?
 \item Welche Elemente werden zur Erzeugung einer MOT benötigt? Wo wird das Licht in die drei Strahlen aufgeteilt? Wie verlaufen die Strahlen?
 \end{itemize}
@@ -84,7 +87,7 @@ Entwicklung für kleine Geschwindigkeiten und nahe Fallenmittelpunkt: $F_{MOT} =
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width = 0.95\textwidth]{TS_korrigiert.jpg}
-	\caption{Termschema D2-Linie inkl Laserlinien (a) Rückpumper Stabilisierung b) Rückpumper MOT c) Kühler MOT.}
+	\caption{Termschema D2-Linie inklusive Laserlinien a) Rückpumper Stabilisierung b) Rückpumplinie MOT c) Kühllinie MOT.}
 \end{figure}
 
 \newpage
