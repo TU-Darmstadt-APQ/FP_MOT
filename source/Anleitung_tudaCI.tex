@@ -337,61 +337,11 @@ In \hyperref[fig:Rack]{Abbildung \ref{fig:Rack}} ist das Rack zu sehen, in dem d
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width=\textwidth]{graphics/Rack_new.jpg}
-	\caption{Ausschnitt des Racks inklusiver der Stromtreiber und Lockboxen zur Frequenzstabiliserung der Laser.}
+	\caption{Ausschnitt des Racks inklusiver der Stromtreiber und Lockboxen zur Frequenzstabiliserung der Laser. Weiterhin sind die Controller für die temüeraturstabilisierung der Laser zu sehen.}
 	\label{fig:Rack}
 \end{figure} 
 
 Um den Versuch zu verstehen und möglichst viel aus der Durchführung mitzunehmen, sollten Sie sich schon während der Vorbereitung intensiv mit der Realisierung des Versuchsaufbaus vertraut machen. 
-Dazu existiert im Anhang eine Bilderreihe, in welcher unterschiedliche Elemente des Aufbaus markiert sind. 
-Diese können über die Links auf der nächsten Seite aufgerufen werden.\\
-Eine detaillierte Beschreibung des Aufbaus sowie der Strahlführung findet sich in den entsprechenden Kapiteln zur Theorie. 
-Hier wird wiederum, wie zu Beginn erwähnt, Bezug auf dieses Kapitel genommen, um die Details in Bezug zum Gesamtaufbau zu betrachten.\\
-Dieser ist mit allen markierten Elementen ebenfalls auf der nächsten Seite und im Anhang noch einmal dargestellt (siehe \hyperref[fig:AEGBv]{Abbildung \ref{fig:AEGBv}}).\\
-
-\fbox{\parbox[c]{0.985\textwidth}{
-		\begin{frage}\label{f:4-1}
-			Welchen Vorteil bietet es, den Aufbau der MOT durch ein Glasfaserkabel von dem Aufbau der Laserstabilisierung zu trennen?
-		\end{frage}
-	}}\\
-~\\
-
-\begin{center}
-
-\begin{tabular}{lll}
-	& \textbf{Markierte Elemente} & \textbf{Abbildung}\\
-	& ~ & ~\\
-	\includegraphics[width=8px]{graphics/Kaestchen/SL.jpg} & Spiegel der Laserstabilisierung u. ~ \includegraphics[width=8px]{graphics/Kaestchen/SM.jpg} ~ der MOT & \ref{fig:SL}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/ST.jpg} & Strahlteiler ~~ u. ~ \includegraphics[width=8px]{graphics/Kaestchen/RD.jpg} ~ Rubidiumdampfzelle & \ref{fig:SW}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/PD.jpg} & Photodioden \medspace u. ~ \includegraphics[width=8px]{graphics/Kaestchen/UK.jpg} ~ USB-Kamera ~ & \ref{fig:PD}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/LH.jpg} & $\lambda/2$-Platten ~ u. ~   \includegraphics[width=8px]{graphics/Kaestchen/LV.jpg} ~ $\lambda/4$-Platten & \ref{fig:LH}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/LN.jpg} & Linsen & \ref{fig:LI}\\
-\end{tabular}
-
-~\\
-~\\
-~\\
-
-\begin{tabular}{lll}
-	& \textbf{Markierte Strahlengänge} & \textbf{Abbildung}\\
-	& ~ & ~\\
-	\includegraphics[width=8px]{graphics/Kaestchen/RL.jpg} & Spektroskopie Rückpumplaser & \ref{fig:SPM}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/SLS.jpg} & Spektroskopie Kühllaser & \ref{fig:SPS}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/OL.jpg} & Offsetlock für den Kühllasers ~~~~~~~~~~~~~~~~~~~~~~~~~ & \ref{fig:OFL}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/RL.jpg} & zur MOT Rückpumplaser & \ref{fig:MM}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/SLS.jpg} & zur MOT Kühllaser & \ref{fig:SZM}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/ML.jpg} & MOT & \ref{fig:MOTSTG}\\
-	\includegraphics[width=8px]{graphics/Kaestchen/AS.jpg} & alle Strahlengänge & \ref{fig:STGK}\\
-	& ~ & ~\\
-	\includegraphics[width=8px]{graphics/Kaestchen/AM.jpg} & alle Strahlengänge und alle Elemente & \ref{fig:AEGB}
-\end{tabular}
-\end{center}
-
-\begin{figure}[htb!]
-	\centering
-	\includegraphics[width=\textwidth]{graphics/AEGB.jpg}
-	\caption{Alle Strahlengänge und alle Elemente.}
-	\label{fig:AEGBv}
-\end{figure}
 
 Die Steuerung der einzelnen Phasen des Versuchsablaufs findet mittels \textit{labscript} satt. 
 Die Ansteuerung der der einzelnen steuerbaren Elemente des Versuchs erfolgt über \textit{BLACS}, während über den \textit{runmanager} vollständige Experimentabläufe geladen werden. 
