@@ -31,9 +31,9 @@ textheight = 24.7cm,
 \item Welche Wellenlänge benötigen wir ungefähr? 
 \item Niveaustruktur \isotope[85]{Rb}, Kernspin $I=\frac{5}{2}$ \\ 
 Grundzustand: $5^2\rm{S}_{1/2}$ ($n=5$, $S=\frac{1}{2}$, $L=0$ $\Rightarrow$ $J=\frac{1}{2}$) \\
-angeregter Zustand: $L=1 \Rightarrow$ $5^2\rm{P}_{1/2}$ ($J=\frac{1}{2}$; D2-Linie) oder $5^2\rm{P}_{3/2}$ ($J=\frac{3}{2}$; D1-Linie) \\
+angeregter Zustand: $L=1 \Rightarrow$ $5^2\rm{P}_{1/2}$ ($J=\frac{1}{2}$; D1-Linie) oder $5^2\rm{P}_{3/2}$ ($J=\frac{3}{2}$; D2-Linie) \\
 Hyperfeinstrukturaufspaltung wegen Entartung des Gesamtdrehimpuls: $|J-I|<F<J+I$ \\
-Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =1/\tau$ mit  $\tau=\unit[26]{ns}$ Lebensdauer
+Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =\nicefrac{1}{\tau}$ mit  $\tau=\unit[26]{ns}$ Lebensdauer
 \end{itemize}
 
 \subsection*{Laser und Laserstabilisierung:}
@@ -44,7 +44,7 @@ Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =1/\tau$ mit  $\tau=\un
 \item Offset-Lock
 \item PD: pin-Photodiode, Raumladungszone; Elektronenlochpaar entsteht durch absorbiertes Photon;
 \item PID-Regler: Regelung physikalischer Größe auf Sollwert; Proportional; Integral; Differenzialteil
-\item Aufbau Laserstabilisierung; Aufbau Offsetlock plus Elektronik;
+\item Aufbau Laserstabilisierung; Aufbau Offsetlock plus Elektronik
 \end{itemize}
 
 
@@ -53,24 +53,24 @@ Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =1/\tau$ mit  $\tau=\un
 \begin{itemize}
 \item Spontankraft: $F = \hbar k \Gamma_{\text{sc}}$ mit $\Gamma_{\text{sc}} =  \frac{\Gamma}{2} \frac{s_0}{1+s_0+\left(2\frac{\Delta}{\Gamma}\right)^2}$ mit $\Delta = \omega_L – \omega_R$ ; $s_0= \frac{I}{I_0}$; Sättigungsintensität $I_0=\frac{\pi h c \Gamma}{3\lambda^3}$
 \item Dopplerkühlung: $F_{\text{OM}} = F_{x+} + F_{x-}$ wobei $\Delta_{\text{OM}} = \Delta \mp k v_x$
-Entwicklung für kleine Geschwindigkeiten: $F_{\text{OM}} = \frac{8 \hbar k^2 \Delta s_0}{\Gamma (1+s_0 + \left(2 \frac{\Delta}{\Gamma}\right)^2)^2} v_x = -\beta v_x $
+Entwicklung für kleine Geschwindigkeiten: $F_{\text{OM}} = \frac{8 \hbar k^2 \Delta s_0}{\Gamma \left(1+s_0 + \left(2 \frac{\Delta}{\Gamma}\right)^2\right)^2} v_x = -\beta v_x $
 Dopplerlimit : $T_{\text{D}} = \frac{\hbar \Gamma}{2 k_B} = \unit[144]{\upmu K}$
 \item Fangen von Atomen (Quadrupolfeld, Zeeman-Shift; Fangen)
 \begin{itemize}
 \item Quadrupolfeld:  $B_x = B(x) = B_0 x$
 \item Zeeman-Aufspaltung: $\Delta E = g_{F'} m_{F'} \mu_B B_x$
-\item Verstimmung: $\Delta_{OM} = \Delta \mp k v_x \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}$
-\item Entwicklung für kleine Geschwindigkeiten und nahe Fallenmittelpunkt: $F_{MOT} = - \beta v_x - \kappa x$ gedämpfter harmonischer Oszillator
+\item Verstimmung: $\Delta_{\text{OM}} = \Delta \mp k v_x \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}$
+\item Entwicklung für kleine Geschwindigkeiten und nahe Fallenmittelpunkt: $F_{\text{MOT}} = - \beta v_x - \kappa x$ gedämpfter harmonischer Oszillator
 \end{itemize}
-\item Sub-Doppler-Kühlung: lin/lin-Konfig: Sisiphus-Kühlung genannt; Energieverschiebung des Grundzustandes je nach Laserpolarisation (Bei $\sigma^-$ ist $m_F=+1/2$ maximal und umgekehrt). Spontane Emission im Mittel keine Drehimpulsänderung. Recoil-Limit: $\frac{1}{2} k_B T_R = \frac{\hbar^2 k^2}{2m} \leftrightarrow T_{\mathrm{recoil}} = \unit[370]{nK}$.
+\item Sub-Doppler-Kühlung: lin/lin-Konfig: Sisyphus-Kühlung genannt; Energieverschiebung des Grundzustandes je nach Laserpolarisation (Bei $\sigma^-$ ist $m_F=+1/2$ maximal und umgekehrt). Spontane Emission im Mittel keine Drehimpulsänderung. Recoil-Limit: $\frac{1}{2} k_B T_R = \frac{\hbar^2 k^2}{2m} \leftrightarrow T_{\mathrm{recoil}} = \unit[370]{nK}$.
 \item Sub-Doppler-Kühlung: $\sigma$/$\sigma$-Konfiguration: Stehende Welle, immer linear polarisiert; Keine Energieverschiebung; Besetzungsgleichgewicht der $m_F$ Unterzustände hängt von Bewegungsrichtung ab; Dadurch mehr Streuung von entgegenkommenden Photonen und bremsende Wirkung.
 \end{itemize}
 
 \subsection*{Versuchsaufbau}
 \begin{itemize}
-\item AOM und Glasfaser
-\item Aufbau MOT mit $\frac{\lambda}{2}$
-\item PBS sowie $\frac{\lambda}{4}$
+\item AOM und Glasfasern
+\item Aufbau MOT mit $\frac{\lambda}{2}$-Platten
+\item PBS sowie $\frac{\lambda}{4}$-Platten 
 \item Ionen-Getter-Pumpe und Dispenser
 \end{itemize}
 
