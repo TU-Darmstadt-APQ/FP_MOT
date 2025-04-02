@@ -1,4 +1,5 @@
 \documentclass[10pt,a4paper]{extarticle}
+\usepackage[ngerman]{babel}
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -29,11 +30,14 @@ textheight = 24.7cm,
 \begin{itemize}
 \item Mit welchem Element arbeiten wir? Mit welchem Isotop arbeiten wir? 
 \item Welche Wellenlänge benötigen wir ungefähr? 
-\item Niveaustruktur \isotope[85]{Rb}, Kernspin $I=\frac{5}{2}$ \\ 
-Grundzustand: $5^2\rm{S}_{1/2}$ ($n=5$, $S=\frac{1}{2}$, $L=0$ $\Rightarrow$ $J=\frac{1}{2}$) \\
-angeregter Zustand: $L=1 \Rightarrow$ $5^2\rm{P}_{1/2}$ ($J=\frac{1}{2}$; D1-Linie) oder $5^2\rm{P}_{3/2}$ ($J=\frac{3}{2}$; D2-Linie) \\
-Hyperfeinstrukturaufspaltung wegen Entartung des Gesamtdrehimpuls: $|J-I|<F<J+I$ \\
-Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =\nicefrac{1}{\tau}$ mit  $\tau=\unit[26]{ns}$ Lebensdauer
+\item Niveaustruktur \isotope[85]{Rb}
+\begin{itemize}
+\item Kernspin $I=\frac{5}{2}$ 
+\item Grundzustand: $5^2\rm{S}_{\frac{1}{2}}$ ($n=5$, $S=\frac{1}{2}$, $L=0$ $\Rightarrow$ $J=\frac{1}{2}$) 
+\item angeregter Zustand: $L=1 \Rightarrow$ $5^2\rm{P}_{\frac{1}{2}}$ ($J=\frac{1}{2}$; D1-Linie) oder $5^2\rm{P}_{\frac{3}{2}}$ ($J=\frac{3}{2}$; D2-Linie) 
+\item Hyperfeinstrukturaufspaltung wegen Entartung des Gesamtdrehimpuls: $|J-I|<F<J+I$ 
+\item Natürliche Linienbreite  $\Gamma=2\pi\cdot\unit[6]{MHz} =\frac{1}{\tau}$ mit $\tau=\unit[26]{ns}$ Lebensdauer
+\end{itemize}
 \end{itemize}
 
 \subsection*{Laser und Laserstabilisierung:}
@@ -59,7 +63,7 @@ Dopplerlimit : $T_{\text{D}} = \frac{\hbar \Gamma}{2 k_B} = \unit[144]{\upmu K}$
 \begin{itemize}
 \item Quadrupolfeld:  $B_x = B(x) = B_0 x$
 \item Zeeman-Aufspaltung: $\Delta E = g_{F'} m_{F'} \mu_B B_x$
-\item Verstimmung: $\Delta_{\text{OM}} = \Delta \mp k v_x \pm \frac{g_{F'} m_{F'} \mu_B B_0 x}{\hbar}$
+\item Verstimmung: $\Delta_{\text{OM}} = \Delta \mp k \cdot v_x \pm \frac{g_{F'} m_{F'} \mu_B B_0}{\hbar} \cdot x$
 \item Entwicklung für kleine Geschwindigkeiten und nahe Fallenmittelpunkt: $F_{\text{MOT}} = - \beta v_x - \kappa x$ gedämpfter harmonischer Oszillator
 \end{itemize}
 \item Sub-Doppler-Kühlung: lin/lin-Konfig: Sisyphus-Kühlung genannt; Energieverschiebung des Grundzustandes je nach Laserpolarisation (Bei $\sigma^-$ ist $m_F=+1/2$ maximal und umgekehrt). Spontane Emission im Mittel keine Drehimpulsänderung. Recoil-Limit: $\frac{1}{2} k_B T_R = \frac{\hbar^2 k^2}{2m} \leftrightarrow T_{\mathrm{recoil}} = \unit[370]{nK}$.
@@ -83,14 +87,19 @@ Dopplerlimit : $T_{\text{D}} = \frac{\hbar \Gamma}{2 k_B} = \unit[144]{\upmu K}$
 \item Durch welche Größen/Faktoren werden die Laserfrequenzen beeinflusst? Welche dieser Faktoren sind gewollt bzw. ungewollt und wie können diese beseitigt werden?
 \item Welche Elemente werden zur Erzeugung einer MOT benötigt? Wo wird das Licht in die drei Strahlen aufgeteilt? Wie verlaufen die Strahlen?
 \end{itemize}
-
 \begin{figure}[htb!]
 	\centering
 	\includegraphics[width = 0.95\textwidth]{TS_korrigiert.jpg}
 	\caption{Termschema D2-Linie inklusive Laserlinien a) Rückpumper Stabilisierung b) Rückpumplinie MOT c) Kühllinie MOT.}
 \end{figure}
+\begin{figure}[htb!]
+	\centering
+	\includegraphics[width = 0.95\textwidth]{spectroscopy.png}
+	\caption{Transmission der dopplerfreien Sättigungsspektroskopie von Rubidium inklusive aller vier Linien.}
+\end{figure}
 
-\newpage
+\clearpage
+
 \section*{Auswertung}
 \subsection*{Eindimensionale Betrachtung}
 Annahme: Gaußverteilung zu $t = 0$
