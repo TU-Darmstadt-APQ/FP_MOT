@@ -1,0 +1,72 @@
+name: "Build PDFs"
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - "**"
+    paths:
+      - '**.tex'
+      - '.github/workflows/ci.yml'
+      - '.github/actions/**.yml'
+    # Ignore the push event when creating tags
+    tags-ignore:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  release:
+    types:
+      - published
+
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tex_file:
+          - {name: 'source/Anleitung_tudaCI', output: 'source/Anleitung_FP_MOT'}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup SSH keys
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.APQ_CI_DEPLOY_KEY }}"
+        shell: bash
+
+      - name: Checkout submodules using SSH
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: git -c url.git@github.com:.insteadOf=https://github.com/ submodule update --init --recursive
+        shell: bash
+
+      - name: Build PDF
+        uses: ./.github/actions/build
+        id: pdf-filename
+        with:
+          tex-filename: ${{ matrix.tex_file.name }}
+          output-filename: ${{ matrix.tex_file.output }}
+
+      - name: Parse base name from filename
+        id: pdf-basename
+        run: |
+          echo "value=$(basename ${{ steps.pdf-filename.outputs.value }})" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Upload PDF as artifact if not publishing
+        if: github.event.action != 'published'
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDF-${{ steps.pdf-basename.outputs.value }}
+          path: ${{ steps.pdf-filename.outputs.value }}.pdf
+          retention-days: 7
+
+      - name: Append PDF as an asset
+        if: github.event.action == 'published'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload ${{ github.ref_name }} ${{ steps.pdf-filename.outputs.value }}.pdf --repo ${{ github.repository }}
+        shell: bash

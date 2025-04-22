@@ -1,0 +1,57 @@
+name: Update APQ logo
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    paths:
+      - '.github/workflows/update_logo.yml'
+    branches:
+      - master
+
+jobs:
+  update-APQ-Logo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests	: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get latest logo release tag
+        id: logo-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.APQ_LOGO_PA }}
+        run: |
+          LATEST_TAG=$(gh api /repos/TU-Darmstadt-APQ/APQ-Logo/releases/latest | jq -r ".tag_name")
+          echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          CURRENT_TAG=$(<.apq-logo.version)
+          echo "current_tag=$CURRENT_TAG" >> $GITHUB_OUTPUT
+      - name: Update APQ logo
+        if: steps.logo-release.outputs.current_tag != steps.logo-release.outputs.latest_tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.APQ_LOGO_PA }}
+        shell: bash
+        run: |
+          # Download the release
+          gh release download --pattern '*.pdf' -D ./.tmp -R TU-Darmstadt-APQ/APQ-Logo
+          # Update logos
+          for file in ./.tmp/*; do find ./ -type f -name $(basename $file) -not -path '*/.*' -exec cp $file {} \; ; done
+          # Update current release
+          echo "${{ steps.logo-release.outputs.latest_tag }}" > .apq-logo.version
+      - name: Create pull request
+        if: steps.logo-release.outputs.current_tag != steps.logo-release.outputs.latest_tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git branch update_logo/${{ steps.logo-release.outputs.latest_tag }}
+          git checkout update_logo/${{ steps.logo-release.outputs.latest_tag }}
+          git add -- . ':!./.tmp'
+          git commit -m "Bump APQ-Logo from ${{ steps.logo-release.outputs.current_tag }} to ${{ steps.logo-release.outputs.latest_tag }}"
+          git push -u origin update_logo/${{ steps.logo-release.outputs.latest_tag }}
+          gh pr create \
+            --title "Bump APQ-Logo from ${{ steps.logo-release.outputs.current_tag }} to ${{ steps.logo-release.outputs.latest_tag }}" \
+            --body "Bumps [APQ-Logo](https://github.com/TU-Darmstadt-APQ/APQ-Logo) from ${{ steps.logo-release.outputs.current_tag }} to ${{ steps.logo-release.outputs.latest_tag }}" \
+            --label dependencies
